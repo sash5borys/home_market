@@ -83,6 +83,30 @@ article, section {
     }
   }
 }
+#overlay-mobile-menu{
+  position: fixed;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background-color: $color_white;
+  .overlay-mobile-menu-start{
+    padding: 0.8rem map-get($padding_container, small);
+    margin-right: 0;
+    justify-content: space-between;
+    background-color: $color_blue;
+  }
+  .overlay-mobile-menu-end{
+    margin-right: 0;
+    padding: 0.8rem map-get($padding_container, small);
+    a:hover img {
+      @include hoverIconOrange;
+    }
+  }
+}
 #catalog-menu-open-button{
     height: map-get($image_size, medium);
     font-size: map-get($font_size, medium);
@@ -188,6 +212,7 @@ article, section {
   }
   .nav-icon{
     font-size: map-get($image_size, medium);
+    color: $color_blue;
     img {
       height: map-get($image_size, medium);
     }
@@ -199,6 +224,9 @@ article, section {
         height: map-get($image_size, medium)*1.5;  
       }
     }
+  }
+  #overlay-mobile-menu{
+    display: none;
   }
   #catalog-menu-open-button{
     height: map-get($image_size, big);
