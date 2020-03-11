@@ -1,0 +1,15 @@
+@mixin tabletResponse {
+    @media screen and (min-width: 600px) {
+        @content;
+    }
+}
+@mixin desktopResponse {
+    @media screen and (min-width: 800px) {
+        @content;
+    }
+}
+@mixin maxResponse {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}

@@ -1,0 +1,209 @@
+a, div {
+  margin-right: map-get($margin_container, small);
+}
+a, button {
+  @include centered;
+}
+article, section {
+  margin: 2rem 0;
+}
+
+// Header
+#logo {
+  font-family: $font_logo;
+  font-size: map-get($image_size, small);
+  h1 {
+    color: $color_white;
+  }
+  i {
+    color: $color_yellow;
+  }
+}
+.row-container {
+  @include flexContainer(row);
+}
+.col-container {
+  @include flexContainer(column);
+}
+.top-links{
+  a {
+    color: $color_white;
+    font-size: map-get($font_size, small);
+  }
+  a:hover {
+    @include hoverLinksOrange;
+  }
+  img {
+    height: map-get($image_size, small);
+  }
+}
+#phone-call {
+  color: $color_orange;
+  justify-content: flex-start;
+  img {
+    height: map-get($font_size, medium);
+  }
+}
+.nav-icon{
+  font-size: map-get($image_size, small);
+  @include centered;
+  img {
+    height: map-get($image_size, small);
+  }
+}
+.nav-icon:hover {
+  @include hoverLinksOrange;
+}
+.nav-icon img:hover {
+  @include hoverIconYellow;
+}
+.pay-icons{
+  font-size: map-get($image_size, small);
+  .nav-icon{
+    img {
+      height: map-get($image_size, small)*1.5;  
+    }
+  }
+}
+#search-products-form{
+  width: 100%;
+  max-width: 700px;
+  input, button {
+    height: map-get($image_size, medium);
+    font-size: map-get($font_size, medium);
+  }
+  input {
+    width: 100%;
+    flex: 1 1 200px;
+    padding: 6px;
+    outline: none;
+    border: none;
+    background-color: $color_white;
+  }
+  button {
+    width: 100%;
+    flex: 0 0 30px;
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-radius: 0 0.3rem 0.3rem 0;
+    background-color: $color_white;
+    cursor: pointer;
+    img {
+      height: map-get($font_size, big);
+    }
+  }
+}
+#catalog-open-button{
+    height: map-get($image_size, medium);
+    font-size: map-get($font_size, medium);
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem 0 0 0.3rem;
+    color: $color_white;
+    background-color: $color_orange;
+    cursor: pointer;
+}
+#catalog-open-button:hover {
+  @include hoverLinksYellow;
+}
+.category-text {
+  color: $color_blue;
+  font-size: map-get($image_size, medium)/2;
+  line-height: 2.5rem;
+}
+.category-links {
+  align-items: flex-start;
+  a{
+    color: $color_black;
+    font-size: map-get($font-size, medium);
+  }
+}
+
+// Footer
+#subscribe-form {
+  width: 100%;
+  max-width: 450px;
+  input, button {
+    height: map-get($image_size, medium);
+    font-size: map-get($font_size, medium);
+  }
+  input {
+    width: 100%;
+    flex: 1 1 200px;
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem 0 0 0.3rem;
+    background-color: $color_white;
+  }
+  button {
+    width: 100%;
+    flex: 0 0 80px;
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-radius: 0 0.3rem 0.3rem 0;
+    color: $color_white;
+    background-color: $color_orange;
+    cursor: pointer;
+  }
+}
+
+// Tablet response
+@include tabletResponse {
+  // Header
+  #logo {
+    font-size: map-get($image_size, medium);
+  }
+  .nav-icon{
+    font-size: map-get($image_size, medium);
+    img {
+      height: map-get($image_size, medium);
+    }
+  }
+  .pay-icons{
+    font-size: map-get($image_size, medium);
+    .nav-icon{
+      img {
+        height: map-get($image_size, medium)*1.5;  
+      }
+    }
+  }
+  #search-products-form{
+    input, button {
+      height: map-get($image_size, big);
+      font-size: map-get($font_size, big);
+    }
+    img {
+      height: map-get($font_size, big)*2;
+    }
+  }
+  #catalog-open-button{
+    height: map-get($image_size, big);
+    font-size: map-get($font_size, big);
+  }
+  .category-text {
+    font-size: map-get($image_size, big)/2;
+  }
+  .category-links {
+    a{
+      font-size: map-get($font-size, big);
+    }
+  }
+
+  // Footer
+  #subscribe-form {
+    input, button {
+      height: map-get($image_size, big);
+      font-size: map-get($font_size, big);
+    }
+  }
+  
+}
+
+// Desktop response
+@include desktopResponse {
+
+}
