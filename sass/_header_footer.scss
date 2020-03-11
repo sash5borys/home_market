@@ -1,11 +1,10 @@
 // Header
 header{
   // position: fixed;
-  min-width: 360px;
   padding: 0.8rem map-get($padding_container, small);
-  z-index: 9;
-
   width: 100%;
+  min-width: 360px;
+  z-index: 9;
   background-color: $color_blue;
 
   .header-top-menu {
@@ -33,7 +32,10 @@ header{
     .header-bottom-menu-center{
       width: 100%;
       max-width: 450px;
-      .overlay-catalog{
+      .overlay-catalog-menu{
+        min-width: 360px;
+      }
+      .catalog-menu{
         margin-right: 0;
       }
 
@@ -47,6 +49,11 @@ header{
       }
     }
   }
+}
+
+// Main
+main{
+  background-color: orange;
 }
 
 // Footer
@@ -66,8 +73,6 @@ footer{
       }
     }
     .footer-top-menu-end{
-      width: 100%;
-      align-items: center;
       .menu-table{
         color: $color_black;
         font-size: map-get($font-size, medium);
@@ -88,7 +93,7 @@ footer{
   // Header
   header{
     padding: 0.8rem map-get($padding_container, big);
-    #overlay-open-button{
+    #mobile-menu-open-button{
       display: none;
     }
     .header-bottom-menu{
@@ -108,10 +113,11 @@ footer{
     padding: 1.2rem map-get($padding_container, big);
     .footer-top-menu{
       .footer-top-menu-end{
+        width: 100%;
         flex-direction: row;
-        align-items: flex-start;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        align-items: flex-start;
         .menu-section{
           flex: 0 0 40%;
         }

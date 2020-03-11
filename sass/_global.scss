@@ -57,11 +57,66 @@ article, section {
 .nav-icon img:hover {
   @include hoverIconYellow;
 }
+.category-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: $color_blue;
+  font-size: map-get($image_size, medium)/2;
+  margin: map-get($margin_container, small) 0;
+  line-height: 2.5rem;
+}
+.category-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  a{
+    color: $color_black;
+    font-size: map-get($font-size, medium);
+  }
+}
 .pay-icons{
   font-size: map-get($image_size, small);
   .nav-icon{
     img {
       height: map-get($image_size, small)*1.5;  
+    }
+  }
+}
+#catalog-menu-open-button{
+    height: map-get($image_size, medium);
+    font-size: map-get($font_size, medium);
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem 0 0 0.3rem;
+    color: $color_white;
+    background-color: $color_orange;
+    cursor: pointer;
+}
+#catalog-menu-open-button:hover {
+  @include hoverLinksYellow;
+}
+#overlay-catalog-menu{
+  position: absolute;
+  height: 0;
+  width: 100%;
+  top: 73px;
+  left: 0;
+  padding: 0 map-get($padding_container, small);
+  z-index: 3;
+  overflow-y: hidden;
+  background-color: $color_white;
+  border-bottom: map-get($margin_container, small) solid $color_blue;
+  .overlay-catalog-menu-start{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .menu-section{
+      flex: 0 0 100%;
+      .category-links{
+        display: none;
+      }
     }
   }
 }
@@ -92,32 +147,6 @@ article, section {
     img {
       height: map-get($font_size, big);
     }
-  }
-}
-#catalog-open-button{
-    height: map-get($image_size, medium);
-    font-size: map-get($font_size, medium);
-    padding: 6px;
-    outline: none;
-    border: none;
-    border-radius: 0.3rem 0 0 0.3rem;
-    color: $color_white;
-    background-color: $color_orange;
-    cursor: pointer;
-}
-#catalog-open-button:hover {
-  @include hoverLinksYellow;
-}
-.category-text {
-  color: $color_blue;
-  font-size: map-get($image_size, medium)/2;
-  line-height: 2.5rem;
-}
-.category-links {
-  align-items: flex-start;
-  a{
-    color: $color_black;
-    font-size: map-get($font-size, medium);
   }
 }
 
@@ -171,6 +200,23 @@ article, section {
       }
     }
   }
+  #catalog-menu-open-button{
+    height: map-get($image_size, big);
+    font-size: map-get($font_size, big);
+  }
+  #overlay-catalog-menu{
+    top: 76px;
+    padding: 0 map-get($padding_container, big);
+    border-bottom: map-get($margin_container, medium) solid $color_blue;
+    .overlay-catalog-menu-start{
+      .menu-section{
+        flex: 0 0 45%;
+        .category-links{
+          display: flex;
+        }
+      }
+    }
+  }
   #search-products-form{
     input, button {
       height: map-get($image_size, big);
@@ -179,10 +225,6 @@ article, section {
     img {
       height: map-get($font_size, big)*2;
     }
-  }
-  #catalog-open-button{
-    height: map-get($image_size, big);
-    font-size: map-get($font_size, big);
   }
   .category-text {
     font-size: map-get($image_size, big)/2;
@@ -205,5 +247,21 @@ article, section {
 
 // Desktop response
 @include desktopResponse {
+  // Header
+  #overlay-catalog-menu{
+    top: 94px;
+  }
+}
+
+// Maximum response
+@include maxResponse {
+  // Header
+  #overlay-catalog-menu{
+    .overlay-catalog-menu-start{
+      .menu-section{
+        flex: 0 0 30%;
+      }
+    }
+  }
 
 }
