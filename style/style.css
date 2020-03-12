@@ -77,7 +77,7 @@ a, button {
 }
 
 article, section {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 #logo {
@@ -185,6 +185,10 @@ article, section {
   line-height: 2.5rem;
 }
 
+.category-text img {
+  margin-right: 0.5rem;
+}
+
 .category-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,6 +205,11 @@ article, section {
 .category-links a {
   color: #000;
   font-size: 14px;
+}
+
+.category-links a:hover {
+  -webkit-filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
+          filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
 }
 
 .pay-icons {
@@ -269,7 +278,6 @@ article, section {
   z-index: 3;
   overflow-y: hidden;
   background-color: #fff;
-  border-bottom: 0.5rem solid #1b1f4c;
 }
 
 #overlay-catalog-menu .overlay-catalog-menu-start {
@@ -280,6 +288,11 @@ article, section {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+#overlay-catalog-menu .overlay-catalog-menu-start a:hover img {
+  -webkit-filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
+          filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
 }
 
 #overlay-catalog-menu .overlay-catalog-menu-start .menu-section {
@@ -367,6 +380,12 @@ article, section {
 }
 
 @media screen and (min-width: 600px) {
+  a, div {
+    margin-right: 0.8rem;
+  }
+  article, section {
+    margin: 2rem 0;
+  }
   #logo {
     font-size: 34px;
   }
@@ -393,7 +412,6 @@ article, section {
   #overlay-catalog-menu {
     top: 76px;
     padding: 0 2rem;
-    border-bottom: 0.8rem solid #1b1f4c;
   }
   #overlay-catalog-menu .overlay-catalog-menu-start .menu-section {
     -webkit-box-flex: 0;
@@ -497,10 +515,6 @@ header .header-bottom-menu .header-bottom-menu-end a:first-child {
   margin-right: 0;
 }
 
-main {
-  background-color: orange;
-}
-
 footer {
   min-width: 360px;
   padding: 1.2rem 1rem;
@@ -537,9 +551,19 @@ footer .footer-top-menu .footer-top-menu-start .social-icons {
   margin: 0.8rem 0;
 }
 
+footer .footer-top-menu .footer-top-menu-start .social-icons a:hover img {
+  -webkit-filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
+          filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
+}
+
 footer .footer-top-menu .footer-top-menu-end .menu-table {
   color: #000;
   font-size: 14px;
+}
+
+footer .footer-top-menu .footer-top-menu-end .pay-icons img:hover {
+  -webkit-filter: none;
+          filter: none;
 }
 
 footer .footer-bottom-menu span {

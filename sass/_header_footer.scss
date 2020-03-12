@@ -51,11 +51,6 @@ header{
   }
 }
 
-// Main
-main{
-  background-color: orange;
-}
-
 // Footer
 footer{
   min-width: 360px;
@@ -70,12 +65,20 @@ footer{
       @include centered;
       .social-icons{
         margin: map-get($margin_container, medium) 0;
+        a:hover img {
+          @include hoverIconOrange;
+        }
       }
     }
     .footer-top-menu-end{
       .menu-table{
         color: $color_black;
         font-size: map-get($font-size, medium);
+      }
+      .pay-icons{
+        img:hover{
+          filter: none;
+        }
       }
     }
   }

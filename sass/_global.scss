@@ -5,7 +5,7 @@ a, button {
   @include centered;
 }
 article, section {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 // Header
@@ -65,6 +65,9 @@ article, section {
   font-size: map-get($image_size, medium)/2;
   margin: map-get($margin_container, small) 0;
   line-height: 2.5rem;
+  img{
+    margin-right: map-get($margin_container, small);
+  }
 }
 .category-links {
   display: flex;
@@ -73,6 +76,9 @@ article, section {
   a{
     color: $color_black;
     font-size: map-get($font-size, medium);
+  }
+  a:hover{
+    @include hoverIconOrange;
   }
 }
 .pay-icons{
@@ -131,11 +137,13 @@ article, section {
   z-index: 3;
   overflow-y: hidden;
   background-color: $color_white;
-  border-bottom: map-get($margin_container, small) solid $color_blue;
   .overlay-catalog-menu-start{
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+    a:hover img {
+      @include hoverIconOrange;
+    }
     .menu-section{
       flex: 0 0 100%;
       .category-links{
@@ -206,6 +214,12 @@ article, section {
 
 // Tablet response
 @include tabletResponse {
+  a, div {
+    margin-right: map-get($margin_container, medium);
+  }
+  article, section {
+    margin: 2rem 0;
+  }
   // Header
   #logo {
     font-size: map-get($image_size, medium);
@@ -235,7 +249,6 @@ article, section {
   #overlay-catalog-menu{
     top: 76px;
     padding: 0 map-get($padding_container, big);
-    border-bottom: map-get($margin_container, medium) solid $color_blue;
     .overlay-catalog-menu-start{
       .menu-section{
         flex: 0 0 45%;
