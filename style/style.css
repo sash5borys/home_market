@@ -220,8 +220,17 @@ article, section {
   height: 48px;
 }
 
+.horizontal-line {
+  position: absolute;
+  height: 2px;
+  right: 0;
+  left: 0;
+  background-color: #1b1f4c;
+}
+
 #overlay-mobile-menu {
   position: fixed;
+  margin-right: 0;
   height: 100%;
   width: 0;
   top: 0;
@@ -233,21 +242,23 @@ article, section {
   background-color: #fff;
 }
 
+#overlay-mobile-menu > div {
+  margin-right: 0;
+}
+
 #overlay-mobile-menu .overlay-mobile-menu-start {
   padding: 0.8rem 1rem;
-  margin-right: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #1b1f4c;
 }
 
-#overlay-mobile-menu .overlay-mobile-menu-end {
-  margin-right: 0;
+#overlay-mobile-menu .overlay-mobile-menu-center, #overlay-mobile-menu .overlay-mobile-menu-end {
   padding: 0.8rem 1rem;
 }
 
-#overlay-mobile-menu .overlay-mobile-menu-end a:hover img {
+#overlay-mobile-menu .overlay-mobile-menu-center a:hover img, #overlay-mobile-menu .overlay-mobile-menu-end a:hover img {
   -webkit-filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
           filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
 }
@@ -270,6 +281,7 @@ article, section {
 
 #overlay-catalog-menu {
   position: absolute;
+  opacity: 90%;
   height: 0;
   width: 100%;
   top: 73px;
@@ -278,6 +290,14 @@ article, section {
   z-index: 3;
   overflow-y: hidden;
   background-color: #fff;
+}
+
+#overlay-catalog-menu > div {
+  margin-right: 0;
+}
+
+#overlay-catalog-menu .horizontal-line {
+  bottom: 0;
 }
 
 #overlay-catalog-menu .overlay-catalog-menu-start {
@@ -513,6 +533,10 @@ header .header-bottom-menu .header-bottom-menu-end li:nth-child(-n + 2) {
 
 header .header-bottom-menu .header-bottom-menu-end a:first-child {
   margin-right: 0;
+}
+
+main {
+  background-color: orange;
 }
 
 footer {
