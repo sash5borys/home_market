@@ -89,8 +89,16 @@ article, section {
     }
   }
 }
+.horizontal-line{
+  position: absolute;
+  height: 2px;
+  right: 0;
+  left: 0;
+  background-color: $color_blue;
+}
 #overlay-mobile-menu{
   position: fixed;
+  margin-right: 0;
   height: 100%;
   width: 0;
   top: 0;
@@ -99,14 +107,15 @@ article, section {
   overflow-x: hidden;
   transition: 0.5s;
   background-color: $color_white;
+  &>div{
+    margin-right: 0;
+  }
   .overlay-mobile-menu-start{
     padding: 0.8rem map-get($padding_container, small);
-    margin-right: 0;
     justify-content: space-between;
     background-color: $color_blue;
   }
-  .overlay-mobile-menu-end{
-    margin-right: 0;
+  .overlay-mobile-menu-center, .overlay-mobile-menu-end{
     padding: 0.8rem map-get($padding_container, small);
     a:hover img {
       @include hoverIconOrange;
@@ -129,6 +138,7 @@ article, section {
 }
 #overlay-catalog-menu{
   position: absolute;
+  opacity: 90%;
   height: 0;
   width: 100%;
   top: 73px;
@@ -137,6 +147,12 @@ article, section {
   z-index: 3;
   overflow-y: hidden;
   background-color: $color_white;
+  &>div{
+    margin-right: 0;
+  }
+  .horizontal-line{
+    bottom: 0;
+  }
   .overlay-catalog-menu-start{
     width: 100%;
     flex-direction: row;
