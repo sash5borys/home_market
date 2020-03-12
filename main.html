@@ -198,6 +198,38 @@
     <!-- End Navbar -->
   </header>
   <main>
+    <section id="carousel-slider" class="carousel slider row-container" data-count-slides="1">
+      <div class="carousel-nav carousel-nav-left">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAEM0lEQVR4nO2dz4uVVRjHP8+MYyM0iugmqkULCdu5KBRaDPhj7uVmhTkVQ0mFEOTGRnTIaidCUv0HFUPpotkUw+i9hmi0iIKYVUgrN0UhCupIDjPjfdrIINLgee6d854f93zW75f75cvzvud8z33nDhQKhUKhUCgUCoVCpEhoA92io6zlNqdQXgGeWOGy68AkQ3wgUyxUaG+ZNSE+dLVQEG7zFcrYQy7dBIwzB8AR78b+h74QH7pq1DnmEPL9HPDm5SEkG7SO0EA5GdqHK0kGrQ22IpzB7v9rH35cSC5obbCRNt8D643SWQb4yIcnF5IKWkfpZ4nTKFuM0n8QXpRp/vVizIG0dh23+BShblQtoLwqTf704smRZCZa6xxAOGwXckha/OTBkokkCovW2AFcBB4xSj+XZph984NEP9E6wmPAFNaQhR+YZ8KLqQ6IOmgdZhDhO+Bxo/QKaxiTSyz58NUJ0QatIKzjC+A5o3QOZa9Mc82Hr06Jd9dRY8JYrwHatBmT8/zuxVMXRLkYao0RYAbotwmZkBanvJjqkuiC1hpPA78AG4zSKZq8JqAebHVNVM9obbARYRp7yLMM8FasIUNEQadcr12IZzFMuF67EMVEp16vXQi+GOZQr10IOtG51GsXggWdU712IUjQudVrF8LsOjKr1y5UvhjmWK9dqDToXOu1C5U9o3Ou1y5UEnTu9dqFahbDzOu1C94nuhfqtQteF8NeqdcueJvoXqrXLniZaB1mkEF+xN78rrDIs3KB6z58hcTPRK/jBPaQb9JPI8eQwdeuQ80vfLdp84Y0uezFTwREcfDfC/gKetJ4fR99fKMNtnpxEwF+gp7nY+BXo2oDd5nRvWz2YSk0XoKWS8yjvAz8ZZQ+xRJndDiiL41XCW/PaGnxN21eAu6YhMpuBtM9Dl0Jr4uhnOc3lHc7kL6vIxxcdUMBqeQ8Wmt8BowbZYsoO3M576hme7edo8BZo2oA4Vvdw5M+LFVNZd+waJ31KD8DzxilswzwfOpn0pUVFjnHLWAfyg2jdBuLTGoEL/t0Q6XNUJr8gfA6cNco3U+dYz48VUXlFVyatBA+NAuVk7qHFzxYqoRgt6PW+RLlbaNsDmWHtNJ7tyPcodId3sNe04cQplOs6cGC7rWaHvSYtJdqevDz6F6p6dHsTXOv6cEnepluanp9xV8Hi4ZoJhryrunxTDR51/SogoZ8a3p0QUOeNT3aWw3yqulRTvQyGdX0qIPOqaZHHTTkU9OjDxryqOlRL4YP0mFNX0DZFbqmJzHRy3RW09fGUNOTmmhIt6anNdHcq+n97AduGqXbWOSED08uJBc0gMxwGRgD2kbpmx7sOJFk0ADS5CzCcaMs2F/fJhs0gJzjE+C0QRLsF9GjaU4dM8Q7zHEVGGXlfw9yDWGSR813QKFQKBQKhUKhUCjkz3+1u2neZNlTUAAAAABJRU5ErkJggg==">
+      </div>
+      <div class="carousel-nav carousel-nav-right">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAEL0lEQVR4nO2czWucVRSHn5O0Nl3EUnQjduNCRHfdCAUXXaiZMdaKtFUi1gqKoBu1aLRdqJv4Qe1/oFi1BT8WShgzUxcWXGgF6UrElZuKLsSPFGzSJnO6SAg1kHrPMPe+91zus57D/Pjl5L3vk3knUKlUKpVKpVKpVCqZIinfTNtsQXkDOAjcsMHLzqOcYJHX5AxLCeNFZSTpu62U/DwblwywA+EoY7yfJlQa0ha9ssmhPKptpqMlSUzqom0oM9rivqZjDIPUl44PjRMjwCmd5PYYcVKStuhFXgG+N05tY5mO7uHGGJFSkbRoOcMCyoPAr8bRW1jilO5mU4xcKUh+jZYev9FnL3DRNKjcwxhvxUkVn0YOQznNDyhPDzD6gk7w5NADJSCpsKxHWxxn5b7awiWUu6XHNzEyxaLZ27txXgS+NE5dh/CJttkRI1IsGt1oAG1zPcq3wB3G0XNs5i6Z5d8YuYZN48Iic8wDD6H8bRzdyWVOaAbLEkLjRQNIl58RHgGWjaP7aPNSjEzDJouiAaRLD+GoeVCZ0Xu5P0KkoZLdr522eQ/lCePYBZRd0uPHKKGGQDYbvcZFnsGu6eMIszlrenZFl6rp2RUNZWp6lkVDeZqe3WG4nlI0PduNXqMQTc9+o6EMTc9/oylD010UDf413U3R4FvTG/+VGgSPmu5qo9dwqOkui/ao6S6LhlVNF/YBi6bBhjTdbdEAMsd3KE8NMJpc010ehuvxoOmuN3oNB5pexEYD6CTb6XMW5VbjaBJNL2OjAenwFyPsBf4xju7kMq/HyHQ1xRQNIB1+Ah7GrumHhp/mvxRV9MCI+QdjpqiiVx9Y/xgYtQ2aH5A3U0zRq4fhF8A24+g5NvNqjExXU0TRup9RlvlogDuO3xEeSPHBQBFFM88xMH+p6BLKAZnjfIxI63FftLY5iPCcfZBnU35461pYtMUu4Gtgi3H0uHQ5HCHShrjdaJ3gJuBTrCULX7GQ/ouiLovW3YwhfA7cbBz9hU1MNfEdc3dFKwhbeRe40zh6AWWPzPJHjFz/R5YPBF6TFtMoU8apPn2m5HRzj/W6Ogy1xQTQwW5+09Lj7SihAnFTtLa4DTiL3fw+o8sBAY0QKxgX12idZDvCLIPp9eNNlwwOitb9jLLEyZz1OoT8D8N5jiG0jVMret1No9chZL3RXvQ6hGwPQ096HUKWG+1Nr0PIrmiPeh1CVkV71esQ8rrrcKrXIWRzGHrW6xCyKNq7XofQ+DW6BL0OodGiS9HrEJo9DAvR6xAa2+iS9DqERg7D0vQ6hOQbXaJeh5C06FL1OoS0G72VN7Hr9TyjTOas1yGk/v/Rjxkn+ihTqw+Yuyb1NdomF8IR6dGJlCUpqYv+wPDak8zl/zeMUNIWPc7LCO/ANa+3fyLMsMAhL3pdqVQqlUqlUqlUKq65Ao00arutq+8tAAAAAElFTkSuQmCC">
+      </div>
+
+      <div class="carousel-content">
+        <div class="slide slide-1" data-bg-of-slide="#d9c0f7">
+          <a href="" class="slide-link">
+            <div class="slide-image"
+              style="background-image: url('https://i2.rozetka.ua/promotions/1645/1645281.jpg');"></div>
+          </a>
+        </div>
+        <div class="slide slide-2" data-bg-of-slide="#46daca">
+          <a href="" class="slide-link">
+            <div class="slide-image"
+              style="background-image: url('https://i1.rozetka.ua/promotions/1617/1617407.jpg');"></div>
+          </a>
+        </div>
+        <div class="slide slide-3" data-bg-of-slide="#b1d0ef">
+          <a href="" class="slide-link">
+            <div class="slide-image"
+              style="background-image: url('https://i2.rozetka.ua/promotions/1645/1645792.jpg');"></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <pre>
 
 
@@ -302,6 +334,7 @@
     </div>
   </footer>
   <script src="./script/scripts.js"></script>
+  <script src="./script/main.js"></script>
 </body>
 
 </html>
