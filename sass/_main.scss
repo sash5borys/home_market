@@ -4,6 +4,9 @@ main{
     #carousel-slider {
         width: 100%;
         height: 380px;
+        .carousel-content .slide .slide-link{
+            width: 100%;
+        }
     }
     #carousel-new-products, #carousel-trend-products {
         width: 100%;

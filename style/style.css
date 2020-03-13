@@ -788,6 +788,10 @@ main #carousel-slider {
   height: 380px;
 }
 
+main #carousel-slider .carousel-content .slide .slide-link {
+  width: 100%;
+}
+
 main #carousel-new-products, main #carousel-trend-products {
   width: 100%;
   height: 200px;
