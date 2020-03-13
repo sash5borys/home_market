@@ -1,4 +1,4 @@
-a, div {
+a, span, div {
   margin-right: map-get($margin_container, small);
 }
 a, button {
@@ -6,6 +6,9 @@ a, button {
 }
 article, section {
   margin: 1rem 0;
+}
+a, span, ul, li{
+  width: fit-content;
 }
 
 // Header
@@ -29,9 +32,9 @@ article, section {
   a {
     color: $color_white;
     font-size: map-get($font_size, small);
-  }
-  a:hover {
-    @include hoverLinksOrange;
+    &:hover {
+      @include hoverLinksOrange;
+    }
   }
   img {
     height: map-get($image_size, small);
@@ -40,6 +43,9 @@ article, section {
 #phone-call {
   color: $color_orange;
   justify-content: flex-start;
+  &:hover{
+    @include hoverIconYellow;
+  }
   img {
     height: map-get($font_size, medium);
   }
@@ -49,13 +55,10 @@ article, section {
   @include centered;
   img {
     height: map-get($image_size, small);
+    &:hover {
+      @include hoverIconYellow;
+    }
   }
-}
-.nav-icon:hover {
-  @include hoverLinksOrange;
-}
-.nav-icon img:hover {
-  @include hoverIconYellow;
 }
 .category-text {
   display: flex;
@@ -65,9 +68,17 @@ article, section {
   font-size: map-get($image_size, medium)/2;
   margin: map-get($margin_container, small) 0;
   line-height: 2.5rem;
+  &:hover{
+    @include hoverIconOrange;
+  }
   img{
     margin-right: map-get($margin_container, small);
   }
+}
+.category-menu-text {
+  color: $color_blue;
+  font-size: map-get($image_size, medium);
+  margin: map-get($margin_container, small) 0;
 }
 .category-links {
   display: flex;
@@ -76,18 +87,37 @@ article, section {
   a{
     color: $color_black;
     font-size: map-get($font-size, medium);
+    &:hover{
+      @include hoverIconOrange;
+    }
   }
   a:hover{
     @include hoverIconOrange;
   }
+}
+.social-icons{
+  margin: map-get($margin_container, medium) 0;
+    a:hover img {
+      @include hoverIconOrange;
+    }
 }
 .pay-icons{
   font-size: map-get($image_size, small);
   .nav-icon{
     img {
       height: map-get($image_size, small)*1.5;  
+      &:hover{
+        filter: none;
+      }
     }
   }
+}
+.horizontal-line{
+  position: absolute;
+  height: 2px;
+  right: 0;
+  left: 0;
+  background-color: $color_blue;
 }
 #overlay-mobile-menu{
   position: fixed;
@@ -101,16 +131,11 @@ article, section {
   background-color: $color_white;
   .overlay-mobile-menu-start{
     padding: 0.8rem map-get($padding_container, small);
-    margin-right: 0;
     justify-content: space-between;
     background-color: $color_blue;
   }
-  .overlay-mobile-menu-end{
-    margin-right: 0;
+  .overlay-mobile-menu-center, .overlay-mobile-menu-end{
     padding: 0.8rem map-get($padding_container, small);
-    a:hover img {
-      @include hoverIconOrange;
-    }
   }
 }
 #catalog-menu-open-button{
@@ -123,9 +148,9 @@ article, section {
     color: $color_white;
     background-color: $color_orange;
     cursor: pointer;
-}
-#catalog-menu-open-button:hover {
-  @include hoverLinksYellow;
+    &:hover {
+      @include hoverLinksYellow;
+    }
 }
 #overlay-catalog-menu{
   position: absolute;
@@ -141,9 +166,6 @@ article, section {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    a:hover img {
-      @include hoverIconOrange;
-    }
     .menu-section{
       flex: 0 0 100%;
       .category-links{
@@ -179,6 +201,12 @@ article, section {
     img {
       height: map-get($font_size, big);
     }
+  }
+}
+.catalog-menu, #overlay-mobile-menu{
+  margin-right: 0;
+  div{
+    margin-right: 0;
   }
 }
 
@@ -273,12 +301,15 @@ main{
     color: $color_white;
     background-color: $color_orange;
     cursor: pointer;
+    &:hover {
+      @include hoverLinksYellow;
+    }
   }
 }
 
 // Tablet response
 @include tabletResponse {
-  a, div {
+  a, span, div {
     margin-right: map-get($margin_container, medium);
   }
   article, section {
@@ -303,8 +334,22 @@ main{
       }
     }
   }
+  .category-text {
+    font-size: map-get($image_size, big)/2;
+  }
+  .category-links {
+    a{
+      font-size: map-get($font-size, big);
+    }
+  }
+  .category-menu-text{
+    font-size: map-get($image_size, big);
+  }
   #overlay-mobile-menu{
     display: none;
+  }
+  .horizontal-line{
+    height: 4px;
   }
   #catalog-menu-open-button{
     height: map-get($image_size, big);
@@ -331,12 +376,13 @@ main{
       height: map-get($font_size, big)*2;
     }
   }
-  .category-text {
-    font-size: map-get($image_size, big)/2;
-  }
-  .category-links {
-    a{
-      font-size: map-get($font-size, big);
+
+  // Main
+  main{
+    .category-menu-content {
+      .card{
+        height: 180px;
+      }
     }
   }
 

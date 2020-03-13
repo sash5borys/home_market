@@ -60,7 +60,7 @@ table {
           box-sizing: border-box;
 }
 
-a, div {
+a, span, div {
   margin-right: 0.5rem;
 }
 
@@ -78,6 +78,12 @@ a, button {
 
 article, section {
   margin: 1rem 0;
+}
+
+a, span, ul, li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #logo {
@@ -139,6 +145,11 @@ article, section {
           justify-content: flex-start;
 }
 
+#phone-call:hover {
+  -webkit-filter: brightness(2.5);
+          filter: brightness(2.5);
+}
+
 #phone-call img {
   height: 14px;
 }
@@ -158,10 +169,6 @@ article, section {
 
 .nav-icon img {
   height: 32px;
-}
-
-.nav-icon:hover {
-  color: #ff4800;
 }
 
 .nav-icon img:hover {
@@ -185,8 +192,19 @@ article, section {
   line-height: 2.5rem;
 }
 
+.category-text:hover {
+  -webkit-filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
+          filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
+}
+
 .category-text img {
   margin-right: 0.5rem;
+}
+
+.category-menu-text {
+  color: #1b1f4c;
+  font-size: 34px;
+  margin: 0.5rem 0;
 }
 
 .category-links {
@@ -212,12 +230,39 @@ article, section {
           filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
 }
 
+.category-links a:hover {
+  -webkit-filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
+          filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
+}
+
+.social-icons {
+  margin: 0.8rem 0;
+}
+
+.social-icons a:hover img {
+  -webkit-filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
+          filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
+}
+
 .pay-icons {
   font-size: 32px;
 }
 
 .pay-icons .nav-icon img {
   height: 48px;
+}
+
+.pay-icons .nav-icon img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.horizontal-line {
+  position: absolute;
+  height: 2px;
+  right: 0;
+  left: 0;
+  background-color: #1b1f4c;
 }
 
 #overlay-mobile-menu {
@@ -235,21 +280,14 @@ article, section {
 
 #overlay-mobile-menu .overlay-mobile-menu-start {
   padding: 0.8rem 1rem;
-  margin-right: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #1b1f4c;
 }
 
-#overlay-mobile-menu .overlay-mobile-menu-end {
-  margin-right: 0;
+#overlay-mobile-menu .overlay-mobile-menu-center, #overlay-mobile-menu .overlay-mobile-menu-end {
   padding: 0.8rem 1rem;
-}
-
-#overlay-mobile-menu .overlay-mobile-menu-end a:hover img {
-  -webkit-filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
-          filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
 }
 
 #catalog-menu-open-button {
@@ -288,11 +326,6 @@ article, section {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-#overlay-catalog-menu .overlay-catalog-menu-start a:hover img {
-  -webkit-filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
-          filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
 }
 
 #overlay-catalog-menu .overlay-catalog-menu-start .menu-section {
@@ -341,6 +374,14 @@ article, section {
 
 #search-products-form button img {
   height: 16px;
+}
+
+.catalog-menu, #overlay-mobile-menu {
+  margin-right: 0;
+}
+
+.catalog-menu div, #overlay-mobile-menu div {
+  margin-right: 0;
 }
 
 main .carousel {
@@ -461,8 +502,12 @@ main .carousel .carousel-content .card .card-price {
   cursor: pointer;
 }
 
+#subscribe-form button:hover {
+  background-color: #e2b220;
+}
+
 @media screen and (min-width: 600px) {
-  a, div {
+  a, span, div {
     margin-right: 0.8rem;
   }
   article, section {
@@ -484,8 +529,20 @@ main .carousel .carousel-content .card .card-price {
   .pay-icons .nav-icon img {
     height: 51px;
   }
+  .category-text {
+    font-size: 18px;
+  }
+  .category-links a {
+    font-size: 16px;
+  }
+  .category-menu-text {
+    font-size: 36px;
+  }
   #overlay-mobile-menu {
     display: none;
+  }
+  .horizontal-line {
+    height: 4px;
   }
   #catalog-menu-open-button {
     height: 36px;
@@ -512,11 +569,8 @@ main .carousel .carousel-content .card .card-price {
   #search-products-form img {
     height: 32px;
   }
-  .category-text {
-    font-size: 18px;
-  }
-  .category-links a {
-    font-size: 16px;
+  main .category-menu-content .card {
+    height: 180px;
   }
   #subscribe-form input, #subscribe-form button {
     height: 36px;
@@ -569,7 +623,6 @@ header .header-bottom-menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 0;
 }
 
 header .header-bottom-menu .header-bottom-menu-start .logo-text-long {
@@ -585,16 +638,16 @@ header .header-bottom-menu .header-bottom-menu-center .overlay-catalog-menu {
   min-width: 360px;
 }
 
-header .header-bottom-menu .header-bottom-menu-center .catalog-menu {
-  margin-right: 0;
-}
-
 header .header-bottom-menu .header-bottom-menu-end li:nth-child(-n + 2) {
   display: none;
 }
 
 header .header-bottom-menu .header-bottom-menu-end a:first-child {
   margin-right: 0;
+}
+
+header .header-bottom-menu .horizontal-line {
+  bottom: 0;
 }
 
 footer {
@@ -629,13 +682,9 @@ footer .footer-top-menu .footer-top-menu-start {
           align-items: center;
 }
 
-footer .footer-top-menu .footer-top-menu-start .social-icons {
-  margin: 0.8rem 0;
-}
-
-footer .footer-top-menu .footer-top-menu-start .social-icons a:hover img {
-  -webkit-filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
-          filter: invert(1) brightness(50%) sepia(70%) saturate(10000%);
+footer .footer-top-menu .footer-top-menu-end .category-text:hover {
+  -webkit-filter: none;
+          filter: none;
 }
 
 footer .footer-top-menu .footer-top-menu-end .menu-table {
@@ -648,9 +697,15 @@ footer .footer-top-menu .footer-top-menu-end .pay-icons img:hover {
           filter: none;
 }
 
+footer .footer-bottom-menu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 footer .footer-bottom-menu span {
-  display: block;
   font-size: 12px;
+  margin: 0.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,6 +796,10 @@ main {
 main #carousel-slider {
   width: 100%;
   height: 380px;
+}
+
+main #carousel-slider .carousel-content .slide .slide-link {
+  width: 100%;
 }
 
 main #carousel-new-products, main #carousel-trend-products {
