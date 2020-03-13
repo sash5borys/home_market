@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <title>ХОУМ ШОП</title>
+</head>
+
+<body>
+  <div id="overlay-mobile-menu" class="overlay-mobile-menu">
+    <div class="overlay-mobile-menu-start row-container">
+      <a href="" id="logo">
+        <h1 class="logo-text-short"><i>Х</i>Ш</h1>
+      </a>
+      <a href="javascript:void(0)" class="nav-icon" id="mobile-menu-close-button">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAB2klEQVRYhe3Xz0sCQRTA8e9shR09BIF5zYMQQSBd0/KgEvinBqUeDIWOBUEEBXW1KOzQscUf06FNZ9cdnV1HSehdhMfszoeZ58xb+I8VCxFMyBJZJDk2qIlzPhYxqTxlix4VBDeiwYMW5GFugQTQweFY1HmyiimTYUgL2AFcBAcqyvGNHnLoYQDSDGnLMhnLmLaHAUggyalj/CCHC+BFyaRsoRRMSkm/IKhrQaJBlwH5CZTkSpbIxsYU2fW2ScW8sUZRNOj6DNoXrPmWFgTvQCFYhEaY4Lt+MAVR4zE4PhRkCxUVMxU0LyoOZiYoLiouxggUFaUd65CfhTEGmaJs1J0xaNaE9OnZ+GdGAoH2gHv1fv05h3zUqycyCLRFq7411pkVGzQVNQcGgnfZH4jV37JFF3WkLQu9tQXvCIoMOMJCl7CaB6OVq8MQtbzL1RC13PbD4FltUWtbCNOlb/I80Q5LtoHWtEIPBU3tZ6JclDFQkx+KczRXuoiyff4PxSpJvrgH0ko61gE3gQo/UDtssifO+PxN+LfMpbIIDICo84RDnvGpDpD25hyFH9TnGnBHekuYEFTHS7nenOMxwYdkkV3W2SfBpbqUNkNWSeJyQp870eR5EXP8x9LiG2u4FSSSSpHKAAAAAElFTkSuQmCC" />
+      </a>
+
+    </div>
+    <div class="overlay-mobile-menu-center col-container">
+      <ul class="menu-section">
+        <li>
+          <a href="" class="nav-icon category-text">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAEUklEQVRYhe2XS2xUVRiAv//cGUsrsSAWdO4w00IAJRGo4kIlsbqQ0JmpIOkCDSYqiZroFiKrJhpfceGCBdEEAkZowA22A4GNJMQXXZiAhWAQZsqdIfUBTQCLzp3zu5iZphTmWdz1X/3nf37n5J5z7oEZmZHpiUy3wMKF6xarcVaAzLMwx6h1cv/kdoyOHrvRSL1AYxDdq61j3kFZZ6GtYFUEUBGcWU154NNGate1QgsWb5gf8HO7ge4pLgv8oaACDwKjks8t97yjV/43ILcjvhIrR0AfKpp+FmWPFTmRTV87Bcf9cDjuqsN5YBagwGlEd2ZSN76A4/5dA5rf0bMgaO1JIAL8qSJbsqmBQ3cEj8R2IvLGLU2UY9aXDdnswN/VeplagILWflaEGVNj1pSDARCju0u6wleAqvC8CerHtfSqukLhcHyJOpwFHBXdlE0l+wueXicUufkkoqtQ5olwHyILsboKYQlwc87s5tax6+NbgfcAlbxZ6nnfnK/Ur+ouU0c2gzrAuWzqiQOQJBTt6RTG9wEP3zIt1QldVPuGhw/+C70futHxLUBUjX0N2D4tIBHtUgURDkGfbW9fPyen/lEmtjsecB7kiqJ/GdHLijnipQd/LLgP5lUS/aK6DeGZav2qr5DyOIBFvgfwbf4VhDbQFI6uzVw4/Gu1Gkb1Jy2onRTWUMvGVioUCiVagBYAJ08WwBr7OyKfK+b9WmAAxNpLRbW5ra333kqxFVfIGJ1bmoqqjgEUP+r+WkBKohoYK5yd0NQ03gpcL9uzSq2WkuIHArl6ICaLHzCTD8WWsoFVgRw+KWo24PsNAxVzLYA68lFDQKGOnmUK6wFEbMzzBjMlnxuNPetGE2PhSGzb1Dy3Pf6uG02MhdvjXSWb5w1mRGysMNIXw+H4krqBDDSVdGucM7c4hQhoq4osuy3R6lLQVrVEJpvzwtmJQdA01w3kXWwaBn4BkLwOudH4/pIvk0ruQWxnczD/1tS85nvsm4jtzIwM7i3Z3Gh8v7HmZGEycrpY+45S8eoILUpEJK/7gacKYHaF5x0+XSlnqoTD3Y+qY04VRvqdOual7IWBkXLxFbd9MfFpNxo/AzyCYzYDW+sBKuYg6BkvnVxTLbym2x7YB6DwMvQ6tdP0GYVNFJL3VgmuHcga+2WBh5AbGe+qFScUGXoOCAPWBgP77hrQ5YuH08APACK8XSuQYSL2ePa3Q5cqBtcDBKAiOwAUXnA74iurxbvt3atUpAdAYEetfWoGyqZmHQDOAYJll+tumFcuNhRKPICaXYAoDHvp1WX/MBsGgoN54FXABx6TQG4oHE1shK5JO7Ur4EZivRK0QxR+NXwj9nXos7V2qfuh6EZjMZB+YHbRdBW0eJLLcmBu0X4NdFMmnUzWU7+hl2skEluURz5A2MjtZ5kPfO0j20fTAxfrrT2tp3Q4vPZ+nECXSuHeEmXEKN+OjCSvTqfujMzIdOQ/SmiPf5V4JF0AAAAASUVORK5CYII=" />
+            Особистий кабінет
+          </a>
+        </li>
+        <li>
+          <a href="" class="nav-icon category-text">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAEbUlEQVRYhe2XS2xUVRjHf9+ZKdBCBbThMZ3pbUVYKETB+EARfCVAZzpFXUhComjckRgNGg3GyMJEoi4MbogLFQNRwwLpDEMrJFowxoCPKCt5tdNOB3ktkNKSwpzPxdyZXsZ5tcCu/82ce87/+77fPffcc+7AhCZ0Y5JKhkCgrc7U6OOozgPqrJjzxsiRVE/HUUBL5Q22RBdZqw8YtQ3AEGJOkJnyYyq1a3hcQIFAWwOT9F1RXgHqiliOIfLBQG9s+yjYZhNwjqwX5C1gQZGYIVQ+I+N/f2Bg94WqgQJO2xJB9wDBcncDoEjnFN/wWmunyYhmvhZ0VaUYlH4V055OdvxRESgYjMxXH78At3u6/xI4aEUui6oDshp0umf8T/f3Xk/qi6D7VCRpVKeqyApUF3liLhibeai/f99Jb31/IaD62YnmYS6o8lK6Lx7zmpqb18wYIfO2qL4JmOtBsKp8OMU/vOXUqQMXvXGB5rZ2Uf3cvdk7rPHtAB7BsxalIGCNqO52L4cUs6zYtOYUdCLrFL5yoQCswAupZHxnqRh3OfwE1AKoEvXesPGaRfX5XFuVreVgAFLJ+E6EDe4dKsKGcjAA6WTsdxE+HS3KWu+4ud6uD+dafmRHucQ5DfTGt4nIJhHZNNAb31ZNDNdsPreBpd6hgjUkc/JGc+kkVSrVG9tSrTerqScgux0pzPWOFMwQV/ONq7UNYytSvezkkXxugZGSQALH8hc+/323CoiRa4tzTRX+LgmkSNcona6/VTxizIueol3esetnKCNfkN8TJDqnqf3umw3T1NR2D2g0h2Ns5suSQKlUxwmg0/XW+CSzlSoO4DFIMtlX3n2ZJFG4Uxcuaiy6ESS3uJ8KNkVevVk0jU7kddAnXJiramRjocdX2DF48fj56TMW1AOPZuN4ctpt87sH/z3edyMwoZbW5aqyPVdTlY/Sydi3hb7/zRDA7IbT7wA/u5eTfEbiASe6uJi3GgWDrYusNd8BkwBQDs+sr32vmLfk+pjb0uoYaw4Ds7I5+MdnM8sKn3llmOhd1mcPCeQ23bPW2AdP9ySSxfxFZwjgdE8iKYY24LJLPkeNb38otHreWGDUl9nvgRk01oZLwZQFAkj1xA8b0eeAKwAKLdb4D4VC4YWVYEKh8EL16UGQZrfriqp5tr8/8Wu5uLJAAP29e7tE7DM5KNC51kh3oxNZWiqm0YkstUa6QXPn1LAaaU/3deyvVK8iEECqN9EpIquyX4FA9gPrQKMTDhd6A03hp4EuRr84B1U1mu6JfV9NraqAslCxbmPtMiDtdtWB7Ak44ZdznqATWSdiEkC923VGMcvTfXsPVFtnzLtwdqHaLuBOt0uBN9z2x56cpyRjVrq7f9Ua17EwqyU6u8baBLCkeFY5Ktd0dSoVHxhr7qofmVdnezrOjAzVrtCCk9ql+WGyGX5sPDDjBgI4d27X4Mz62ijwTa5PYXeNXGot/LcxFt2Ek3yzCTi/fQKQTt7/Gmy2N55zQhMav/4DfBufruFnBugAAAAASUVORK5CYII=" />
+            Сподобалося
+          </a>
+        </li>
+        <li>
+          <a href="" class="nav-icon category-text">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAADkklEQVRYhe2XTWgcZRjHf8/sbKhpRDxE62bcTdJYpLViKXjKoZduqckWRAIl5uDVapF685abBw9VUPEgiNQWIeRgkhqbSsSDUJAqRVuhprbZ3e6lpdIPbXAn7+Nh52uT2U1ms1HEPqd5Pvb9/2bfr2fggf3HTNZTlMkWBhFzXJDnADuhhovwoxrrWKU49d2GgTL9haws6yVga0KQlXZP7dTOypUvSs2KrLVGEaNvtgEGoEtc99iaes2S3d0jXR2dS2XQRwBUrXylOHU2CUWmr5AXo2c89+799LJza2H2TqP6pv9QuvP+Kz4McLlSnPo6CQxA5er0WeAXz314S9Uea1bfDEgEXvMdRd4DNCkQoAofBIOib9BkZhoCPdk7lAee9ty7S2n3sxZgAKj++dCnILc9d0emr7A/MZBR62jo6cfN5n0tu3Fj4h7KJ74vRo82qo0FcpxDA6AHfRpS+lGrMIGQuu8DxnOHevpf2LFuILXN65Hc6eu/fXl5o0Cl0uwVkFnPFdzUq3F1/uKSTG/hsGVMFkDFeivYXSITYsz5jQIBqGXtRXXEk7wtat4GMJZVrFyb/hxQAXByhVFFT7ZDtFUT5OXy4vSp2rSo6fo3YaIMtYvSpOZJmWj2uIr112bqi5oOkPAqMal5iBxQPbnCAuh2ABHZV742/e1mAjm9w/tU+caDuFpenOmH+l025z+okt9MGAA1oYYiX/nPAZBKCCTogdVDjFtOdmjMyQ6NUXf0J417GhIBimgHQEu2Ow9SrRGzZ9vAwe7oAE72+1EVOaEiJ5zc8GircYDHt7/4mMIeD61a014BdGth9o6InvPjdtWuv28sGQhfj6dajgNpt7rf1xbRc9Frqe6kVv1n1pFGp0vlTDRXB2SZMKmiB1hnz53QBJXg37fMcmOgUmnveeBm7Vdsc/oO7Q6SRheCZ+XXVuM9fcPPgj7huTdLped/aAgE4wYIukJjTLDbysXTJwXGakf8zKlW49HtXtMaj57Iqz9pVJgT5TCAQB54x0+VF2fi7rtEcYHwSJH69QMx7YflMkfYqg5mMoXOGLGWzBtrMAhU3VU9euyi7ckN/wQ8U/P0Q1GK7QBSsXKgfh/08/XFmd0ra2K/QkWYVPWB5Ii2ba+F3wgiTMZVxHaMNva7wIV2YcTYBU9jlTV89127Rjp+/2PpJVHdqSLpdlCIalVFLj26dcvkxYsTm9rePLD/r/0NNnNlDBP+iEwAAAAASUVORK5CYII=" />
+            Кошик
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="horizontal-line"></div>
+    <div class="overlay-mobile-menu-end col-container">
+      <ul class="menu-section">
+        <li><a href="" class="category-text">Контакти</a></li>
+        <li><a href="" class="category-text">Доставка та оплата</a></li>
+        <li><a href="" class="category-text">Запитання та відповіді</a></li>
+        <li><a href="" class="category-text">Про нас</a></li>
+      </ul>
+    </div>
+  </div>
+  <header>
+    <!-- Start Top Links -->
+    <nav class="header-top-menu row-container">
+      <ul class="header-top-menu-start top-links row-container">
+        <li>
+          <a href="" id="phone-call">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAACu0lEQVRYhd3YPWiddRTH8c+5Ca1GmkFB6xs4qKCLIopmERzae28FLWpVdBJFkA46qBTBN+xQCi4uGUREUGmkDiltmlsSFJeiLl10cBAUMcaaio3YYuw9Dgk2N3lyc5N7nzv4G57h/z/nPF/O/+Wc56GNsm4464bb2fRalUKQXbZn1SHptDSbVY/2CygKYO7UNI5rlg2fseDmmDZXNlBLhrLmBunoChi43KC3yoZZBYRR6apCy/BsVt3WN6CsGUGtje0A3smCZS4FSNi9rnW4V81j/QFKN3boczB3uqwcnNY91OlSXK9iXxkwtGbohw34vZB7bOk9TmuGTm7Ab8Dp4ku1W10MekEDf3XoNxqfO18qUEz5QxjrwGdGeLMMmBYgEA7gwjo+L8dxZ/sCFBO+E95tY/+be3xcFswqoKWRV/DrGvZDTpXbjqwCimN+xxOKl27IOe+XWT4Kj25MmpYOFHqE3epe7SsQGPEapgrn0htZ83QZQG1Tn1VXC1/j2oLpf/BwTDrSS6C2t200zEhVCjvFQYxl1YN9A1qC+kbF/fizYPoS4XBWPdUuRu5xaae1r6N6FBO+1PQQ/i6YHhTey5rXV56+rBvOmrfNmzNvLqv2r9e6bOj4Zt0j0iGL3WNRtE9t9YzbnXXSk8JBbF9h9RNeMmksyK6AlkF9iK1rmJyzWKSvaB/IFwY8HxNOdQUEWXWfMI5tm/FfpiY+0vRinFisDpu+cXOXuzUds14mOtMZ6blo+KSrEpB1t0onFN9TG9V5W1zZVdcXx30r3YXPegBU+e/RjaJhxjY7sN/inthkIIfjiPmeVu2sqQofrPn1u7Z+tuCOmDbb00Y9JjVU3CKNWqx1negXTQ/EtFlK7Gtyh5tU7BMex1ChUThqwd6Y8uPFoZK19MNrpzSC69AUvtc0Hg1flf3+/5/+BVovuUyr4EUjAAAAAElFTkSuQmCC" />(096)555-22-22
+          </a>
+        </li>
+        <li><a href="">Контакти</a></li>
+      </ul>
+      <ul class="header-top-menu-end row-container">
+        <li><a href="">Доставка та оплата</a></li>
+        <li><a href="">Запитання та відповіді</a></li>
+        <li><a href="">Про нас</a></li>
+      </ul>
+    </nav>
+    <!-- End Top Links -->
+
+    <!-- Start Navbar -->
+    <div class="header-bottom-menu row-container">
+      <div class="header-bottom-menu-start row-container">
+        <a href="javascript:void(0);" class="nav-icon" id="mobile-menu-open-button">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAChUlEQVRYhe2XS2gTURSGvzOkoShSK8QKulK0CN3YIkgbQTTWKahd16K4lWDduRDRKNSFG2kpCLoRXYjLtosmqOCjWYgLEQqCIghFUISG+sAYQo6bSTuZuWmSZhJd5F/N/e/rm3PPvXMHWmqpPkm1DfUQIdqJIuwBOqvslkF5T5Z5eUY+ECCN0UEbF1HO1QDi1RLKbSxuyhzf1w2kx+hFmAZ2rBPEq0WEYZnjTc1AOkgfFs+BjS77I/AUJVPV9EIncATY5XJ/IRwsB2UE0hgdhFhgNTIZIM4BHkmCQlUwxbESWLxihAJTCJsdexGhx7R8ZqAhxlEuOcWfKFFJ8bYWEMOY+1BeUoy4Mi4pLlcE0j7aiPCVYgIr5yXFVD0wK2PbjAETTnGJLF3e3Wf5ekUYYHU3LWNxNwgYALLcgZVl2sIG+r1NQoZu3a7nDpSs2oEhlUrpBl64LX+EINKg6f1SuryWCcgUtUapmXOtT/5dNkQE5aRTOyNzfAPQQbZicaJRvhFIbc4Ck8Amx/qBcsFpOVHiw5jzPFmvL0nulQO6D5ymuXogSc4UC6VJFSZOjn6UHADCXk/nTyi/fb7yzti+sh8mTNxd5c+ho+ymnc8A5LmB0utU/QHyCLcocBiLEQAKPCTMdQByXKnJz7JdHvPBy/BfyR8hmyjCQFNmV9KSZN5tmQ6mGMrVpgDBNSgFMp3U/1SVju40WvoGdUuIQvmUqAT0RFIkguRRm8RaQKYlc18rdwYJ48h9v172VvojZJF23ZpH1UYQFgJBUXqAUy7Hlw7l7tSzKMcDgSivGUky7DXL7bJRYLaBMNOI+Zu59o+izX6EAQpsCwTD4otzGL4OZLyWWjLoL0LnvmvShzvsAAAAAElFTkSuQmCC" />
+        </a>
+        <a href="" id="logo">
+          <h1 class="logo-text-long"><i>ХОУМ</i>ШОП</h1>
+          <h1 class="logo-text-short"><i>Х</i>Ш</h1>
+        </a>
+      </div>
+      <div class="header-bottom-menu-center row-container">
+        <div class="catalog-menu">
+          <button class="nav-icon" id="catalog-menu-open-button">Каталог</button>
+          <!-- Start Overlay Catalog Menu -->
+          <div class="overlay-catalog-menu col-container" id="overlay-catalog-menu">
+            <div class="overlay-catalog-menu-start col-container">
+              <div class="menu-section">
+                <a class="nav-icon category-text" href="">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAABNUlEQVRYhe3XsU3DQBiG4e+/RKJgAxMlZAEaKJBMGdzgsADsQZuWPfACThowJUgUqVgAYinegIIi91GQMyZROKxIFxf3dvbZ/h/pZMkGfL7tkupB0B9G0DhS1C0Xw7WoBRRei7fxwxoo6MV3Aly5gKxGIClmk+sSFPSHkWje7wJToqiiIk+zNgAIeVxZeqaoJxcIoT4DJAQAUfoEwBIE7NFcJPI4fx+PXIA6h/GIRGgMAKBcDK6TB9nyIFseZMuDbHmQLQ+y5UG2GgdqAwCBT3OCRNjpXty4GG4+zqqGb5BWUxFt1gYUGbgA/cJpNQWWW1bkaUYgcY0oMUBS5GkGrP6XdS/PRRanFLW/6WYha20nRW43P0t/kK0Xg1kD/aeDXkz7VT/NZ5NaM5r5ltXpry3w+ZrQF35rXCDcAtSjAAAAAElFTkSuQmCC" />
+                  ТВ, Аудіо, Відео, Фото
+                </a>
+                <ul class="category-links">
+                  <li><a href="">Пральні машинки</a></li>
+                  <li><a href="">Холодильники</a></li>
+                  <li><a href="">Плитки</a></li>
+                </ul>
+              </div>
+              <div class="menu-section">
+                <a class="nav-icon category-text" href="">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAADo0lEQVRYhe2YTWhcVRTHf+e9TCZN0xTTNNiZMPOmBsQGdFGhUKG6EmozYysMdiN0obTarhRiiyKCFASVCtKQ4saVoHVRm48quijoIm0IFLoQoR+vk0mYtlGQpHlpJ+8eF500YzIzec9Mg0L/m3fPveee83v3vHffBzzS/0xSa7Az2bNPRd9E5Yn6ZNOritU36Q6cCQ0Uc9Ivi2rViauSkp3IDX5XaciqOsnw9kOBARCOVBtqqDpHNPmgbbHD8nVqNQzGlnY1XCiZTmigct3DunErd/ZmLJF5zrb8lnF36EeAeHzfJo3Mv2ga5n8uXDl3u1aMjlTmTgSzYq7qJVuiTqfnBRHzq1H5IZ5IvwZApHhOVL+2i/ZPQePUDQjlsYWmUGrrg2PbmgPlbwyeQeQQ8M7GDU39AOKbV0CPY5lMvYACXUMl6YQ7cApgYgEyP3wZuFwvGAhTsjVSmBVaps7O7DppmN1lsBwAFa5bxaZf8vnT3poCtXXtbm2et99T9Q6rynpQAERBbW8m5qRP3ovK8anfz06HjR26ZI87e511RXtElV5gfQWXFlF9t2nOH9mSeilZYbx+QO1PZjY0aHEIeKqs+xJKP6qngEsLnYpsE2MNbd6cbQmTI1TJop45piLbSqaHyoGJ3MC35T4xp+dVUb4CmgS6G5tnjwLvB80ReIW6unZHRTi8YAvy+lIYgEl38BtRfaMsxZHu7mxj0DyBV8grWjuB1pJ5F9FnYk766creKih3gSjoxr/ueDsR67e6Aimkyl6eoqr0SunuquC7xBYHCAQUuGQi+EF9l8kEnxt4hYzPNWsRfw70I9HKiVSwQT4AogAK1+sOFOsojBSmtvwJtAFNonI7nxv8spJv3Ok5hN6HAf6YzE2PdKRaNwXJE7hkY2NjRdDPF2wVORl30gchay96Ze24kz6I8sVin5yA8/NB84Tah8Rv/tTYsxlBngWNoPTHk14v9FwEELwdqqQWJzAaYfqzMDlC7dT5/GmvUTSNMFrWvRXYD+xXymCUixFMxnXPzz00IADXHS5EmNklIseAWxVcborq0Yg187zrDhfCxv9XT/vSWX8M2U86U952o7oVwPatq+Pj28fgw5Xf5lcD1IhJJhJ7KjzZZ8FnyoL7n0hiSCRGHdizzNNg2itvo8GBXCAJoIYLvtT86l5Z/1gzuVbNreo1pCInVkdQQ6p91YZqnnbMSe8VzFv1+tkgyhVjSd+kO/B9PeI90n9CfwPdMjzxUUHlZAAAAABJRU5ErkJggg==" />
+                  Побутова техніка
+                </a>
+                <ul class="category-links">
+                  <li><a href="">Пральні машинки</a></li>
+                  <li><a href="">Холодильники</a></li>
+                  <li><a href="">Плитки</a></li>
+                </ul>
+              </div>
+              <div class="menu-section">
+                <a class="nav-icon category-text" href="">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAFeklEQVRYhe2XX2xTdRTHP+fXdmyTMTYBda3tGBOIwJOA8scIJkagLREQUBPQxPjmG68EIYGEF31SwwsxYUhUDCjtQIlR8Q8iPGhmNGaMrS29GBwM5oBttPceH9qyu9KWqryY8E2a3nvO+Z7zvb/+fueewj38zyDVBPlDkUWKbBN0KYgNfGccdpw/HztTKj4wPbJQHd4AWQJqFPlehB1WInbqPwsKhMJrFfMBqK+ImlFxNoMZFtUZAOpoDx7qRaUD8BbHC7oxnYwf/teCgsFwky3SC0y+k/AqccUn3rZE4pOr5QJMJbaNibjEdGeRNlV9BtAqiquqPuNRnYFyNm9rymo2XIlUUZDgtLjyd97nGR4QMXsYv7Ingbfyn5NuuojZ4/WOXgbpdMkMVKrpreRUTJ9rMdaM2LXThNx+Aa6okRcu9MWOuzmB1lUrVM0BoAl0xohd+46Is6TwDAq9lWpW3ENTp66fWFM/fA6YVuwzoivOJzo/L8XLizpWwvVnduRm28WLx6+Xq1nxJ+vvP3hNkFeA0SLXyXJiANKJo58BPxSZR0SclyuJuaMggHQydkyMWYhyeswqxcVKYSxGOS3GPJ4XWhF3FASQ7jvSJXBgLD81hetgMNzmD0V+8bdGux4IRaePxcitviVwIN13pKuaWlUJype4PHbtLCpc2cIaYC6q87zomrHEurg09y4I8gejG1Tk3cK9IPP9wWgEIIs5BHQBXbZ4DwG0BCNRhcduyRF51x+MbqimVsVTNmfO+prBa8NvKrxewj2EyktWKhZ3G1seDq8WI+8DE0sUe7txYt2WX389ePMfC3po+qqQsc1HCAtvGZWzCAK0uzKcYawhLkZZ4ErTg6IIj7hynHY8zoY/+o4mqxbkD4XDIPuAZpf542Gf/eoEW5qMY74E2so9TD71OfXw9IjJXq3LePYCz7ucA6CbrWRnZzHLM/52mbclOHeXiLwD1OeNN0XZYqXiW4YHekavXT07OOHB2e/5stoAzMF14vK4rsKezI26DRetw/3DAz2jQ4PdBxsbZ15FeDpfsw7kxYbGmbVDgy0nIOHctkKBwLPN6vEdAp5yJU8hsrHcHDNl1uqGmhv2ciMyHcBR7cuM1H/Z33/wWql4f2v0CVQ/BIIu89diZ9al058PuAVJoDVyQpUnXYHHyPo2Wdbhqo9sNfD719yPN9MBrHSZT1jJ+HJADYA/FF3uEmODbLWS8yN3WwyAZR2+bCXnR0C25moB8JQ/FF4G+be9qLNAJb9YInutRGwXxABobX1uclaz4fzYYHmNL15pwHIjGAw32ZiI4LQgkq7xjMR7e78YhO2OlWRXSygSEngNQFUWAF8VGuONQhJ1mN3cvnIS5BpcRrPnFParyG4V6choti8QCq+9k5hAKLrOFulFdJ+K7FbYP2rXnmsJRqIAze0rJxlh9i2CcD33BQQCq9vV4/zObaeuHCQjYj+ZThz9sZTXH4osAjlx+xxeFlmP6qxUqrPXAKTTR3pE2FmB0E1uIuzO3apP1WwrF6zINpeYIm6JeGVnKtXZC653WToR347KZuBnYFxr96iutJLxLcaxVxVsAkvLFRB0SSVuHjeBn0R104VUfEfBOG6EtVKxDqADwB+K/AU0lH2q24c2N0YqcQX+SifjjaV8ZWdqRb4XdAWAjXzmD4XjjkrEFVLrb418inJZ4FJe5BSE+1HqCkGluIp8W0FsaeS6Kt/8g41ZJSQjRpem++KnS3nLzkNWInZK0I3AlSLXEEimmsK52HEYEHRjOTFQxV/pXGO0VzmqAUES2dHRzilTGjMDQzfmGcyjKjQYdRoAHDFDogw5OL81N9T/cunSoM87YUJY0VYjkvaK52i1TfUe7uHf4m9kmUEJN6XjaQAAAABJRU5ErkJggg==" />
+                  Дитячі товари
+                </a>
+                <ul class="category-links">
+                  <li><a href="">Пральні машинки</a></li>
+                  <li><a href="">Холодильники</a></li>
+                  <li><a href="">Плитки</a></li>
+                </ul>
+              </div>
+              <div class="menu-section">
+                <a class="nav-icon category-text" href="">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAADR0lEQVRYhe3WT2gcZRjH8e8zu0nTJpUoQstMurNNpIIFRQQPYksqVAu7aVpLDh5ie2rFm6iIvViUovjvIN4NeBCsYul0u9KDjVo9SaVIwD/Vzq67YxMFK9VYkp338bCTuNnsbjbpVDzsDwZ23nneeT/vO/syA510cmOR9kuHk7bbNyEwLaGZKJXOfNOqemDr3rvVmIMoTv/G9Y9PTZ2YixF0zHLcryaA8ZquP6KcR8z3iBUAoMZG5E6UB4HBmhuc7u9bf6AdVFsgx828CfJUe/jGUeTjbrm23/cnr7eqs1bGZF+qwVyQkG2IPAHkgZkGXWaAPKJPWia8A5gEEHTPvPad2L59rLvVeC1XyHazzwq8Gp1+G3aFO69cyv9aW7Np08O9yWTiVoBKJfx9evrsX8uu93SfBoajppaPrynISWcOovJOdXL8bBJmxy+XzxRaTaDpxOyRDdKlHvAQtH58DUEDbuZRRd4HEsCMWtbO4PKp79aCWS1qGchO7d0tYjxgHcgfiuwKCqe+vhHMalBLQLabeUCQs0AvMKsqjwRF73wcmHZRi7vM2Zq9R5BchJkTMQfixgAEgTer8zICfALV3TenGz9Kp4d7qufA5tToXQkJPwVuByoqMhb43sm4MbVptvsklcoMhiKfAQ5gUDlULnrv3kxMHWoKcAFUeMsKxXoswgBcLBevvVff0R4a3TKQyhxe68ADqcxhe2h0S317smfd0QUMcEnmw9escuG+l4EPosZ7nVTv2/UYqZhzxrJq302rirGsQamYc7UoOz3yCujRBQyVcFe5nC9ZcMx0yZ/joF8AIHLESWefr8WADq0V8290SCrh55vT+9KOO3JcVJ+L2v1QkrvL5XwJol3m+5PXdd7ah/JDtYbjjpt5Oj7MYtykVi4uXRmz44p/0l8oWNz2QeD9lkD3UH05CsjrMWMAULgl+rVkZZaBAIrF3E+K7gf+jhtSl2Ur0xAEEBRyXwoyDoQi+iJwNUbIVdBnFv7AjQoafg+VCt6Hitxf8nMvxIgBoFzIvdEM0xQEEBS8C3Fj2smKX4z/dTqglfK/AyXbLRTVI46bHVvTKKq3xQ4C+qPjpmZlkMoEFhtiGc0wG8t9OumkRf4Bam1XPm3Efm0AAAAASUVORK5CYII=" />
+                  Одяг, Взуття, Аксесуари
+                </a>
+                <ul class="category-links ">
+                  <li><a href="">Пральні машинки</a></li>
+                  <li><a href="">Холодильники</a></li>
+                  <li><a href="">Плитки</a></li>
+                </ul>
+              </div>
+              <div class="menu-section">
+                <a class="nav-icon category-text" href="">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAADeElEQVRYhe2Xz2tcVRTHP987k4napOnEVtq8ITOKv2iJUop0IegmuMnEheLKvabgUhEEoTvBX5tCwX/AjaAUbQv+AVUXIUgVWmxDjDN1Wpu2iEmdzLx7XLyZcWby3mSSZpRAz+q+c773nM8777737oX7tsss1b/0pMvlR18ZyT4592D26YXVO5dXBwGU7kc0MTkzLTf/qZlNyWAIXwE++N+AJH2J2WjrGoYHAQPg+tSNbi7ZGesX6D+zXQu00Db2Hi0kKu/R+lrUB/f/frxy89AikEP21rWlb8700ufyxQ8NXo0N1sMXy+XzpXsCmp+frwX5mToIcHc305vZAaTH4mLh0HDPmoNeQ9/J7E3Ee/1O6KtD/VpQKM7J2xjSlAGCDJA1NCYMAEc4l5ucuY23c6XSuYsDBcLsXZMKrUs4hnRMZi2JIg2kqQCDBlINAXAJSFq4LwAZmavFBXcUSLKaIWR2urR89lScJsgXV4BxM1uPi+/ooja0DmAi00OWATCn2A7t7FtmRHct9QDSMIBragcKpKiI+cQOCSwNkPTIEtdQ8GjxWTwft7kOAsj8O0G++Hoj/4/lX79+u02zDqCEDh058trQnb/uCsBvFcjhxzxuuttv6DBwuHHV0WEzahIIHwt04waZzEPROJXaIhB11poP1NApxFozJLOXgKPwrw9AjioGhtsTl1Ij1T34Zk6qWwKqaWgtRdhQuY+uXT3zWzM2kS/mBEcxOvfVXreRIfy+hGItv7nUrThN8qJ2at291esj7SFBFkDqApKtABiKBXJWb/nD1erK1oDS1VaxlFP3FjYL4FHXycNW2uPd5n16b2NYvX7929hTSyJQ5crILYg+XhbqkTggRaePlsm4GXHxcGxS58cbo9ju9ASCL0JhpaiwHeoKjkd+t9ThlYsKiUk4uTG3Jx/FtR0gMLTUKPBE07f/qZdHgQNRft8FFDZ/qMNB8MNEdz41dwJmiTvGzb7UlwC88UzTkfk7nCLaOprqmcvt4nraFluJM3E7RisQTV7cGIus599e5i+YdELieFCY/SzKaY83wr+Uy191tL5y5fwfuXzxT4O93rv3g8JsZ2Gz5wBMurotIAcXGl+ifZi90UnL93FzDLsIeh6Ypm1j1qHx+mlbQMvLZxeD/OwnaOPJVfB53BzhTpv4uVfe9Qfib+a+7Ur7B8R5K6ClQ7dpAAAAAElFTkSuQmCC" />
+                  Парфуми та Косметика
+                </a>
+                <ul class="category-links ">
+                  <li><a href="">Пральні машинки</a></li>
+                  <li><a href="">Холодильники</a></li>
+                  <li><a href="">Плитки</a></li>
+                </ul>
+              </div>
+              <div class="menu-section">
+                <a class="nav-icon category-text" href="">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAABeUlEQVRYhe2Yu0oDQRSG/7Mbm2inhZdgFNTWl7DykhcwIoiQFxDyDL6CiCBJZ5dorAI+gIJYaoxjsmsQ7CTBIjvHQs2KMXt2kyAW85Uz/znzwbCwZwBDMBQlPDW/moRHE5FOsPml8VB6HKrQ9OzaChEdAkhGkunACky7bu20PLBQIrG+yDauAcT7k+nQIs9adpxCJShkSV3Ypi1fhvIgOgBwI9aBLz+ylP9ciiOm01KdKETQC52wpqyrihnNvAOAA8o8snnTVcWMpSnrW/LSwELM1JVp1M6uQHzSswY4cqul2zC9fhKTAr0YQXO7jbFjZh79vk4Wv06OP5efQn9XQxJS6uINQOm3PUf12zXElf01RkjCCEkYIQkjJGGEJIyQhBGSMEISRkhCHoOI9bAOC9NL/skn3H1NYNri/Zm5jVYUCc3sT7xEXaNRdKG2nYOt9wDEAU4HjofBNMnzclJIvDLHKVTASAGs+lYBqgCl6vXzeyn4755jDBLv7Sp7KzUciwIAAAAASUVORK5CYII=" />
+                  Смартфони, Телефони
+                </a>
+                <ul class="category-links ">
+                  <li><a href="">Пральні машинки</a></li>
+                  <li><a href="">Холодильники</a></li>
+                  <li><a href="">Плитки</a></li>
+                </ul>
+              </div>
+              <a class="menu-section nav-icon category-text" href="">
+                <img
+                  src="data:image/png;base64,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" />
+                Акції
+              </a>
+            </div>
+            <div class="overlay-catalog-menu-end"></div>
+            <div class="horizontal-line"></div>
+          </div>
+          <!-- End Overlay Catalog Menu -->
+
+        </div>
+        <form class="search-products-form row-container" id="search-products-form" action="">
+          <input type="text" placeholder="Я шукаю..." name="search_text" autocomplete="off" />
+          <button type="submit" name="search_submit">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAACSUlEQVRYhe3XP2yNURjH8U9LKvWvLalGyyY60IQIHWwSSxOkjBZTh0aCEIPJJvHnmgxGi4iQICQigohB2YlBJBQRijbqPzWc97rH1Xt733tfaSX9JSd53jfn/M73Pe85z/u8TKu86lL0nYH16EEn2tCAl3iGa0n7mDHjX2rAzmTisQnaKI5iwb+C6cKjCkCK2zv0Zg3Tg5Giie5iL9ZgMVqxEjtwAT+ivj9xICuYtcJeyJs/TgAnUhduFT1EX60wC/E8Mryd3KtUM3EiGv8V3bUA5SKzh2iuwqMOpyOfAelO9G914HNi8l14BdVqDgYjqC3VmOyKDE7VAJNXX+R3thqDG5HBhgyA5ims+AhmpTV4mwz+IGzOLHRd4SFXTNS5Poob0ZLEg8IeykJPorg9DVBTFA9nBAPvo7ilZK9EMdCQkF0JGTgrtRXNUTHQN7xJ4g7MzQioM4oH0w4+r7ABt2UA06bwfXulguRYX3R9MYr7MwDqj+a4nICl0ny8VlilTTXALBXSR95rVbVGuyOTISyrwqMR9yOfc9XCELLpvcjsKVanGN8qVAj58Z+E2qkmtfuzBBnFQeVPXr1QqMUf1Hw7XOnE5XZ9Jy5heXRvGFdxEy+EbL4I67AZS8r4HcH+SsFKqRlnhISZpqYeb5XGEqhM1I0r+DIByAC2C68vV6JPWai0VVwTNir8l80WTuID3BFq71g57BnH5xj2pZw7Mx0y/krlJguoHNTxaagildroWycTqnilTqryFylL5aGmBExevaYQzP+jX9qT276ype3EAAAAAElFTkSuQmCC" />
+          </button>
+        </form>
+      </div>
+      <ul class="header-bottom-menu-end row-container">
+        <li>
+          <a href="" class="nav-icon"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAEOklEQVRYhe3YXWjVZRzA8c/jNlPZ2JoKpS3rpqKrcJNyK1zN7MycQeVFVNRFUBGU4YUk9HpRSRR0bRARhhUZZGsvGpWlBumgoIsKKyuSUtM0m3a283Rxnp29eM7xbJOu+sE5/+fl9/J9nuf3/J+HP/9LeQnTMY4d5qpxteBK0VxBg6hB9GHo88p/AhQ7zDXTfaJ7cUUJtT9VuTR0OzpZ/9UVg3SZI+tpPCSafRb1ekPW4snJAlU0Q3GVhbLeF1w1pvkw+kR7BF/ikKxjagxgAU7jC8FHhr0a+v1wToBSnuzC5cniJ9ETTnkzfOzUGfoZD+PlCc2n8VTo9fz0gTLewa35ih7V7iyXG7FdrVl+QT3iuBjBk6HHM+XizSgLs9LVBRgGzHR7BYk6hK8SwO+C1TieBvR4XKmlnHH5pM7ZMMIm556wzd8F2IwloozgMpyPWlyEJsxMVl+HXttixh3oRrWcx3BbqZAllywuV6/aEVThvdDrFoir1cl6Q7Sq7GA4KWdZ6LcvDWAHOjAkZ2Ho93sxo9IzVK0twcDWQvs/NjMOZgiH8EfhF3xl2KbQ7+fREXpN0IFqM7Th3ckBRa2F+cvZmUa5BF2p9QM8p8bA2KUsI3sKpaBl8kDBBak0pN+Pqby00D9sbdjuuwpA8tJnv4wsauRcVEqt3C5rTM9jIb99qbNJlUZVGrXZXzEMko9jqVJfSq/cLhsxOl5w+rZBDCK/ZyYvJzAfdaUUis5QJIiFGYpTCl1cYvpvjCV2ePEl67SucG6FNCPnQkZ8BVfJeLRyoGh9Kn2j2vXjurrMiZ32xowf40qLzjDNuCR2OhAzvohrJtwK8r6+TbX1E22LAsV21WhI1T1hm8PjFLKaRM1YJKe5yGCaRRejxUlNY7uSr92p2phijZOi6xgzdstv8UE8K/g09PhkTP/9gnkGbQwfGxpn26zGfOsFv4UemwrtnZaJrsMGzMau0OvayoBusliwQ/6Mgp/1WhSmmOCRIOMAhRk7Kloe+gxM1C2aQ6HPgCot6E9NTVa6biowkGxHYPpVaSkGUxIIQrfv5TxSaBh215SBcu4eU3s4dPu+ZNyz+Yqd9qYk/lOdC9PLsWKJ7WY5z0FBAz4PvWOOnyJS9oKW92hzKtX7y82TgQGzdCUYeP1s6pUAbcFwKj84aSAeSM9/1Hhr2kChz0GjJ9cNsdM1lZLEFVpxQ6puPeOdNhUgkLNxNIqX4prCxa00zBpVZnhxjN0LlYSqCCj022301rjUCe/EdrUlYVarc8JWCrO5pdQ2PyNWJUoQu8yTtZfC+fUrNsp5d+SqGldoEtwqWI8Lk94BWc3hQ0fOKRDEGy1QZRsWT+gaeRWMP0yDfXK6Uh5WJJXl0Ij/7X4VtGId40Y8ewLMYcGjarVOBoZpfI6JzWrMs0zQJlooiPLL+JlDdoZ9slP1/b+Uk38BZUhDEG8XiUcAAAAASUVORK5CYII=" /></a>
+        </li>
+        <li>
+          <a href="" class="nav-icon"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAADiklEQVRYhe3WW4iUZRzH8c9/FctVujApo8ON2cEQobITW2qgO2OuRlQKSQcQOtwESXSRgZTQfV0ZEWh2IKGoqJkxwzY0i8DKuskDQUmSpmAua7m6Txf77uw7487sqCve7O9m3v//+R++7/M+zzwPYxrTuSlGCkhd2vWZJ0xHu+RvfK/s5yANm0MomIU5wlT0Yq/JvopNjp8VUOoyVZ+XsBLtw4TsxqvK1g+CpTXafOdxyQu4bpicXskbTlobXzrcMlDqdLPwMa5q9jaZyk5abrLwr/dQaCHnD2FplPwwIlBaYIZxvsWUnHuX8LXkBGZgIS7Kjf+U/c7O+U6ggj3CBMlczMqNHxZuj5J9+f7ja2AI47yTgzksPBEln9bEdZnqpFckT2YvNbumTPKmZHVsdrAmr9NS4a2s/qWSjYm78muxZoZS0f2SjzKzV+gYblqr8QVL8C4mZa7jWBFlHzbMGVgO2zAxI1iSf+G22mjLctZrzWAgyj6RdBnYRcclS5rBQFTsFF7PuZbnx9vq4u/IwW1sVjjXYKuwXFgWFVtayRG52smd+aHxdaHTqk//1S62pvXr1tiImmSvY1XrivxQ/Qz1VJ8m1AaOqnprav/TDOjX6lOYc96ATrktZ+1uDJR8ngN65rwBydVOSo2B2mxAX2bNTQUdo02SFrkHd2dmX9ZzeKAo2V+zA1iXijX/yOcGM8/F+q0bcng7SvY3BAL9XqS6B2bi5dECMtFa3JBZx7C6PuQ0oKg4IKyqOpLnU9GD58qSOj0seW6okVVRceC0/k0KrBcezcweydyo2HlWMAvdok23wSMm2RAVjw0Xe/onG9QlnpL8mFmThUq6z41nDDNwe/isChN+McHTjeKb3hizYttwWRb9u1PmxWa/tQRTNF2yFVdnroNO6Ygv7GmU03iGkCUuwJGBDq7R5pvU6aYRYQqul3TnYI5Kis1gRgSCKNuFxYaOlWnClrTIrU1g5gjduDJz9aDYyhocESiD2iEsxtEqVL/u4XZfKngI3ZLLM9dRYXGU7WilV0tAECXd+nXgz8zVLvkgFaxJ2VpMnZ7F+4YuX38J86Oku+U+rQYOKnW6Vihjes69Mav1SM63T1KIir1nUv+MgTKoKcIm3NsgZLt+D9TfqVtRy58sr6g44pACuXNpSOscMv9sYEZFqWBFKuhJBb2p08oLAlGvVDQzFc280BxjGhP8D0BCDl3iugzSAAAAAElFTkSuQmCC" /></a>
+        </li>
+        <li>
+          <a href="" class="nav-icon"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAC8ElEQVRYhe2Xz0tUURTHP2fSklJaFQVhUCYhFbmJFi5c5Mx7RasIxFzosl+Ebdr6H1hQ0SKIMCsIlzXjKFaLwE2FFQZmBNaihZtSirLeaTHXN3d+vDe++UFEfmFgzrnnnvOZ++7cex6s6R+TrCZIHTqAIeAgUBexxi/gJcKAJHlWMZAeoZk6ZoBNEUHytYRHm6T5GBYUK5mmnotVgAFoJMZAqaDQFdJOGmngE7AZAI+4pBmPQqEucZQxYy4i7JAkX4Piw1doA30+DMySZiIKDABJxlHeGqsJpTcsPBBIQRDOWq4rAhqVx8y5ZrkuaMiTCV4hhziw11iLCHeiwvj6wW3gi7FacemKDgTnre83w557KckTllBuBeQuDaQJWgB3xSTGjXJhrEpXAc9kPKZHaV01EDHO+WPCQ3nEbKU8kuQ9kFwx+c3pYnF1YDawQzdCMxlHnx+hfFeXS5UCmVzfsoT0q8tn458nxX0BFQBN0IMwUpWi5Uo5JWPczTyWGI1/FcZiyFyUHpN5J8MQys+aAgjrwbpKPCYzbiN1mAN2m+BOSfK0ljzq0Ak8NuYHSbEL7H+Zkrbi47WEKaihpFa+ZoFiOUCJ/Nk6SEwdetWh1z76o/p9iQVk1bbPoUlg2RC3q8uWnART9ADDwDAuPWX7AY2zFaXdmMumdi6QuRqmfL9XcN+0ZDOypwI/rKPLqj1lX0v5J3X2sUkN95Fn5Ra/VyoKZA8mwtqEcmXamuzqhwId5jmwYKxtOOy3RuesJO/K9ic4AGw31gKHeGEj5LxByCCeOkwA3f50eAVAihFcFA8lxT1/UlR/7laYkEHTAQRJE/Srg5pPpP55NVKHCSt/X/54YftRT5psq9qhx9lYNZhMrg7fIYU9etFNqy6vUfYZ8zrCfFWIPHYipg8S3kgyZ48CQW+hyij4QGeit/YBsn9+pkaBineMDVwGpquEUUzTpkaBAs8ZPcl6FjkBtKHUVwVDWAZmaGJUHtS4vVnTf6s/S47ul9pyqLYAAAAASUVORK5CYII=" /></a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Navbar -->
+  </header>
+  <main>
+    <article class="category-products-menu">
+      <h2 class="category-menu-text"> Побутова техніка</h2>
+      <!-- Start Category Menu -->
+      <section class="category-menu-content row-container">
+        <!-- <div class="carousel-content row-container"> -->
+        <div class="slide card" data-bg-of-slide="#fff">
+          <a href="" class="slide-link col-container">
+            <div class="slide-image"
+              style="background-image: url('https://i2.rozetka.ua/goods/12403146/samsung_ww70k42101wdua_images_12403146410.jpg');">
+            </div>
+            <span class="category-text">Пральні машинки</span>
+          </a>
+        </div>
+        <div class="slide card" data-bg-of-slide="#fff">
+          <a href="" class="slide-link col-container">
+            <div class="slide-image"
+              style="background-image: url('https://i1.rozetka.ua/goods/15900731/arctic_arsx-087_images_15900731008.jpg');">
+            </div>
+            <span class="category-text">Холодильники</span>
+          </a>
+        </div>
+        <div class="slide card" data-bg-of-slide="#fff">
+          <a href="" class="slide-link col-container">
+            <div class="slide-image"
+              style="background-image: url('https://i1.rozetka.ua/goods/2453574/gorenje_ec_5111_wg_images_2453574017.jpg');">
+            </div>
+            <span class="category-text">Плитки</span>
+          </a>
+        </div>
+        <!-- </div> -->
+      </section>
+      <!-- End Category Menu -->
+    </article>
+    <article class="carousels-of-products">
+      <!-- Start Trend Products -->
+      <a href="" class="category-text">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAFIklEQVRYhd2XW2xUVRSGv3U6FCr0RkwIM8OZAmkLbUAjFRDEQLgpMy0GbdRXBW+JUR8M8UJsApHEB30wMQImhJgQQtGoDEK8EkyMohAQ2sBU6sz0nBo0wU6nZBqYnuXDXGin0+kFAonraZ+9/rXWt/dZZ+8Z+D+a22x80G02Lb8VuYybh2laK6InRJwTbtO/5o4DiQy8DQhgiBg77iiQe3bjOpBBr0qXuM2mtXcMyFB9K3dOxGm5qZwTDfT4/KtUWQEgaLug7WnXMo/Pv+q2A4GxLTNyhO3OkP6RYTs3VpOJBHl8gQeAnwBQOuxoyfzUfOI8MA/AcfShv7qO/Dje3BPaIVFasmORFmgdgNYBgR2D5t+cSO5xA3mrNixRYR0ASocViR/M+KxIyQHgQgqI9W6ff9l48xeNTbbS5fUunFNWWb1Uke2ACSDoK72xb87c0LVreXl1DJFNKb/UllfUXC4rnae9vTN7IeyMVmlID5mmv/I6zDGQejWkTmCOqM5RqANKcmL/sCN98+F4cuh0c5HHl2gDanP0SSAKdCLSKY62O2ibCzqj0fvD0OJkgTxm4/uIbgGmjraCtKmgj1uRI5/lc3p9/k2KHMpdcAG7isoeO3r4VZkxY91U15TivgLiPqADJYRISNCLjsip7vDhC4UquKsa5xmqixSpRbUGoQaoBqaNEKLJ/mulAuD2BXYLbMl4BD5X5AOSyZBtH7XGuMoxmcfziBeXq0bQlxQezTpEdtvhw88ZAN2RhueBvVlUaBR05q2GAbDtoxaq0xXxD6q33w5PeRGyX9lxjcdCX5ZX1NwNLCZ1HGwsK68Jx2Ohs7cSyF0VeEJgPzApDfNxd6ThafjQGQSUst5Y6GhpRe10gSWAgdBUVlkbjfeEzgxPPRGYxqdE+QRwpWH2pN5OS/Y4GHYOxWOhY2WVNRXAUtI7VVpR+088Fvr1pmB8jc8IujdbU/moOxp8AY7rYF3egzHeEzpWVlFbDKwARGBDeXn1ld5Yx8mJwHjNwBaEXdy4Gd6zo8GXAc3VjnhSx2Oh78sra+4ClgOCyMMVldU/9/Z0XBoPzKwq/3pFDmRgRHjXjgRfG0lf8C6zwsGtCnvSj6IO944HBiAdI5DqGSsc3FpIP+rlagj/ZsaOYVwcLxAioUHjK6PWG02gKvVZcVLOjxtogGyMqNYXko4JSNC69DBhWZP/HC+PZTVcAhLpx7pC2lS9Apa+53pJgZ+2I8FFuZr6+ubinnjiSYCK0pIDbW2t13I1Hl/gFHAf4CT7r5Vdvvz11ZFqFtyh4mLX/KxG5dxQb4vhMf3NPX397Qj7EPb19CU6vKb/WWge+vVK9rUZxuRJ8wrVLAjkFN3oHxVty4zdpn+Nx/fbaUQOgs4dFGKqyC6PL3HOY/qbyXxdDtlYAynYR65CTkHqMieXAW0eM7AaeAdh8SCZCnwBoLAxDTEfkYMeM3ASeEOE85k8YjBxINUbTagpkHtykH8QGXjdCn/1C6R/b2vRTtBV6RUtBr5VOJsvZz4r2NReX6BTYfbwKDmH42y3o0da88W5Tf8ahJ2CNORxd9qR4Nw884WBvN7mEi1K9DG0zy6gbLOjwU/Jcw/l5vaYgccQtpP+r5Y2RwZKpllWayJf0IhNbVlcU/gbAKVLkc12pG+BHQ0eGgMMgNrR4CE70rdAkc0oXWnOy5bFsKMhu4pCGd1zN86SZHLhJLn6XTh8vH8MECNaVdXKKdd16mp1uX7vvvRF183kuq32H7glysEpJ4JUAAAAAElFTkSuQmCC">
+        Популярні товари
+      </a>
+      <section id="carousel-trend-products" class="carousel row-container" data-min-size="260">
+        <div class="carousel-nav carousel-nav-left">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAEM0lEQVR4nO2dz4uVVRjHP8+MYyM0iugmqkULCdu5KBRaDPhj7uVmhTkVQ0mFEOTGRnTIaidCUv0HFUPpotkUw+i9hmi0iIKYVUgrN0UhCupIDjPjfdrIINLgee6d854f93zW75f75cvzvud8z33nDhQKhUKhUCgUCoVCpEhoA92io6zlNqdQXgGeWOGy68AkQ3wgUyxUaG+ZNSE+dLVQEG7zFcrYQy7dBIwzB8AR78b+h74QH7pq1DnmEPL9HPDm5SEkG7SO0EA5GdqHK0kGrQ22IpzB7v9rH35cSC5obbCRNt8D643SWQb4yIcnF5IKWkfpZ4nTKFuM0n8QXpRp/vVizIG0dh23+BShblQtoLwqTf704smRZCZa6xxAOGwXckha/OTBkokkCovW2AFcBB4xSj+XZph984NEP9E6wmPAFNaQhR+YZ8KLqQ6IOmgdZhDhO+Bxo/QKaxiTSyz58NUJ0QatIKzjC+A5o3QOZa9Mc82Hr06Jd9dRY8JYrwHatBmT8/zuxVMXRLkYao0RYAbotwmZkBanvJjqkuiC1hpPA78AG4zSKZq8JqAebHVNVM9obbARYRp7yLMM8FasIUNEQadcr12IZzFMuF67EMVEp16vXQi+GOZQr10IOtG51GsXggWdU712IUjQudVrF8LsOjKr1y5UvhjmWK9dqDToXOu1C5U9o3Ou1y5UEnTu9dqFahbDzOu1C94nuhfqtQteF8NeqdcueJvoXqrXLniZaB1mkEF+xN78rrDIs3KB6z58hcTPRK/jBPaQb9JPI8eQwdeuQ80vfLdp84Y0uezFTwREcfDfC/gKetJ4fR99fKMNtnpxEwF+gp7nY+BXo2oDd5nRvWz2YSk0XoKWS8yjvAz8ZZQ+xRJndDiiL41XCW/PaGnxN21eAu6YhMpuBtM9Dl0Jr4uhnOc3lHc7kL6vIxxcdUMBqeQ8Wmt8BowbZYsoO3M576hme7edo8BZo2oA4Vvdw5M+LFVNZd+waJ31KD8DzxilswzwfOpn0pUVFjnHLWAfyg2jdBuLTGoEL/t0Q6XNUJr8gfA6cNco3U+dYz48VUXlFVyatBA+NAuVk7qHFzxYqoRgt6PW+RLlbaNsDmWHtNJ7tyPcodId3sNe04cQplOs6cGC7rWaHvSYtJdqevDz6F6p6dHsTXOv6cEnepluanp9xV8Hi4ZoJhryrunxTDR51/SogoZ8a3p0QUOeNT3aWw3yqulRTvQyGdX0qIPOqaZHHTTkU9OjDxryqOlRL4YP0mFNX0DZFbqmJzHRy3RW09fGUNOTmmhIt6anNdHcq+n97AduGqXbWOSED08uJBc0gMxwGRgD2kbpmx7sOJFk0ADS5CzCcaMs2F/fJhs0gJzjE+C0QRLsF9GjaU4dM8Q7zHEVGGXlfw9yDWGSR813QKFQKBQKhUKhUCjkz3+1u2neZNlTUAAAAABJRU5ErkJggg==">
+        </div>
+        <div class="carousel-nav carousel-nav-right">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAEL0lEQVR4nO2czWucVRSHn5O0Nl3EUnQjduNCRHfdCAUXXaiZMdaKtFUi1gqKoBu1aLRdqJv4Qe1/oFi1BT8WShgzUxcWXGgF6UrElZuKLsSPFGzSJnO6SAg1kHrPMPe+91zus57D/Pjl5L3vk3knUKlUKpVKpVKpVCqZIinfTNtsQXkDOAjcsMHLzqOcYJHX5AxLCeNFZSTpu62U/DwblwywA+EoY7yfJlQa0ha9ssmhPKptpqMlSUzqom0oM9rivqZjDIPUl44PjRMjwCmd5PYYcVKStuhFXgG+N05tY5mO7uHGGJFSkbRoOcMCyoPAr8bRW1jilO5mU4xcKUh+jZYev9FnL3DRNKjcwxhvxUkVn0YOQznNDyhPDzD6gk7w5NADJSCpsKxHWxxn5b7awiWUu6XHNzEyxaLZ27txXgS+NE5dh/CJttkRI1IsGt1oAG1zPcq3wB3G0XNs5i6Z5d8YuYZN48Iic8wDD6H8bRzdyWVOaAbLEkLjRQNIl58RHgGWjaP7aPNSjEzDJouiAaRLD+GoeVCZ0Xu5P0KkoZLdr522eQ/lCePYBZRd0uPHKKGGQDYbvcZFnsGu6eMIszlrenZFl6rp2RUNZWp6lkVDeZqe3WG4nlI0PduNXqMQTc9+o6EMTc9/oylD010UDf413U3R4FvTG/+VGgSPmu5qo9dwqOkui/ao6S6LhlVNF/YBi6bBhjTdbdEAMsd3KE8NMJpc010ehuvxoOmuN3oNB5pexEYD6CTb6XMW5VbjaBJNL2OjAenwFyPsBf4xju7kMq/HyHQ1xRQNIB1+Ah7GrumHhp/mvxRV9MCI+QdjpqiiVx9Y/xgYtQ2aH5A3U0zRq4fhF8A24+g5NvNqjExXU0TRup9RlvlogDuO3xEeSPHBQBFFM88xMH+p6BLKAZnjfIxI63FftLY5iPCcfZBnU35461pYtMUu4Gtgi3H0uHQ5HCHShrjdaJ3gJuBTrCULX7GQ/ouiLovW3YwhfA7cbBz9hU1MNfEdc3dFKwhbeRe40zh6AWWPzPJHjFz/R5YPBF6TFtMoU8apPn2m5HRzj/W6Ogy1xQTQwW5+09Lj7SihAnFTtLa4DTiL3fw+o8sBAY0QKxgX12idZDvCLIPp9eNNlwwOitb9jLLEyZz1OoT8D8N5jiG0jVMret1No9chZL3RXvQ6hGwPQ096HUKWG+1Nr0PIrmiPeh1CVkV71esQ8rrrcKrXIWRzGHrW6xCyKNq7XofQ+DW6BL0OodGiS9HrEJo9DAvR6xAa2+iS9DqERg7D0vQ6hOQbXaJeh5C06FL1OoS0G72VN7Hr9TyjTOas1yGk/v/Rjxkn+ihTqw+Yuyb1NdomF8IR6dGJlCUpqYv+wPDak8zl/zeMUNIWPc7LCO/ANa+3fyLMsMAhL3pdqVQqlUqlUqlUKq65Ao00arutq+8tAAAAAElFTkSuQmCC">
+        </div>
+
+
+        <div class="carousel-content">
+          <div class="slide card card-1" data-bg-of-slide="#fff">
+            <a href="" class="slide-link col-container">
+              <div class="slide-image"
+                style="background-image: url('https://i2.rozetka.ua/goods/1866359/tefal_fv1543_images_1866359990.jpg');">
+              </div>
+              <span class="card-title">Праска Tefal Easy Access FV1543</span>
+              <span class="card-price">779 <i>грн</i></span>
+            </a>
+          </div>
+          <div class="slide card card-2" data-bg-of-slide="#fff">
+            <a href="" class="slide-link col-container">
+              <div class="slide-image"
+                style="background-image: url('https://i2.rozetka.ua/goods/1866359/tefal_fv1543_images_1866359990.jpg');">
+              </div>
+              <span class="card-title">Праска Tefal Easy Access FV1543</span>
+              <span class="card-price">779 <i>грн</i></span>
+            </a>
+          </div>
+          <div class="slide card card-3" data-bg-of-slide="#fff">
+            <a href="" class="slide-link col-container">
+              <div class="slide-image"
+                style="background-image: url('https://i2.rozetka.ua/goods/1866359/tefal_fv1543_images_1866359990.jpg');">
+              </div>
+              <span class="card-title">Праска Tefal Easy Access FV1543</span>
+              <span class="card-price">779 <i>грн</i></span>
+            </a>
+          </div>
+          <div class="slide card card-4" data-bg-of-slide="#fff">
+            <a href="" class="slide-link col-container">
+              <div class="slide-image"
+                style="background-image: url('https://i2.rozetka.ua/goods/1866359/tefal_fv1543_images_1866359990.jpg');">
+              </div>
+              <span class="card-title">Праска Tefal Easy Access FV1543</span>
+              <span class="card-price">779 <i>грн</i></span>
+            </a>
+          </div>
+          <div class="slide card card-5" data-bg-of-slide="#fff">
+            <a href="" class="slide-link col-container">
+              <div class="slide-image"
+                style="background-image: url('https://i2.rozetka.ua/goods/1866359/tefal_fv1543_images_1866359990.jpg');">
+              </div>
+              <span class="card-title">Праска Tefal Easy Access FV1543</span>
+              <span class="card-price">779 <i>грн</i></span>
+            </a>
+          </div>
+          <div class="slide card card-6" data-bg-of-slide="#fff">
+            <a href="" class="slide-link col-container">
+              <div class="slide-image"
+                style="background-image: url('https://i2.rozetka.ua/goods/1866359/tefal_fv1543_images_1866359990.jpg');">
+              </div>
+              <span class="card-title">Праска Tefal Easy Access FV1543</span>
+              <span class="card-price">779 <i>грн</i></span>
+            </a>
+          </div>
+          <div class="slide card card-7" data-bg-of-slide="#fff">
+            <a href="" class="slide-link col-container">
+              <div class="slide-image"
+                style="background-image: url('https://i2.rozetka.ua/goods/1866359/tefal_fv1543_images_1866359990.jpg');">
+              </div>
+              <span class="card-title">Праска Tefal Easy Access FV1543</span>
+              <span class="card-price">779 <i>грн</i></span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Trend Products -->
+    </article>
+  </main>
+  <footer>
+    <div class="footer-top-menu col-container">
+      <div class="footer-top-menu-start col-container">
+        <form action="" class="subscribe-form row-container" id="subscribe-form">
+          <input type="text" placeholder="Email-підписка" name="subscribe-email" autocomplete="off" />
+          <button type="submit" name="subscribe_submit">Отримати</button>
+        </form>
+        <ul class="social-icons row-container">
+          <li>
+            <a href="" class="nav-icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAACQUlEQVRYhe2Yz2sTQRTHv9+3G2JKLyJVbGq63tuTaMFTT1q69iDYowfxWkpA/Bu86k0Q/Adqi9hEiRdvgucW8aSbJqlgISdpStKd5yHdJT/aLmuSRSTf077ZN+99dmb27c4AY50v9tozzvJdo9acqLFGmdhQfKG/W/XelwDoaUCcnr23SeD+KEH6xa1aeftBABUCzTjLS6ryIVmYtoS6VPGKJQCwg0aj1hyDkVM+B8znEWPcBjUPAL7KPIBuICFsDXjEfNn3ihujxJl2XIvKMHfIMcqkfyM72iW+rsyuXLdhHlN5E8QlBX6D2gT4qeYVniUKlM2tPAT0FcC0dr7DbaMV1X+oQFdz7g1QXw8Sd6hrSMCnGPAhhztlxGKXraiocB3AN9uYpogeJgi0agGNy92A+mLfK7yNE2VoU+Y4Byn0fhtVfsWN83/Voamp1clM5jDVtjTd5yCYyOXci4FpzMRRtbrROC/mQCOUyjTe+GTdJ+stlZ99Dqovg/s+WYccrkfFTHTKjNCL8kkUSGC8aJ8E1aTtRfkMtKhTbD1StTMA0CLSAn7tcXliqYZ1qPbjXWQZGAioXC6FC9lxFi+0dLLbQXmwt1f4HifmP1eHxkBRGgNFaQwUpY6NIo6DnxkaWcjmXD9OoGOVVMcWvR2Heiubc49O7WBkAdQwdx+Q0N9VPRkwah5gPg6Q9sC027AGcu2sHoEsmp2QI7hon0JwKw7EkLRZ8YofA6PvOOaa497xVeaTOI6xaHZOYPqHd6wz9AerwMAGbsFDbwAAAABJRU5ErkJggg==" />
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAE2klEQVRYhe2XTWxUVRTHf+d2iiFAqtGknQ/6WqW0fLgwIySugErcvBlITGBRV2oofsTEkBgChUpDJUQXGiHBwIYVLIgxOh1WUMCFiUhXEq1t1E4zb1oSSPgKKO2842LevHmUaWemGXec1Xnvnvv+v3fveefcB09tYZNKAS2t29ca8gkRuoBmYEmNGo8Epl0YVXRoKpP+fVFAK1cmN7hGvwA21QhQweSSq+4nU5PpkXKjDeVuxlrtXjXyLfBifWEAaBeRd5qaOu/cvTP289zBJ1YoYiU+FDgeuJUFPSliflSTn2qYldla1PMhDYnbEHZdNoloLxAtqesHzkT6xLxA3jb9BIQAUL4Rd+mebPbcw1og5rNYbMdSDf3zFaq9nvyMq+5rwe0LBSd4OePDOJND79cDpGjei+2OWAkR2AXaaEQ+B14vxpii09K6fS2lBM6Ku3RPvUCilm3HrMR3sfbERgBm5GPA8Ya7I23JrmJsqOTMJtXfQT1ZzTaFLXuNYLaIlxcKDsJwbiI1+nikHFZ4RV0UeDOXSz2ItCZOiXCoIKdJYPQxIISOomuMXlkIJNJqbzUiRxXioIFHFKgiln1NMHudTGq4MCBfo/qRQU6VNLiipamrSwtTXBOkuejnCd2Yh0WiVnIQdJ8uUMMEeRX0QtSyjziZ9EFnInUaOB2MccVMibrFF2l5AohATTIz5MsJeTD7/RvKuBg9qy7XAcSwXlV6gFUFHemLWjZOJn1g7rPMDHktVUHfC80NnM8irfZW0H1FFFUGcpP3P4PLwbp0Lh6PD964Fe5Tpd+D2h+1ksP+9lWwqoG8nCmkiTKQmxwaKBc3MjIyAxyKtdmiKgUo0aPAxqp0qgkKW/aaQgIDynhhZRa25uenB0H+9OZsiLRv66wbkGC2+L7hzJxtKmveSp3x52m+u25AqK70XS+Bq5sXiFUTqxuQiLgBlYpnqBJDMNbV+SNrBNJSmUcM66sFEg3EimTrBoTgf7Kq0hOPxxsrTVm3bscSoKek5Fb12VcFlJtIjSp6zbtcdeNWuK/SnNv3Hx6keMBTrjp/nR+rGxCAYPbiNS5V+mNt9kC5lYrH441RK3EYKEKrGPZWq1N1YXQyqeGoZR8B6QNEVfqnb0beilrhs6j8WqDWl6dv0sNjR18ZzE6kLi8GyO9fbmP5s7aTSR+MWjYg+wEBfQk4gJT9gBRk0MmkPi036IY0FJjma/tbJqjf4Y2q333nihQapWxF+GWeGFCuitDtZFL9BM8nATOUNBSmi76/Qq7KmHhVw3XZBMx7JvIa5cZI+7ZO0Xw36h3cBQejF6tM4M0B34/3C1fYstcY5DfvMqcz0pHLpR5U8eCaLRbbsVQbHo4BMQA1piv39w9/QGDLCn+Ucsm7jMgSvvw/YABoeHCsCANcLMLAnB/F5U0d10XM2979+IpnV0dXLOu8eO/e2Ew9OJqb31j23AtdJxR517v1CHF33rs97ufQE30p2pZ4DyX48+aocsoYrrhipkL5fE1wsw0NjUbdMLBZlV1AxBdX3Z2dTJ8MxpdtlLFWu1fFHAet2CIWabOiuic7mT42d6Bsvbl7Z3xkeVPHeRHTAbTXGeaCYnY6k0PflxuseJSItCW7UE0atFMxLaDP1KYv/wrutIsZxUgqmMBPbTH2H5s31MQHmYGIAAAAAElFTkSuQmCC" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top-menu-end col-container">
+        <div class="menu-section">
+          <span class="category-text">Графік роботи Call-центру</span>
+          <a href="" id="phone-call">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAACu0lEQVRYhd3YPWiddRTH8c+5Ca1GmkFB6xs4qKCLIopmERzae28FLWpVdBJFkA46qBTBN+xQCi4uGUREUGmkDiltmlsSFJeiLl10cBAUMcaaio3YYuw9Dgk2N3lyc5N7nzv4G57h/z/nPF/O/+Wc56GNsm4464bb2fRalUKQXbZn1SHptDSbVY/2CygKYO7UNI5rlg2fseDmmDZXNlBLhrLmBunoChi43KC3yoZZBYRR6apCy/BsVt3WN6CsGUGtje0A3smCZS4FSNi9rnW4V81j/QFKN3boczB3uqwcnNY91OlSXK9iXxkwtGbohw34vZB7bOk9TmuGTm7Ab8Dp4ku1W10MekEDf3XoNxqfO18qUEz5QxjrwGdGeLMMmBYgEA7gwjo+L8dxZ/sCFBO+E95tY/+be3xcFswqoKWRV/DrGvZDTpXbjqwCimN+xxOKl27IOe+XWT4Kj25MmpYOFHqE3epe7SsQGPEapgrn0htZ83QZQG1Tn1VXC1/j2oLpf/BwTDrSS6C2t200zEhVCjvFQYxl1YN9A1qC+kbF/fizYPoS4XBWPdUuRu5xaae1r6N6FBO+1PQQ/i6YHhTey5rXV56+rBvOmrfNmzNvLqv2r9e6bOj4Zt0j0iGL3WNRtE9t9YzbnXXSk8JBbF9h9RNeMmksyK6AlkF9iK1rmJyzWKSvaB/IFwY8HxNOdQUEWXWfMI5tm/FfpiY+0vRinFisDpu+cXOXuzUds14mOtMZ6blo+KSrEpB1t0onFN9TG9V5W1zZVdcXx30r3YXPegBU+e/RjaJhxjY7sN/inthkIIfjiPmeVu2sqQofrPn1u7Z+tuCOmDbb00Y9JjVU3CKNWqx1negXTQ/EtFlK7Gtyh5tU7BMex1ChUThqwd6Y8uPFoZK19MNrpzSC69AUvtc0Hg1flf3+/5/+BVovuUyr4EUjAAAAAElFTkSuQmCC" />(096)555-22-22
+          </a>
+          <ul class="category-links">
+            <li><span>У будні з 08:00 до 21:00</span></li>
+            <li><span>Субота з 09:00 до 20:00</span></li>
+            <li><span>Неділя з 10:00 до 19:00</span></li>
+          </ul>
+        </div>
+        <div class="menu-section">
+          <span class="category-text">Інформація про компанію</span>
+          <ul class="category-links">
+            <li><a href="">Про нас</a></li>
+            <li><a href="">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="menu-section">
+          <span class="category-text">Допомога</span>
+          <ul class="category-links">
+            <li><a href="">Доставка та оплата</a></li>
+            <li><a href="">Гарантія</a></li>
+            <li><a href="">Запитання та відповіді</a></li>
+          </ul>
+        </div>
+        <div class="menu-section">
+          <span class="category-text">Купуйте online з</span>
+          <ul class="pay-icons row-container">
+            <li class="nav-icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAGYElEQVR4nO2aa1BUZRjHfwdB2OUiAssiSICCkWUwGpWmKGbNNKWWU01NTY63aZq+9KHJ6eI0Yzk5U00fmvxglh8stZrpJpM15h20sizxBkok95VddleQy65w3j7s7tk9ew7IOsWOcH6fzvu8L4fn+b/P+zzvsoCBgYGBgYGBgYGBwXhEGmrCsu5gKUjrgQrAOnou/YcIbJLEQUTM5o5t5TV6S3QFyFh3+BkJsR2I+18dHCUk8MqStMqxdeFOnTk1/p3/jTESfAAJvIiYsvBMiNFZup4xFjyAgIkgrw+36wjA4lHwJyoIndj0BLCMgi/RQdIWcz0BhuwMYwBNbHoCjCsMAaLtQLQxBIi2A9Fm3AsQO9zk7Ixa5lpPE4Os2ISQqO/KZV/rPQwKrX7vPF2IJWWiMt70zT/IQrBhxTTFdrKhiy37WpSxJEHZ9EnMvzWV3PQEzPExOK9e43xrD4fPu2i092t+z9I5FpbfFbyy1Lb28F5l4wjDDjKsACcdxXR7E3lp1i4eyz9ErDSozFU2zWf1kQ2q9dMyTaypyFHGTY5+Gu19PDzbwrI5QWebHcGACrPMbFlTTGlesq4PHV1e7nj5uMomSfDq8nwKs8yKbW7RpBsS4LpH4GJXLi9Wv8L8Pdvwpjyo2B+5pYpss0O1NnRHAD6vakcWUGg1qd9p6wUgLSmOb18uGTJ4gFON3RrboplpquABLCkTyUmLv144GobNgFAaurKp9G5jRVEl1L8EwktJ+gXaejOUNctCBBiQBbuO2QAoCnM2IMDK8ilkhhyXvxq7+einZlqdHrJS41k6J4OL7b0aX9Yuztb1sSQvmVanZ6QhAREIAFBd52bF3avBNA1x9gkW5DSwt3ke4Evl26cmKWv31XRic3sBmB4mQL1fgOKcRJV9wxd/82v9FWVcedJOTNjltSDTxP13pAMgBPR4BklKmAD4BPjhT3VWXo+IusDRWrfvIXURUvGnPFTUrMyFnnGAHUfblefQdLV3eXH1DADQccWr+pnXHysg36I+LrJQ+7CmIkcR5dgFt0qw0rwkIiUiAS7Z+2gJpFj6UlKtc5W5UAFanB4OnnUBkJU6kWT/DkEw/QH2/tWpev+9RZOo3ljGe8/OUHWSAEkJE3hqXvAD3e5jNmqarirjkmFqyVBEfA+oqnUpz4l565iVdZWiLDMzpwbTeWdVO4P+rSu0hp//PuX52AU37+5RV+64CRLPlU+hemMZC4onq+aenGslxeQ7tT2eQfacdFDTFCySaUlx5KYnRBRP5ALUuYOD+Gyyrbmq3R+UBTurbco4vFrX29RF7d09l1jx/ilOh+wkQKo5lu0vzMQ6yZcJkoSqxX7/u51ezyA1jeqfK82PLAsiFqA6VABgVm6Kqv3tP+OkzRWsxOEC6FX1qjo3Szb9wbqt5+jqG1DsKaZYKm5PA2DhbZNV3WS3v8M0d/bj6rmm2EsirAMRdQGAVqeHho4+pmX6itWjZZnMmBJ0bMeRdtX6wix1Ubtg0woAvor+3e92CjJNvPZoQdBBf8VbuzhHtf7DVcUIf4FMjA+GMdydQo+IBQBfNwgIEBp8m8vDz2ecqrWhu9bnlWlz+m6Bzy+ZSme3l18uXqHd3y4LrSYemJWurPcOyBw46yTfYmJJiB3glgz9s35nXjKShCLO9bghAarrXKwsn6Kx76y2KcUPICEuhpy0oKP1tl6lra1elE2BX0QhYFAIZbcDvPlVA20uD289OV1pfULAlZBjAr4sCdwFUs2x5GWYuGTvYyTckABVtW6E8BWmALJAVfwAplvNqotMoAVmJMcpwYPvPbEhL3P3DvDGF/V8efwyifETePq+LGXuaK2Lxz9Qf8mTZ0ngxKZ7lHFpftL/K4Cj+xp1bT2qm9zBs05aOtWf2sLPf6AD9F+Tefvrf1g401fYJifGMiALzrX08OMpB58dtSmFLbT1Aew+flnjT5OjH3fvAKlm37rSvGS+PWEfUSw63wwdGuHpuTmxf7xIFfO4/4OIIUC0HYg2hgDRdiDa6AkwlruAJjY9ATpGwZHoINBcIjQCSHBgdLwZfSRJ7A+3aTNAxGyWwKux3/x4JJnN4UaNAB3bymtkSVo1xkTwCMGqy59UnAmfGPKfITLXHrkT5PVCogLQfvS7OWiXEAckmc16wRsYGBgYGBgYGBgYjF/+BSv5GBtfbRPOAAAAAElFTkSuQmCC" />
+            </li>
+            <li class="nav-icon">
+              <img
+                src="data:image/png;base64,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" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-menu row-container">
+      <span>© Інтернет-магазин «ХОУМ ШОП» 2020</span>
+    </div>
+  </footer>
+  <script src="./script/scripts.js"></script>
+  <script src="./script/categories.js"></script>
+</body>
+
+</html>

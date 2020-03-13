@@ -2,6 +2,7 @@
 main{
     padding: 0 map-get($padding_container, small);
     #carousel-slider {
+        min-width: 360px;
         width: 100%;
         height: 380px;
         .carousel-content .slide .slide-link{
@@ -9,6 +10,7 @@ main{
         }
     }
     #carousel-new-products, #carousel-trend-products {
+        min-width: 360px;
         width: 100%;
         height: 200px;
     }

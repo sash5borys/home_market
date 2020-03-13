@@ -211,9 +211,6 @@ a, span, ul, li{
 main{
   .carousel {
     position: relative;
-    div{
-      margin-right: 0;
-    }
     .carousel-nav {
       position: absolute;
       z-index: 2;
@@ -223,6 +220,7 @@ main{
       cursor: pointer;
       img {
         height: 100%;
+        
       }
     }
     .carousel-nav-left {
@@ -231,42 +229,54 @@ main{
     .carousel-nav-right {
       right: 10px;
     }
-    .carousel-content {
-      position: relative;
-      overflow: hidden;
+  }
+  .slide {
+    position: absolute;
+    flex: 1;
+    height: 100%;
+    background-color: $color_white;
+    .slide-link{
       height: 100%;
       width: 100%;
-      .slide {
-        position: absolute;
-        flex: 1;
+      @include centered;
+      .slide-image{
         height: 100%;
         width: 100%;
-        background-color: $color_white;
-        .slide-link{
-          height: 100%;
-          @include centered;
-          .slide-image{
-            height: 100%;
-            width: 100%;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-          }
-        }
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
-      .card{
-        white-space: normal;
-        text-align: center;
-        .card-title{
-          color: $color_black;
-          font-size: map-get($font-size, medium);
-        }
-        .card-price{
-          color: $color_orange;
-          font-size: map-get($image_size, small);
-        }
-
+    }
+  }
+  .carousel-content, .category-content {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  .card{
+    white-space: normal;
+    text-align: center;
+    .card-title{
+      color: $color_black;
+      font-size: map-get($font-size, medium);
+      &:hover{
+        @include hoverIconOrange;
       }
+    }
+    .card-price{
+      color: $color_orange;
+      font-size: map-get($image_size, small);
+    }
+  }
+  .category-menu-content {
+    flex-wrap: wrap;
+    .slide{
+      position: relative;
+      flex: 0 0 200px;
+    }
+    .card{
+      height: 140px;
     }
   }
 }
