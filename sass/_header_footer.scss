@@ -6,23 +6,22 @@ header{
   min-width: 360px;
   z-index: 9;
   background-color: $color_blue;
-
   .header-top-menu {
     display: none;
     justify-content: space-between;
     a {
       color: $color_white;
       font-size: map-get($font_size, small);
+      &:hover {
+        @include hoverLinksOrange;
+      }
     }
-    a:hover {
-      @include hoverLinksOrange;
-    }
+
   }
 
   .header-bottom-menu{
     align-items: center;
     justify-content: space-between;
-    margin-right: 0;
 
     .header-bottom-menu-start{
       .logo-text-long {
@@ -34,9 +33,6 @@ header{
       max-width: 450px;
       .overlay-catalog-menu{
         min-width: 360px;
-      }
-      .catalog-menu{
-        margin-right: 0;
       }
 
     }
@@ -63,29 +59,22 @@ footer{
     .footer-top-menu-start{
       width: 100%;
       @include centered;
-      .social-icons{
-        margin: map-get($margin_container, medium) 0;
-        a:hover img {
-          @include hoverIconOrange;
-        }
-      }
     }
     .footer-top-menu-end{
+      .category-text:hover{
+        filter: none;
+      }
       .menu-table{
         color: $color_black;
         font-size: map-get($font-size, medium);
       }
-      .pay-icons{
-        img:hover{
-          filter: none;
-        }
-      }
     }
   }
   .footer-bottom-menu{
+    justify-content: center;
     span {
-      display: block;
       font-size: map-get($font_size, small);
+      margin: map-get($margin_container, small) 0;
       @include centered;
     }
   }
