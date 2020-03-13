@@ -252,6 +252,14 @@ a, span, ul, li {
           filter: none;
 }
 
+.horizontal-line {
+  position: absolute;
+  height: 2px;
+  right: 0;
+  left: 0;
+  background-color: #1b1f4c;
+}
+
 #overlay-mobile-menu {
   position: fixed;
   height: 100%;
@@ -273,7 +281,7 @@ a, span, ul, li {
   background-color: #1b1f4c;
 }
 
-#overlay-mobile-menu .overlay-mobile-menu-end {
+#overlay-mobile-menu .overlay-mobile-menu-center, #overlay-mobile-menu .overlay-mobile-menu-end {
   padding: 0.8rem 1rem;
 }
 
@@ -545,6 +553,9 @@ main .category-menu-content .card {
   #overlay-mobile-menu {
     display: none;
   }
+  .horizontal-line {
+    height: 4px;
+  }
   #catalog-menu-open-button {
     height: 36px;
     font-size: 16px;
@@ -645,6 +656,10 @@ header .header-bottom-menu .header-bottom-menu-end li:nth-child(-n + 2) {
 
 header .header-bottom-menu .header-bottom-menu-end a:first-child {
   margin-right: 0;
+}
+
+header .header-bottom-menu .horizontal-line {
+  bottom: 0;
 }
 
 footer {
