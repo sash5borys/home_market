@@ -1,0 +1,14 @@
+// Main
+main{
+    padding: 0 map-get($padding_container, small);
+    min-width: 360px;
+    position: relative;   
+}
+
+// Tablet response
+@include tabletResponse {
+    // Main
+    main{
+        padding: 0 map-get($padding_container, big);
+    }
+}

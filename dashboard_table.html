@@ -172,7 +172,7 @@
               </a>
             </div>
             <div class="overlay-catalog-menu-end"></div>
-            <div class="horizontal-line"></div>
+            <!-- <div class="horizontal-line"></div> -->
           </div>
           <!-- End Overlay Catalog Menu -->
 
@@ -203,163 +203,294 @@
     <!-- End Navbar -->
   </header>
   <main class="row-container">
-    <aside class="dashboard-left-menu" id="dashboard-left-menu">
-      <a class="menu-section nav-icon category-text" href="">
-        <img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAB3ElEQVRYhe2XPW/TUBSGn3NrYOleyU6dVmVnKRJSOlQiGVCSMsCIEP+CkTLyM6quICFSFghSB1dIVRd2JBJLiWDvUmjuYWhSWU78ocaFVPKz2D73Pee8ukfXsqGkZD4kacH1dxqI3jNql4psaMWMUPk2DD98zm3Iq7b3QZ8VaWQG+4P+wfNMQ66/0xCxn67ZDACq2hiGH7vRmBMXibGb6GXKkYoJijQhardAahe95D6QYQjuTPyISHfQ6+wWaaiy1tpVpTbpFV83RTYrgqkdSsL121sGWwOwmKNh2Ani8SSi+sIMGaN1VXkFYERfA0E8npgb0Wf2yWvoX5F7h6zVAGPeAKi1wax4ElF9YYbG74tu3vhVubkjK0/ZolCesixu7sjKU7YolKcsi8UfmcLZ5b1Sq/jNl2kFFDkZhAdfADy/9VDQzVT9+Hs63ivZkDUnInbyWFeReloDkD/uavPpxa28VbiVro9gOZ6qNkvnrbX2UKZ+4lL4Pb7ezp2hsjcIOy9yGQJw/WZdRB6oyHKSRlSfAHdj4e8q8i4l5xTl62TMuQ3lwfMeVXCcQ9CNcag/Emf7Z+9976o15zIE4G48XpXz0SHgnCPbv/qdH/PWnJuVant9pdpe/98+roW/xwMFI2ZFQ7gAAAAASUVORK5CYII=">
-        Дошка
-      </a>
-      <div class="horizontal-line"></div>
-      <div class="menu-section">
-        <a class="accordion nav-icon category-text" href="">
+
+
+    <aside class="overlay-dashboard-menu" id="overlay-dashboard-menu">
+      <div class="overlay-dashboard-menu-start row-container">
+        <a href="javascript:void(0)" class="nav-icon" id="dashboard-menu-close-button">
           <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAC5ElEQVRYhe2WPWhTURTHf+cmVbDFj06a9/pS/EInnRysSk0LKkmLiA6C4KKCRSfxYxEEUbA4CYLgIE4uSotJrYvVijjp5iBYMQlJ1A7WjyJC+95xqNHXNi+pbZpB+4NAzj3nf86f3HvfCyywwNwQf2DbnWu9kO416oVqMdwT4xpXenO5+0PFtbC/QEP6UNA1KjJdPQ8Iiho9BqwvrpnJJbqmJk78COv8YTioDgCV22r4UNX5HisRPRyUDzQkQncukzxbTTPF1nY0MaxwumTSH1jRhBa/5zOpigcp4nS2gHdehBYARZ6Bd7GQ6XteSRs0y5Qur4zlxA+IeE9E2AU0AA2C7hZk0HIS+2fbd1aGHCe+AjE3Kb3lYYSbzc17l8+bIctJXLaiiVEr2nEJwMUkQJeVkSwf1/F4KW1VDCGcBOpBT06o1K4kUcEpqa2KIeQaMAp6DQBPchUVSraktpLOH8z0ljlOfIUr5l2ZbRupk/DqdLr3c1CPqt6ybLZvBNUjwPj0rIwJcrScmXLM+trns6m7wA6gH/j26/MAYUcuk7w3276BWyZCdy6dOgfoNNXcEDuauOJ/Uvu3LPDVocoZKxpv+HM4q4MKjkJXUL78yxXp0tr8E/nN1DM0VLJqPlHe+MNJv5C4Zo+G3IMqpr4WXkR11Kh7pxaz/h0Cj2xTU2dExY0B1kwaeUbSbqju8ce3PcPl6mw7YWH0EIAa+ZJPp27MyFCRSHPHBpSYoDFgJ9BYplwReYXHI0UHfixyBz8N9X/1F1jR+CmQqxPF9BQyqX1/ZWgyF0wk+nIzaBtITNDtQLkLMA68ABkw4j311JwF3fnHPScKmdT1ORiaSmt4lVO/KQTtKtIObAcWz1StIhsL6eTrKhqaTCTSsYSwtxVj2kW9bWC2gNaVrpb3+UwyMm21moamYtu7GgmFW0FiCm3Aht9J5UY+mzpeU0NTaWrqjHiibSq6lDG5VSgkv9dy/gL/Bz8Br4D34V2yIyAAAAAASUVORK5CYII=">
-          Продажі
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAB2klEQVRYhe3Xz0sCQRTA8e9shR09BIF5zYMQQSBd0/KgEvinBqUeDIWOBUEEBXW1KOzQscUf06FNZ9cdnV1HSehdhMfszoeZ58xb+I8VCxFMyBJZJDk2qIlzPhYxqTxlix4VBDeiwYMW5GFugQTQweFY1HmyiimTYUgL2AFcBAcqyvGNHnLoYQDSDGnLMhnLmLaHAUggyalj/CCHC+BFyaRsoRRMSkm/IKhrQaJBlwH5CZTkSpbIxsYU2fW2ScW8sUZRNOj6DNoXrPmWFgTvQCFYhEaY4Lt+MAVR4zE4PhRkCxUVMxU0LyoOZiYoLiouxggUFaUd65CfhTEGmaJs1J0xaNaE9OnZ+GdGAoH2gHv1fv05h3zUqycyCLRFq7411pkVGzQVNQcGgnfZH4jV37JFF3WkLQu9tQXvCIoMOMJCl7CaB6OVq8MQtbzL1RC13PbD4FltUWtbCNOlb/I80Q5LtoHWtEIPBU3tZ6JclDFQkx+KczRXuoiyff4PxSpJvrgH0ko61gE3gQo/UDtssifO+PxN+LfMpbIIDICo84RDnvGpDpD25hyFH9TnGnBHekuYEFTHS7nenOMxwYdkkV3W2SfBpbqUNkNWSeJyQp870eR5EXP8x9LiG2u4FSSSSpHKAAAAAElFTkSuQmCC" />
         </a>
-        <ul class="accordion-panel">
-          <li>
-            <a class="nav-icon category-text" href="">
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAACF0lEQVRYhe2WMWhTURRAz33/R+wiFKemaVJKcG3BTRd10yaCQ0EoDi6KFOKgDg5iNweRomMnF3FwUEy0g4OdBBXdXCSENG0SQaSDIJH8/66DCaRJfklKTAL+Aw/+u+/fe89034OQkJD/DGl+zMycj4r4h0choerUtrdfVgDcZtAa+wTk1CiEELsJnAYwIxHYB7c9oMIj1+rDYTT3jFwXJbOvkIHdUulVYRhCsdnUrrbFOoSaTM+dO4Z1bvRavFzMXm3dR+OptBhJdf3Z+A/Khddfux0FCok1UVW90qsQsEfIGI4H5Ys1T4H+hNTYCtZZ70NoIAQKOZ5897DPghNNtVTKfhmakDUyL8qboHNf7WPg8qCFxn8ONdkp5jZpuVr6ZaeYWwVWBybUJJpI3xR0GfTtRMTezuc3fh/AbzBCsUTqgqL3/+5koVZ3ItHZ9DtRvQT6Ge/QWrn8/MfQhBTuNmSqoFMKK6K6AgjIWdz6renE4keQankrt9SaO/DBGIulphXmAYzxL1pr7gEnGoLvQZPAUZCTXXsOejB6rhtx8NcBHP31AXtkyYq9o0KhsvVzLZmccGp194yKLqjKVHu+tXwSI10Hqxq/EtQ3UOhb8UWRvddBBbjW3OTzeMBGY3VQKeWyQDaofs9CFibj8cW5fgsdBA8m2+dKh5AoGV8k0x7/F0j724NxntTGmuVRPvJH0TckJGQs+APdF7u4gjNEpAAAAABJRU5ErkJggg==">
-              Замовлення
-            </a>
-          </li>
-          <li>
-            <a class="nav-icon category-text" href="">
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAC5ElEQVRYhe2WPWhTURTHf+cmVbDFj06a9/pS/EInnRysSk0LKkmLiA6C4KKCRSfxYxEEUbA4CYLgIE4uSotJrYvVijjp5iBYMQlJ1A7WjyJC+95xqNHXNi+pbZpB+4NAzj3nf86f3HvfCyywwNwQf2DbnWu9kO416oVqMdwT4xpXenO5+0PFtbC/QEP6UNA1KjJdPQ8Iiho9BqwvrpnJJbqmJk78COv8YTioDgCV22r4UNX5HisRPRyUDzQkQncukzxbTTPF1nY0MaxwumTSH1jRhBa/5zOpigcp4nS2gHdehBYARZ6Bd7GQ6XteSRs0y5Qur4zlxA+IeE9E2AU0AA2C7hZk0HIS+2fbd1aGHCe+AjE3Kb3lYYSbzc17l8+bIctJXLaiiVEr2nEJwMUkQJeVkSwf1/F4KW1VDCGcBOpBT06o1K4kUcEpqa2KIeQaMAp6DQBPchUVSraktpLOH8z0ljlOfIUr5l2ZbRupk/DqdLr3c1CPqt6ybLZvBNUjwPj0rIwJcrScmXLM+trns6m7wA6gH/j26/MAYUcuk7w3276BWyZCdy6dOgfoNNXcEDuauOJ/Uvu3LPDVocoZKxpv+HM4q4MKjkJXUL78yxXp0tr8E/nN1DM0VLJqPlHe+MNJv5C4Zo+G3IMqpr4WXkR11Kh7pxaz/h0Cj2xTU2dExY0B1kwaeUbSbqju8ce3PcPl6mw7YWH0EIAa+ZJPp27MyFCRSHPHBpSYoDFgJ9BYplwReYXHI0UHfixyBz8N9X/1F1jR+CmQqxPF9BQyqX1/ZWgyF0wk+nIzaBtITNDtQLkLMA68ABkw4j311JwF3fnHPScKmdT1ORiaSmt4lVO/KQTtKtIObAcWz1StIhsL6eTrKhqaTCTSsYSwtxVj2kW9bWC2gNaVrpb3+UwyMm21moamYtu7GgmFW0FiCm3Aht9J5UY+mzpeU0NTaWrqjHiibSq6lDG5VSgkv9dy/gL/Bz8Br4D34V2yIyAAAAAASUVORK5CYII=">
-              Рахунки
-            </a>
-          </li>
-        </ul>
       </div>
-      <div class="horizontal-line"></div>
-      <div class="menu-section">
-        <a class="accordion nav-icon category-text" href="">
+      <div class="overlay-dashboard-menu-end col-container">
+        <a class="menu-section nav-icon category-text" href="">
           <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAABdUlEQVRYhe2XO07DQBCG/7ENIoJIUEKsRCJ0KbgAF0BEiCYFBYJbkA7xKKDnAqSl4yHRUHGGUCAKQI6bFAghJAfFGRoeibWT4LAmsrRfZXl2Zv/d9e/VAIaUQVKgVKqMP78Fe8S8AWBO03w+M2oz2cxOvX76rhpgS5ljmfkDAqoAsprEAECWCEtBq+28vtxdqwZYUiYRbWoUEi2+JYUcOYtnv54ajxfi0cYhVyhztHZfQa67utCxec3ijs06FAxBjyC2+YrARSYtGzIUkW+IR7Ux3/TsEIXWMtvhOpM1SczbqgQ3v6J8L+E9XR4NLcjzzu4B7ANArlBWTsxEh3EmABBLkGj7URHbZUwUa8V/EvQbl/kP59UkBaXfZUkjns3Pbz6Jq0OumX6X/asgc5cpMC4bVNO4LJYg4zIFxmWDavbpy+Djs4XuLqQJTwrItmecaBbRBdWkiNjb593Fm6DVdkAoQl9/3wDoeHpqYrfZvA011TSMlg/TwKRLpvMzKQAAAABJRU5ErkJggg==">
-          Каталог
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAB3ElEQVRYhe2XPW/TUBSGn3NrYOleyU6dVmVnKRJSOlQiGVCSMsCIEP+CkTLyM6quICFSFghSB1dIVRd2JBJLiWDvUmjuYWhSWU78ocaFVPKz2D73Pee8ukfXsqGkZD4kacH1dxqI3jNql4psaMWMUPk2DD98zm3Iq7b3QZ8VaWQG+4P+wfNMQ66/0xCxn67ZDACq2hiGH7vRmBMXibGb6GXKkYoJijQhardAahe95D6QYQjuTPyISHfQ6+wWaaiy1tpVpTbpFV83RTYrgqkdSsL121sGWwOwmKNh2Ani8SSi+sIMGaN1VXkFYERfA0E8npgb0Wf2yWvoX5F7h6zVAGPeAKi1wax4ElF9YYbG74tu3vhVubkjK0/ZolCesixu7sjKU7YolKcsi8UfmcLZ5b1Sq/jNl2kFFDkZhAdfADy/9VDQzVT9+Hs63ivZkDUnInbyWFeReloDkD/uavPpxa28VbiVro9gOZ6qNkvnrbX2UKZ+4lL4Pb7ezp2hsjcIOy9yGQJw/WZdRB6oyHKSRlSfAHdj4e8q8i4l5xTl62TMuQ3lwfMeVXCcQ9CNcag/Emf7Z+9976o15zIE4G48XpXz0SHgnCPbv/qdH/PWnJuVant9pdpe/98+roW/xwMFI2ZFQ7gAAAAASUVORK5CYII=">
+          Дошка
         </a>
-        <ul class="accordion-panel">
-          <li>
-            <a class="nav-icon category-text" href="">
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAADsUlEQVRYhe2Xz09cVRTHP+e+NzMwlTSaRgSmZWgLLEhVEm1EEymaVEsZEhf4D7jrymWNScUfK1e6cGXSmOjCpgtjgS5MbKiLNjEmaJRFqZUZMkCmMbF0sMD8uMfFDG06c9+0D7DapN/Vyzvfe8/nnnfmzr3wSA+Z5H5MicToQUz5la1nMbYI3+cyE/PbBnqya7Q1YnUGtG3LQJVUy0Uj/dfnz+UaufzGk4ybiP3pK6ANyAvMuVwqEkX1EPCbwEZdHHpA2yJqv4Tx12HcBmI3wmnflzolou8DqiJvLKUnvnX6OlMnQE8sZZ572pUs0Zk6puhUJZ+eWsxMfRiU0wsKJJKpQdDTgFGRj5fSE5+5fH19Y9GNQvFrUX03v/L5rMtzc2Xu992P98SBl0AGW3Z3X8qvXP3D5XVWaE/vaEtsXa9sv2+CJMtSbjqQzZ5dq40Ylz1WsPv/PRgAbdPIWo8rco+mBoHjVrWwExhGJKow1chzTyBfVi+kM9PrOwGUTB5pKupjjfNtdfLW1qO7/KbY2yq01MYEXdGCfLq0NHEr7LxOIK8spbIoAKVSLA7UVchvjo2h+lHVVieJsgx8sSNALS1NV2+srt0C4mqiLwKTtZ6S55+PlIqnVaSuQqq6Yv1SXa8Y48coV4GL1rk5OoFmZ88WOjpHLgOvithBF1Du2jfXgbdc44O0XoofFrEABWu9ay6P82dfkV4EsHAkTNJGEikPVh9/DOqvQCBrmQYQpH9P72jdZ9kiUhWosthQQDut9vZUHDgMoFpZbCggYyqfStGZP6+cy28XSHwdAKIgxfJG8XJooM3yCiawvOGINntRl3O57/4OBdTXNxYFBirjg8sbTjpUfdiXSAwfCgWUz693A3EAsYVL20VpbT26C+T522ieNxYKqOzp7f3J9zdCb/+18uPRg0D0zht9MxTQTmtxfnVWRD8QkXeqr3r37j124D8DgulSNj31nk/+k8031vecf/sPbB+6X/3vgLZ8HgJIJF57Qr3IrwIbVjkjxp5ZTJ//+YEDJZPDTxXxkgoDqLYrIMJJ1Jzs6BxZQPUCxlz0rP1hYWHKebsIkvPW0dE18gyWzZXOCFTPLtqsSBfQHCJHViAHoJUW6QfA8Ozi/OQvtWZnhSz2hsFoFbj/zqGwll+WQTMoGTWSFmxGLGUr8rLAENAOJBQStSlU5C9X7sCba0fn8SFRuu+aRShhTBYkE9WbmXS68eG/Y/9wDyXzgqBNdwWMzGXTk9ONxj7SQ6N/ABNuSDpJXU9PAAAAAElFTkSuQmCC">
-              Товари
-            </a>
-          </li>
-          <li>
-            <a class="nav-icon category-text" href="">
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAB8UlEQVRYhe2WP4gTQRSHvzd7FsHqyuT2EtRGsBGioKbQOlnQJmBhq5aC5TVqYalgaUqxEKyOJFffFaeFBCwsbC4ka/6UaU7O4jLPwgtsdldcuOwKul/5Y5b5mJ335kFOTs5/hoSDcrmxDqxntP/M97uzYLAWXmGNPFLlSRY2IjwDngYzExFSSlnIAChSDGdLv2xzs37FGrMLnEXksWPtdhoic2Nuo/oS+G5Vb079bm9JqFTx3hq4qHAZcIAvZ+Tw6mCw+yMNIddtFqxz9EngEjAX+Gzh62TYuWd+WWlNoXoi80HXnHpaMgCj0fsjHKkDHwFHoSpoDcJ3SNgaDzu1ycH2t7RkFkz6bX887NxA2ArmoSqTadzHbrnxYBUSI7/biqYyBf2dUDwq8noVQkCM0DKJhID+KUUSk0hoPOxcSFtkQaQx/m0SndBGxTtYxWZJTjrpHTp/SpfEJBIS1YdpiyxYFlIb+7DG948VobYUfFLDjfH5RsXz1JG7k37bT00CKJ6rV4w174BrwdwAKLIv0AOOgevMdcd1m4W0ZFy3WXCs7JzIHAv0FNmH0PhRLDeqRmSPtMcPkTvAC+DQqt6KjB9BShWvJXA/DZEIIq3xoL1UMJHGaIRJJjKAoJHHPFL2xuor4E0mRsrsz4tycnL+cX4CWmyXStJx0QgAAAAASUVORK5CYII=">
-              Категорії
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="horizontal-line"></div>
-      <div class="menu-section">
-        <a class="accordion nav-icon category-text" href="">
+        <div class="horizontal-line"></div>
+        <div class="menu-section">
+          <a class="accordion nav-icon category-text" href="">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAC5ElEQVRYhe2WPWhTURTHf+cmVbDFj06a9/pS/EInnRysSk0LKkmLiA6C4KKCRSfxYxEEUbA4CYLgIE4uSotJrYvVijjp5iBYMQlJ1A7WjyJC+95xqNHXNi+pbZpB+4NAzj3nf86f3HvfCyywwNwQf2DbnWu9kO416oVqMdwT4xpXenO5+0PFtbC/QEP6UNA1KjJdPQ8Iiho9BqwvrpnJJbqmJk78COv8YTioDgCV22r4UNX5HisRPRyUDzQkQncukzxbTTPF1nY0MaxwumTSH1jRhBa/5zOpigcp4nS2gHdehBYARZ6Bd7GQ6XteSRs0y5Qur4zlxA+IeE9E2AU0AA2C7hZk0HIS+2fbd1aGHCe+AjE3Kb3lYYSbzc17l8+bIctJXLaiiVEr2nEJwMUkQJeVkSwf1/F4KW1VDCGcBOpBT06o1K4kUcEpqa2KIeQaMAp6DQBPchUVSraktpLOH8z0ljlOfIUr5l2ZbRupk/DqdLr3c1CPqt6ybLZvBNUjwPj0rIwJcrScmXLM+trns6m7wA6gH/j26/MAYUcuk7w3276BWyZCdy6dOgfoNNXcEDuauOJ/Uvu3LPDVocoZKxpv+HM4q4MKjkJXUL78yxXp0tr8E/nN1DM0VLJqPlHe+MNJv5C4Zo+G3IMqpr4WXkR11Kh7pxaz/h0Cj2xTU2dExY0B1kwaeUbSbqju8ce3PcPl6mw7YWH0EIAa+ZJPp27MyFCRSHPHBpSYoDFgJ9BYplwReYXHI0UHfixyBz8N9X/1F1jR+CmQqxPF9BQyqX1/ZWgyF0wk+nIzaBtITNDtQLkLMA68ABkw4j311JwF3fnHPScKmdT1ORiaSmt4lVO/KQTtKtIObAcWz1StIhsL6eTrKhqaTCTSsYSwtxVj2kW9bWC2gNaVrpb3+UwyMm21moamYtu7GgmFW0FiCm3Aht9J5UY+mzpeU0NTaWrqjHiibSq6lDG5VSgkv9dy/gL/Bz8Br4D34V2yIyAAAAAASUVORK5CYII=">
+            Продажі
+          </a>
+          <ul class="accordion-panel">
+            <li>
+              <a class="nav-icon category-text" href="">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAC5ElEQVRYhe2WPWhTURTHf+cmVbDFj06a9/pS/EInnRysSk0LKkmLiA6C4KKCRSfxYxEEUbA4CYLgIE4uSotJrYvVijjp5iBYMQlJ1A7WjyJC+95xqNHXNi+pbZpB+4NAzj3nf86f3HvfCyywwNwQf2DbnWu9kO416oVqMdwT4xpXenO5+0PFtbC/QEP6UNA1KjJdPQ8Iiho9BqwvrpnJJbqmJk78COv8YTioDgCV22r4UNX5HisRPRyUDzQkQncukzxbTTPF1nY0MaxwumTSH1jRhBa/5zOpigcp4nS2gHdehBYARZ6Bd7GQ6XteSRs0y5Qur4zlxA+IeE9E2AU0AA2C7hZk0HIS+2fbd1aGHCe+AjE3Kb3lYYSbzc17l8+bIctJXLaiiVEr2nEJwMUkQJeVkSwf1/F4KW1VDCGcBOpBT06o1K4kUcEpqa2KIeQaMAp6DQBPchUVSraktpLOH8z0ljlOfIUr5l2ZbRupk/DqdLr3c1CPqt6ybLZvBNUjwPj0rIwJcrScmXLM+trns6m7wA6gH/j26/MAYUcuk7w3276BWyZCdy6dOgfoNNXcEDuauOJ/Uvu3LPDVocoZKxpv+HM4q4MKjkJXUL78yxXp0tr8E/nN1DM0VLJqPlHe+MNJv5C4Zo+G3IMqpr4WXkR11Kh7pxaz/h0Cj2xTU2dExY0B1kwaeUbSbqju8ce3PcPl6mw7YWH0EIAa+ZJPp27MyFCRSHPHBpSYoDFgJ9BYplwReYXHI0UHfixyBz8N9X/1F1jR+CmQqxPF9BQyqX1/ZWgyF0wk+nIzaBtITNDtQLkLMA68ABkw4j311JwF3fnHPScKmdT1ORiaSmt4lVO/KQTtKtIObAcWz1StIhsL6eTrKhqaTCTSsYSwtxVj2kW9bWC2gNaVrpb3+UwyMm21moamYtu7GgmFW0FiCm3Aht9J5UY+mzpeU0NTaWrqjHiibSq6lDG5VSgkv9dy/gL/Bz8Br4D34V2yIyAAAAAASUVORK5CYII=">
+                Замовлення
+              </a>
+            </li>
+            <li>
+              <a class="nav-icon category-text" href="">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAACnklEQVRYhe2XO0xTURjHf9+9bdNabAIRAhVoIibGEEyE2cRVKTKxaDAOumni5MzgoGw6sugismhigcFJEsNiRKIOSoJAHxSjWIKE8ui95zjwSIUCt69Ek/6nk//5Hr/c893cc6GiioqTOAmqre2p8vnSdaVuHoutxmDMyvZcThLd/vUuW8tgqYGCp46HkjPEsj2j1E2KlaMn9Ld0WGs2Cm8p7SI8LBmQzhhvksnhdKE4weZODhvdf+7IKkBHqYCh3lJjKNyv4SbwaT46chHgZCg8BpzLFS/IrUR0+EXZgAAfUA0EsrzAtrdPSvA4KVowkNLGkIH9GWFxxxP0fTQncsUbyn5XVqBkLDIOjGd7iejoy0LrFQ0UbOlu0hmrDiG9EB39AtAQ6jyL5liueFNZs4nE61TZgAzLvqdFbgOTQDuAgTxDOJ8rXrk8V4HnR9YtFKhcKnyoXWa/zlhPEXY/Iwp97cAjszOzZQVKfnsVB+LZ3s4sFSNHQKbNtDJlAKC62mslk8W2zQOotbXHk1pJt2V7FkqhGABIraTbGpo7HRUXMVUyGpksCmhpbb3eEHmfT5GDpdKAP5+M/+wt03LdRI0fGpNDFtIrQl9JgNz2ZsbCvcWj1XIsPjqTb9HGUNe8RgN4Ojo63BMTE5ndTcPwozUAHmVv7s3dd2TRaOAHyPJWLlfyhQFQmq/bS9fCr+Dl7D3Runt7uTQ35/+5Nzfn5TYY6nos6DuAFniiRCIoteocyRQRNQTUCPzWwgPRekojYeAGIAiP5udG7joCqjl9KeDLmG854LJVAn3c8BoXFqciK3s3zFzRa6npDXdty6BLmVUCZwBviUCWEAY2vEZvLhhw9CvdZzQ1fagXsYuC0tpcj8fbv0OfKqZORRUdpT/0ud8inb+HfAAAAABJRU5ErkJggg==">
+                Рахунки
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="menu-section">
+          <a class="accordion nav-icon category-text" href="">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAABdUlEQVRYhe2XO07DQBCG/7ENIoJIUEKsRCJ0KbgAF0BEiCYFBYJbkA7xKKDnAqSl4yHRUHGGUCAKQI6bFAghJAfFGRoeibWT4LAmsrRfZXl2Zv/d9e/VAIaUQVKgVKqMP78Fe8S8AWBO03w+M2oz2cxOvX76rhpgS5ljmfkDAqoAsprEAECWCEtBq+28vtxdqwZYUiYRbWoUEi2+JYUcOYtnv54ajxfi0cYhVyhztHZfQa67utCxec3ijs06FAxBjyC2+YrARSYtGzIUkW+IR7Ux3/TsEIXWMtvhOpM1SczbqgQ3v6J8L+E9XR4NLcjzzu4B7ANArlBWTsxEh3EmABBLkGj7URHbZUwUa8V/EvQbl/kP59UkBaXfZUkjns3Pbz6Jq0OumX6X/asgc5cpMC4bVNO4LJYg4zIFxmWDavbpy+Djs4XuLqQJTwrItmecaBbRBdWkiNjb593Fm6DVdkAoQl9/3wDoeHpqYrfZvA011TSMlg/TwKRLpvMzKQAAAABJRU5ErkJggg==">
+            Каталог
+          </a>
+          <ul class="accordion-panel">
+            <li>
+              <a class="nav-icon category-text" href="">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAADsUlEQVRYhe2Xz09cVRTHP+e+NzMwlTSaRgSmZWgLLEhVEm1EEymaVEsZEhf4D7jrymWNScUfK1e6cGXSmOjCpgtjgS5MbKiLNjEmaJRFqZUZMkCmMbF0sMD8uMfFDG06c9+0D7DapN/Vyzvfe8/nnnfmzr3wSA+Z5H5MicToQUz5la1nMbYI3+cyE/PbBnqya7Q1YnUGtG3LQJVUy0Uj/dfnz+UaufzGk4ybiP3pK6ANyAvMuVwqEkX1EPCbwEZdHHpA2yJqv4Tx12HcBmI3wmnflzolou8DqiJvLKUnvnX6OlMnQE8sZZ572pUs0Zk6puhUJZ+eWsxMfRiU0wsKJJKpQdDTgFGRj5fSE5+5fH19Y9GNQvFrUX03v/L5rMtzc2Xu992P98SBl0AGW3Z3X8qvXP3D5XVWaE/vaEtsXa9sv2+CJMtSbjqQzZ5dq40Ylz1WsPv/PRgAbdPIWo8rco+mBoHjVrWwExhGJKow1chzTyBfVi+kM9PrOwGUTB5pKupjjfNtdfLW1qO7/KbY2yq01MYEXdGCfLq0NHEr7LxOIK8spbIoAKVSLA7UVchvjo2h+lHVVieJsgx8sSNALS1NV2+srt0C4mqiLwKTtZ6S55+PlIqnVaSuQqq6Yv1SXa8Y48coV4GL1rk5OoFmZ88WOjpHLgOvithBF1Du2jfXgbdc44O0XoofFrEABWu9ay6P82dfkV4EsHAkTNJGEikPVh9/DOqvQCBrmQYQpH9P72jdZ9kiUhWosthQQDut9vZUHDgMoFpZbCggYyqfStGZP6+cy28XSHwdAKIgxfJG8XJooM3yCiawvOGINntRl3O57/4OBdTXNxYFBirjg8sbTjpUfdiXSAwfCgWUz693A3EAsYVL20VpbT26C+T522ieNxYKqOzp7f3J9zdCb/+18uPRg0D0zht9MxTQTmtxfnVWRD8QkXeqr3r37j124D8DgulSNj31nk/+k8031vecf/sPbB+6X/3vgLZ8HgJIJF57Qr3IrwIbVjkjxp5ZTJ//+YEDJZPDTxXxkgoDqLYrIMJJ1Jzs6BxZQPUCxlz0rP1hYWHKebsIkvPW0dE18gyWzZXOCFTPLtqsSBfQHCJHViAHoJUW6QfA8Ozi/OQvtWZnhSz2hsFoFbj/zqGwll+WQTMoGTWSFmxGLGUr8rLAENAOJBQStSlU5C9X7sCba0fn8SFRuu+aRShhTBYkE9WbmXS68eG/Y/9wDyXzgqBNdwWMzGXTk9ONxj7SQ6N/ABNuSDpJXU9PAAAAAElFTkSuQmCC">
+                Товари
+              </a>
+            </li>
+            <li>
+              <a class="nav-icon category-text" href="">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAACT0lEQVRYhe3XPWvbUBQG4PfIjlwHQgikZKiwA1aTIUMKHeuhq8GBpNDFSzuW/ona/6BLf0EwHdIviIMpZPCQTtkzBBFso2YxBNOkdYotnQ61E8XWx72S3KH4neyL7tXjc+6VMDDLLNFCcSyi64VUb5B8TbatysyzoXw7b+8fOceSUTEbG8/V7s/eHpi3mOR+n0JcAXAHpMSA+QDGVpR1nAldIV0vpLpXvc8ACqMxBqogMv3mEdt5gJ7ECrppkxPDKJ+3a5WgudpqscwMT5B0y9zaJIoRiVSF3NpEhMr3lhumrGiZ4xIAmO2DKgAWuYdwhXS9kOr1ExMYs1kru12vZY5LTLTLRLtatlgSvY8QSBYTJYEtC4sx2wdVLVtkgNhs7b+PBeR1mtz3zETYbNWqopBRPFs27dMkBRqepi9ODBEqcWDY5qwUaJobWFstlkH08mbA5p4vaNoYZrxxDNXvqfZbX9CvQbLyrzDpOWvHMOq/x6+9e8qYX9x+FD5NUhhmfFWVq2eG0ZjAAGMVItDt412h9JQw281m49prTsL5ZWFxbZkI+b845BeX1uhH97QRBwZAfV61ts/ODl0r4wpauZ87GtjKYwAPh0NPw6Bk9owv6OLCsDLa5t51f/AIwPoItbC0nr7snh6GwQzbtBNUGVcQAHQ6J1bmweZHJ4qAvAgqzJ4JBIVFxYHxBMmi4sL4gkRRcWKG6wfH65UyBIQ6TZFAQPB/sKiVkQb5oeLCAAF7aDydzom1spz71OfEHIFyAC6Z8W5etV6JPmdm+e/yBz1rnmqQUQCxAAAAAElFTkSuQmCC">
+                Категорії
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="menu-section">
+          <a class="accordion nav-icon category-text" href="">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAEkklEQVRYhe2XS2xUVRjHf9+ZGQq0tIMNj85MOyOPliC+0ARSmliIsdh2AGOMkrIGw0ITV8S4YEXigoULH8Sw9BFIEIHRVNRUIZiSqCzUSKt1ptOpIhY69EHL3Hs/F3OnTtvpC5oYTf/JJDfnf853fuf7zj33DCxoQf8zyUwdVqx4rmTRkpF6YKlRuZhMnunN90OhhvvweOtBFDvzVU9P6418v7JyV8ARrQOG79xe3Hb9+snBuwYKRRq3qJozwEq36Q4iL6XiZ48BBCqbdomR94AS1x9QR/f1JmNnAIKR5hdR3gAWuf6fIs6unvgn7XcBVO8Nhkt+AGqAEffnB0aNYz/g8RT1ZdT6BSgHcqsuAfp84l1n26PljvH85ML0A0uAIuBqKjG4CdqsQrOaqXBWV5VVuzA46GafDFYACaDINt4GS61aF2YIyxfRjNwPDAHlllq1tvE2uDAJnwxWOOijbugaN3ZBTQk0F6lauUzPuCdn0mxLNgoyAloGjHpUNxrju5FXsiF3UDHwl0+8692S/Ui2TPdeMmizHNUW3DK5MMMo+7u7Y13x+Ol+I9oC9LkgxUCfEd0Xj5/uTyY//RVlPzBMdu8VAYlszMIwM2Qoq1Wrnir2LvbVoyz1inUxkWj9Pd+vqmpa7ojUAxjVtu7u2M18PxxuqLDUW4cwbI1k2q5d+2yIaeSZzgxGoluNz7tHVCsElgumI53uvAkQiezxF/vXv4DqE2TLVu4ID5f6NywZSHfEczGKSzfsMEK1wEqzyPdImX+d3urvTE01Z8EMRSJ7/Bm13geezrWpyte93Y9th8NOKNz8jMI7/HM+TQzbLrY+29NzLrW6avdGjzhXQH15fqzIc7ulq+vz9KwyVFy27tQYjNKJ8D2irw2k3+0ORRq3KHIOKBO4JcJloBPoQmTIhQxh2D6QDhwfTLdeK/XX+IAMio1QDlTb6t00kO74YMYMBSPRrah+k3X1YCoee3ucH45+Cbpd4Fu1fA2p1Ed94/2mJpCPAQ8qz6e6z57I9wPh6EFB3wQQw5ae385dzvcnv2XqbMtlZiIM1HtBa92ORybCAKQSsZgoXwCo0W0T/d7E2bdQOrNTUTfRnwQkIsuyD0zaeME1S9eQfX2xxPfdpMXk1oT2AoijpQU7uLFFmOTP6aTWjGxwH0f+iPuScxk7W83t02Gkxn3qgJP2/ONMB6SsDVRFx9XYoFkgkatTDQuFGh9EZPNUfqAqWoeydtZAqjqQnZRKEb0QDDefz3mOMSdAjijOqYIw4ebj6jFXgIey3DLuMhYMN58X0QsIlePmmg4olYgdNaI7QXKXqCfHTFuLRJ2EOnQG1zRWh6qa9gci0b1ji0F3uDF/VtG9PYnHX54Q3o0l7UZ0ZyoROzojEEAyHmsV0UMT20V4RUWOeYxEcTy1KnJM1DkyKYDI673x2Idw2CkUX0QPJeOx1kLevNyH5lMLQDPJO5fOxjEtIvZilJu2kd3/OlD+f7JgJDr/NEwDJLbpQOwDU4409iWx5IBjzNhZomJeNY6zTD3OpYIxVQ8AiOPpuAfmBS3ov6W/AVWayEZrmE5bAAAAAElFTkSuQmCC">
+            Клієнти
+          </a>
+          <ul class="accordion-panel">
+            <li>
+              <a class="nav-icon category-text" href="">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAEkklEQVRYhe2XS2xUVRjHf9+ZGQq0tIMNj85MOyOPliC+0ARSmliIsdh2AGOMkrIGw0ITV8S4YEXigoULH8Sw9BFIEIHRVNRUIZiSqCzUSKt1ptOpIhY69EHL3Hs/F3OnTtvpC5oYTf/JJDfnf853fuf7zj33DCxoQf8zyUwdVqx4rmTRkpF6YKlRuZhMnunN90OhhvvweOtBFDvzVU9P6418v7JyV8ARrQOG79xe3Hb9+snBuwYKRRq3qJozwEq36Q4iL6XiZ48BBCqbdomR94AS1x9QR/f1JmNnAIKR5hdR3gAWuf6fIs6unvgn7XcBVO8Nhkt+AGqAEffnB0aNYz/g8RT1ZdT6BSgHcqsuAfp84l1n26PljvH85ML0A0uAIuBqKjG4CdqsQrOaqXBWV5VVuzA46GafDFYACaDINt4GS61aF2YIyxfRjNwPDAHlllq1tvE2uDAJnwxWOOijbugaN3ZBTQk0F6lauUzPuCdn0mxLNgoyAloGjHpUNxrju5FXsiF3UDHwl0+8692S/Ui2TPdeMmizHNUW3DK5MMMo+7u7Y13x+Ol+I9oC9LkgxUCfEd0Xj5/uTyY//RVlPzBMdu8VAYlszMIwM2Qoq1Wrnir2LvbVoyz1inUxkWj9Pd+vqmpa7ojUAxjVtu7u2M18PxxuqLDUW4cwbI1k2q5d+2yIaeSZzgxGoluNz7tHVCsElgumI53uvAkQiezxF/vXv4DqE2TLVu4ID5f6NywZSHfEczGKSzfsMEK1wEqzyPdImX+d3urvTE01Z8EMRSJ7/Bm13geezrWpyte93Y9th8NOKNz8jMI7/HM+TQzbLrY+29NzLrW6avdGjzhXQH15fqzIc7ulq+vz9KwyVFy27tQYjNKJ8D2irw2k3+0ORRq3KHIOKBO4JcJloBPoQmTIhQxh2D6QDhwfTLdeK/XX+IAMio1QDlTb6t00kO74YMYMBSPRrah+k3X1YCoee3ucH45+Cbpd4Fu1fA2p1Ed94/2mJpCPAQ8qz6e6z57I9wPh6EFB3wQQw5ae385dzvcnv2XqbMtlZiIM1HtBa92ORybCAKQSsZgoXwCo0W0T/d7E2bdQOrNTUTfRnwQkIsuyD0zaeME1S9eQfX2xxPfdpMXk1oT2AoijpQU7uLFFmOTP6aTWjGxwH0f+iPuScxk7W83t02Gkxn3qgJP2/ONMB6SsDVRFx9XYoFkgkatTDQuFGh9EZPNUfqAqWoeydtZAqjqQnZRKEb0QDDefz3mOMSdAjijOqYIw4ebj6jFXgIey3DLuMhYMN58X0QsIlePmmg4olYgdNaI7QXKXqCfHTFuLRJ2EOnQG1zRWh6qa9gci0b1ji0F3uDF/VtG9PYnHX54Q3o0l7UZ0ZyoROzojEEAyHmsV0UMT20V4RUWOeYxEcTy1KnJM1DkyKYDI673x2Idw2CkUX0QPJeOx1kLevNyH5lMLQDPJO5fOxjEtIvZilJu2kd3/OlD+f7JgJDr/NEwDJLbpQOwDU4409iWx5IBjzNhZomJeNY6zTD3OpYIxVQ8AiOPpuAfmBS3ov6W/AVWayEZrmE5bAAAAAElFTkSuQmCC">
+                Клієнти
+              </a>
+            </li>
+            <li>
+              <a class="nav-icon category-text" href="">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAFV0lEQVR4nO2aXWxTZRjHf89pO7YhfsRFoC1tQaOJGsnAeAGJqEESoEVIXPzEaIxRUfy4Il4YlqiJkKjEBE3khhBIjDNgthUETFQSiDebUSFojLB2bQMBA+Fj3dh6Hi/W0rOu3UfLdjp3fhdLn+f83+d53//p23O6HnBwcHBwcHBwmKZIOYNCoVVzTFPqb/RkKsEwtKera/+Z8Y5zl9OsH+MrhEg5YyeKDNIGrBnvOGMC5jKlmPYGlLUFrAh0qOqWGzGZohhGE6pN2egCqq9e7y2ySWFxJeUrNkCFVDIWbam0Tin8ofB9mg/TyXi+ly8UXo9WZsC03wKOAXZPwG4cA+yegN04Btg9AbtxDLB7AnbjGGD3BOxmqhnQ4A9FlgHMCa0NVfo9AKaAAaZy3hLWqGrUF4isd+nAT4DXIvy3nPpVb0Aq1r4d9AtLaiaiu4BgPqVH++pcb5VTv+oNADQZi75ZYIL18NG+WtfK83+1Xi6n+FQwAEqaUNniYeoYAKCG6fpoSEJlSyWLh6llwITgGGD3BOzGMcDuCdjNtDeg4t8FJoJAYPVtYHj7hJ6Gm2qTJ060XCumM0Rq5s1beWfG5fZwjXgq1dYz3l5VZECTyx/sfUnRDRloBMUNXLyS7vGFIlEZyHwADLnfV/RbNVyIKngY8AXDR9SQLanTbYfG2rUqtkDDPWtm+YLp7xXdATQWHK5HtUldRmdGzFdGKOMGHhNTD3qDkc+heUxrqwoDanvNXcDyUWRuEZrHUk/Qjb5gx3tj0dpugD8YWamw1pJKILwOLFE1VoB8CWiRoX3AhyLyiGGYy1RlM3A1f1jf9/vDvtH62/4ZoOjLljDtUl0Wj0VPWXKHvYHw2cKzr0pTKt7eZkkd8QUinYjmcjNwy3rg45H62/4OAFmSe6WwOx4fsngADLNuK4NnPEdnweIBSMbb2oFf8/V0SaFmWO1xz/fG05B7ISIniwkSiZY0cDoXK/xZqpjCSUvQUEqXowoM0Ev5l+ovrmk2gPx+VimhG3pMlUsldVmqwID8WxZ4fsGC5bcUCnyhjheAWblYRJf65ocXDtPNDy8U0aV5nXSM1tz2D0FE9qCauwTe0Zep/dEXDL9R58l09vS4Z+HRp1HdWjDKhSkHvKHIhv6rtT8AzKhPP66mbAd1ZTUqmczXo7W33YA5t6f2nDk/dyOwKJtqBI6l+12Ip9jVL4fOFWVfTX16MLL8zbIzkdj/x2j9K39ISvH6AqubRlcW58w5QGQv6KJRxXAZqAdco+gyhmHuHEv/sp4U9YXCrWh1PShZhAFgUzLW/ulIItu3QBF+EziEareJ1CEsFHgSqCnQxUD2I/wNgKl3I6wCAtnjbuATfyh8c6KrvblUs2oy4JSq8Voq3nrYmvQGwhGEZ3KxwCVTeCfVVbcLWjJDSzS5vMHeFwX9jOxVQ5XN/uDq3xOx6N5iTW15WDqDca/llhXguPbLo6lUm/VnMLzeSL149BQwO5u6YJj6cHd39PhI9f3z1zygpvkzcGs2dfZaT91d5861XCnUlmVApXiD4d0Cz2XDXsPM3N/dfeCfQp0/EH5bhW25WE19ItUdbR1LD38wvE4hf9ZF3012RbcV6ib9Rsjvb6oTWJeLFdlRbPEAKjxlCY+NdfEAiVj7PuCXfEaeLaabdANMo3cxg5eyQZRviulmz14xE3goF0sJ3YiI5McojV5vZNi2nXQDDNGgNa4xXEX3s8dTOxfL9V5hxH1fDDXFOsZtGDrs/wOTfhUw++Wgus0Hc3FX7LuLRXWmptTQ6zqzr7/kN8BSZPp6jxkzPNdriGkkx1vDwcHh/81/TnvJyjOMtOsAAAAASUVORK5CYII=">
+                Сегмент
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="horizontal-line"></div>
+        <a class="menu-section nav-icon category-text" href="">
           <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAEkklEQVRYhe2XS2xUVRjHf9+ZGQq0tIMNj85MOyOPliC+0ARSmliIsdh2AGOMkrIGw0ITV8S4YEXigoULH8Sw9BFIEIHRVNRUIZiSqCzUSKt1ptOpIhY69EHL3Hs/F3OnTtvpC5oYTf/JJDfnf853fuf7zj33DCxoQf8zyUwdVqx4rmTRkpF6YKlRuZhMnunN90OhhvvweOtBFDvzVU9P6418v7JyV8ARrQOG79xe3Hb9+snBuwYKRRq3qJozwEq36Q4iL6XiZ48BBCqbdomR94AS1x9QR/f1JmNnAIKR5hdR3gAWuf6fIs6unvgn7XcBVO8Nhkt+AGqAEffnB0aNYz/g8RT1ZdT6BSgHcqsuAfp84l1n26PljvH85ML0A0uAIuBqKjG4CdqsQrOaqXBWV5VVuzA46GafDFYACaDINt4GS61aF2YIyxfRjNwPDAHlllq1tvE2uDAJnwxWOOijbugaN3ZBTQk0F6lauUzPuCdn0mxLNgoyAloGjHpUNxrju5FXsiF3UDHwl0+8692S/Ui2TPdeMmizHNUW3DK5MMMo+7u7Y13x+Ol+I9oC9LkgxUCfEd0Xj5/uTyY//RVlPzBMdu8VAYlszMIwM2Qoq1Wrnir2LvbVoyz1inUxkWj9Pd+vqmpa7ojUAxjVtu7u2M18PxxuqLDUW4cwbI1k2q5d+2yIaeSZzgxGoluNz7tHVCsElgumI53uvAkQiezxF/vXv4DqE2TLVu4ID5f6NywZSHfEczGKSzfsMEK1wEqzyPdImX+d3urvTE01Z8EMRSJ7/Bm13geezrWpyte93Y9th8NOKNz8jMI7/HM+TQzbLrY+29NzLrW6avdGjzhXQH15fqzIc7ulq+vz9KwyVFy27tQYjNKJ8D2irw2k3+0ORRq3KHIOKBO4JcJloBPoQmTIhQxh2D6QDhwfTLdeK/XX+IAMio1QDlTb6t00kO74YMYMBSPRrah+k3X1YCoee3ucH45+Cbpd4Fu1fA2p1Ed94/2mJpCPAQ8qz6e6z57I9wPh6EFB3wQQw5ae385dzvcnv2XqbMtlZiIM1HtBa92ORybCAKQSsZgoXwCo0W0T/d7E2bdQOrNTUTfRnwQkIsuyD0zaeME1S9eQfX2xxPfdpMXk1oT2AoijpQU7uLFFmOTP6aTWjGxwH0f+iPuScxk7W83t02Gkxn3qgJP2/ONMB6SsDVRFx9XYoFkgkatTDQuFGh9EZPNUfqAqWoeydtZAqjqQnZRKEb0QDDefz3mOMSdAjijOqYIw4ebj6jFXgIey3DLuMhYMN58X0QsIlePmmg4olYgdNaI7QXKXqCfHTFuLRJ2EOnQG1zRWh6qa9gci0b1ji0F3uDF/VtG9PYnHX54Q3o0l7UZ0ZyoROzojEEAyHmsV0UMT20V4RUWOeYxEcTy1KnJM1DkyKYDI673x2Idw2CkUX0QPJeOx1kLevNyH5lMLQDPJO5fOxjEtIvZilJu2kd3/OlD+f7JgJDr/NEwDJLbpQOwDU4409iWx5IBjzNhZomJeNY6zTD3OpYIxVQ8AiOPpuAfmBS3ov6W/AVWayEZrmE5bAAAAAElFTkSuQmCC">
-          Клієнти
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAABGUlEQVRYhe2WMU4CQRSG/zdLKGlozK67JNLJBeyojYAhhIaWK0i0sLMi1B4ExTNYGg5gAiJzBBrYeTQLGWUoDIsGeV8182Ym70tm8mcAQTgWgqCe/4u+auuKN388ia7Pf9EFAJBxFcPwsmgIDQ/xDEAbALv2nUZXt2lIfH68dFdjshf8QqWjgHsGclZ5QcDQZLy6fu9P7P1BoeIU/SnT8WDt8eXK9HjQM6AHu0bAkIyqfZfZFxtXpmLus4feam6ANz150q7DTNR11VMVYkUXAL8y+IaIysRobTusR893aQtt4J9VI1hvKwxrfqnUzO698cEhwZggwehCgnEnoXUwsuoQxWWAJBgPAwnGBAlGFxKMOwnJj1EQ/jtLVhiugoWogaUAAAAASUVORK5CYII=">
+          Відгуки
         </a>
-        <ul class="accordion-panel">
-          <li>
-            <a class="nav-icon category-text" href="">
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAEkklEQVRYhe2XS2xUVRjHf9+ZGQq0tIMNj85MOyOPliC+0ARSmliIsdh2AGOMkrIGw0ITV8S4YEXigoULH8Sw9BFIEIHRVNRUIZiSqCzUSKt1ptOpIhY69EHL3Hs/F3OnTtvpC5oYTf/JJDfnf853fuf7zj33DCxoQf8zyUwdVqx4rmTRkpF6YKlRuZhMnunN90OhhvvweOtBFDvzVU9P6418v7JyV8ARrQOG79xe3Hb9+snBuwYKRRq3qJozwEq36Q4iL6XiZ48BBCqbdomR94AS1x9QR/f1JmNnAIKR5hdR3gAWuf6fIs6unvgn7XcBVO8Nhkt+AGqAEffnB0aNYz/g8RT1ZdT6BSgHcqsuAfp84l1n26PljvH85ML0A0uAIuBqKjG4CdqsQrOaqXBWV5VVuzA46GafDFYACaDINt4GS61aF2YIyxfRjNwPDAHlllq1tvE2uDAJnwxWOOijbugaN3ZBTQk0F6lauUzPuCdn0mxLNgoyAloGjHpUNxrju5FXsiF3UDHwl0+8692S/Ui2TPdeMmizHNUW3DK5MMMo+7u7Y13x+Ol+I9oC9LkgxUCfEd0Xj5/uTyY//RVlPzBMdu8VAYlszMIwM2Qoq1Wrnir2LvbVoyz1inUxkWj9Pd+vqmpa7ojUAxjVtu7u2M18PxxuqLDUW4cwbI1k2q5d+2yIaeSZzgxGoluNz7tHVCsElgumI53uvAkQiezxF/vXv4DqE2TLVu4ID5f6NywZSHfEczGKSzfsMEK1wEqzyPdImX+d3urvTE01Z8EMRSJ7/Bm13geezrWpyte93Y9th8NOKNz8jMI7/HM+TQzbLrY+29NzLrW6avdGjzhXQH15fqzIc7ulq+vz9KwyVFy27tQYjNKJ8D2irw2k3+0ORRq3KHIOKBO4JcJloBPoQmTIhQxh2D6QDhwfTLdeK/XX+IAMio1QDlTb6t00kO74YMYMBSPRrah+k3X1YCoee3ucH45+Cbpd4Fu1fA2p1Ed94/2mJpCPAQ8qz6e6z57I9wPh6EFB3wQQw5ae385dzvcnv2XqbMtlZiIM1HtBa92ORybCAKQSsZgoXwCo0W0T/d7E2bdQOrNTUTfRnwQkIsuyD0zaeME1S9eQfX2xxPfdpMXk1oT2AoijpQU7uLFFmOTP6aTWjGxwH0f+iPuScxk7W83t02Gkxn3qgJP2/ONMB6SsDVRFx9XYoFkgkatTDQuFGh9EZPNUfqAqWoeydtZAqjqQnZRKEb0QDDefz3mOMSdAjijOqYIw4ebj6jFXgIey3DLuMhYMN58X0QsIlePmmg4olYgdNaI7QXKXqCfHTFuLRJ2EOnQG1zRWh6qa9gci0b1ji0F3uDF/VtG9PYnHX54Q3o0l7UZ0ZyoROzojEEAyHmsV0UMT20V4RUWOeYxEcTy1KnJM1DkyKYDI673x2Idw2CkUX0QPJeOx1kLevNyH5lMLQDPJO5fOxjEtIvZilJu2kd3/OlD+f7JgJDr/NEwDJLbpQOwDU4409iWx5IBjzNhZomJeNY6zTD3OpYIxVQ8AiOPpuAfmBS3ov6W/AVWayEZrmE5bAAAAAElFTkSuQmCC">
-              Клієнти
-            </a>
-          </li>
-          <li>
-            <a class="nav-icon category-text" href="">
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAB8UlEQVRYhe2WP4gTQRSHvzd7FsHqyuT2EtRGsBGioKbQOlnQJmBhq5aC5TVqYalgaUqxEKyOJFffFaeFBCwsbC4ka/6UaU7O4jLPwgtsdldcuOwKul/5Y5b5mJ335kFOTs5/hoSDcrmxDqxntP/M97uzYLAWXmGNPFLlSRY2IjwDngYzExFSSlnIAChSDGdLv2xzs37FGrMLnEXksWPtdhoic2Nuo/oS+G5Vb079bm9JqFTx3hq4qHAZcIAvZ+Tw6mCw+yMNIddtFqxz9EngEjAX+Gzh62TYuWd+WWlNoXoi80HXnHpaMgCj0fsjHKkDHwFHoSpoDcJ3SNgaDzu1ycH2t7RkFkz6bX887NxA2ArmoSqTadzHbrnxYBUSI7/biqYyBf2dUDwq8noVQkCM0DKJhID+KUUSk0hoPOxcSFtkQaQx/m0SndBGxTtYxWZJTjrpHTp/SpfEJBIS1YdpiyxYFlIb+7DG948VobYUfFLDjfH5RsXz1JG7k37bT00CKJ6rV4w174BrwdwAKLIv0AOOgevMdcd1m4W0ZFy3WXCs7JzIHAv0FNmH0PhRLDeqRmSPtMcPkTvAC+DQqt6KjB9BShWvJXA/DZEIIq3xoL1UMJHGaIRJJjKAoJHHPFL2xuor4E0mRsrsz4tycnL+cX4CWmyXStJx0QgAAAAASUVORK5CYII=">
-              Категорії
-            </a>
-          </li>
-        </ul>
       </div>
-      <div class="horizontal-line"></div>
-      <a class="menu-section nav-icon category-text" href="">
-        <img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAABNUlEQVRYhe3XsU3DQBiG4e+/RKJgAxMlZAEaKJBMGdzgsADsQZuWPfACThowJUgUqVgAYinegIIi91GQMyZROKxIFxf3dvbZ/h/pZMkGfL7tkupB0B9G0DhS1C0Xw7WoBRRei7fxwxoo6MV3Aly5gKxGIClmk+sSFPSHkWje7wJToqiiIk+zNgAIeVxZeqaoJxcIoT4DJAQAUfoEwBIE7NFcJPI4fx+PXIA6h/GIRGgMAKBcDK6TB9nyIFseZMuDbHmQLQ+y5UG2GgdqAwCBT3OCRNjpXty4GG4+zqqGb5BWUxFt1gYUGbgA/cJpNQWWW1bkaUYgcY0oMUBS5GkGrP6XdS/PRRanFLW/6WYha20nRW43P0t/kK0Xg1kD/aeDXkz7VT/NZ5NaM5r5ltXpry3w+ZrQF35rXCDcAtSjAAAAAElFTkSuQmCC" />
-        Відгуки
-      </a>
+
     </aside>
 
     <!-- Start Dashboard Section -->
-    <article class="dashboard-section row-container">
-      <div class="menu-section">
-        <span class="nav-icon category-text" href="">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAC5ElEQVRYhe2WPWhTURTHf+cmVbDFj06a9/pS/EInnRysSk0LKkmLiA6C4KKCRSfxYxEEUbA4CYLgIE4uSotJrYvVijjp5iBYMQlJ1A7WjyJC+95xqNHXNi+pbZpB+4NAzj3nf86f3HvfCyywwNwQf2DbnWu9kO416oVqMdwT4xpXenO5+0PFtbC/QEP6UNA1KjJdPQ8Iiho9BqwvrpnJJbqmJk78COv8YTioDgCV22r4UNX5HisRPRyUDzQkQncukzxbTTPF1nY0MaxwumTSH1jRhBa/5zOpigcp4nS2gHdehBYARZ6Bd7GQ6XteSRs0y5Qur4zlxA+IeE9E2AU0AA2C7hZk0HIS+2fbd1aGHCe+AjE3Kb3lYYSbzc17l8+bIctJXLaiiVEr2nEJwMUkQJeVkSwf1/F4KW1VDCGcBOpBT06o1K4kUcEpqa2KIeQaMAp6DQBPchUVSraktpLOH8z0ljlOfIUr5l2ZbRupk/DqdLr3c1CPqt6ybLZvBNUjwPj0rIwJcrScmXLM+trns6m7wA6gH/j26/MAYUcuk7w3276BWyZCdy6dOgfoNNXcEDuauOJ/Uvu3LPDVocoZKxpv+HM4q4MKjkJXUL78yxXp0tr8E/nN1DM0VLJqPlHe+MNJv5C4Zo+G3IMqpr4WXkR11Kh7pxaz/h0Cj2xTU2dExY0B1kwaeUbSbqju8ce3PcPl6mw7YWH0EIAa+ZJPp27MyFCRSHPHBpSYoDFgJ9BYplwReYXHI0UHfixyBz8N9X/1F1jR+CmQqxPF9BQyqX1/ZWgyF0wk+nIzaBtITNDtQLkLMA68ABkw4j311JwF3fnHPScKmdT1ORiaSmt4lVO/KQTtKtIObAcWz1StIhsL6eTrKhqaTCTSsYSwtxVj2kW9bWC2gNaVrpb3+UwyMm21moamYtu7GgmFW0FiCm3Aht9J5UY+mzpeU0NTaWrqjHiibSq6lDG5VSgkv9dy/gL/Bz8Br4D34V2yIyAAAAAASUVORK5CYII=">
-          Місячний дохід
-        </span>
-        <span class="category-menu-text">500 UAH</span>
-      </div>
-      <div class="menu-section">
-        <span class="nav-icon category-text" href="">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAACF0lEQVRYhe2WMWhTURRAz33/R+wiFKemaVJKcG3BTRd10yaCQ0EoDi6KFOKgDg5iNweRomMnF3FwUEy0g4OdBBXdXCSENG0SQaSDIJH8/66DCaRJfklKTAL+Aw/+u+/fe89034OQkJD/DGl+zMycj4r4h0choerUtrdfVgDcZtAa+wTk1CiEELsJnAYwIxHYB7c9oMIj1+rDYTT3jFwXJbOvkIHdUulVYRhCsdnUrrbFOoSaTM+dO4Z1bvRavFzMXm3dR+OptBhJdf3Z+A/Khddfux0FCok1UVW90qsQsEfIGI4H5Ys1T4H+hNTYCtZZ70NoIAQKOZ5897DPghNNtVTKfhmakDUyL8qboHNf7WPg8qCFxn8ONdkp5jZpuVr6ZaeYWwVWBybUJJpI3xR0GfTtRMTezuc3fh/AbzBCsUTqgqL3/+5koVZ3ItHZ9DtRvQT6Ge/QWrn8/MfQhBTuNmSqoFMKK6K6AgjIWdz6renE4keQankrt9SaO/DBGIulphXmAYzxL1pr7gEnGoLvQZPAUZCTXXsOejB6rhtx8NcBHP31AXtkyYq9o0KhsvVzLZmccGp194yKLqjKVHu+tXwSI10Hqxq/EtQ3UOhb8UWRvddBBbjW3OTzeMBGY3VQKeWyQDaofs9CFibj8cW5fgsdBA8m2+dKh5AoGV8k0x7/F0j724NxntTGmuVRPvJH0TckJGQs+APdF7u4gjNEpAAAAABJRU5ErkJggg==">
-          Нові замовлення
-        </span>
-        <span class="category-menu-text">50 </span>
-      </div>
-      <div class="menu-section">
-        <span class="nav-icon category-text" href="">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAEkklEQVRYhe2XS2xUVRjHf9+ZGQq0tIMNj85MOyOPliC+0ARSmliIsdh2AGOMkrIGw0ITV8S4YEXigoULH8Sw9BFIEIHRVNRUIZiSqCzUSKt1ptOpIhY69EHL3Hs/F3OnTtvpC5oYTf/JJDfnf853fuf7zj33DCxoQf8zyUwdVqx4rmTRkpF6YKlRuZhMnunN90OhhvvweOtBFDvzVU9P6418v7JyV8ARrQOG79xe3Hb9+snBuwYKRRq3qJozwEq36Q4iL6XiZ48BBCqbdomR94AS1x9QR/f1JmNnAIKR5hdR3gAWuf6fIs6unvgn7XcBVO8Nhkt+AGqAEffnB0aNYz/g8RT1ZdT6BSgHcqsuAfp84l1n26PljvH85ML0A0uAIuBqKjG4CdqsQrOaqXBWV5VVuzA46GafDFYACaDINt4GS61aF2YIyxfRjNwPDAHlllq1tvE2uDAJnwxWOOijbugaN3ZBTQk0F6lauUzPuCdn0mxLNgoyAloGjHpUNxrju5FXsiF3UDHwl0+8692S/Ui2TPdeMmizHNUW3DK5MMMo+7u7Y13x+Ol+I9oC9LkgxUCfEd0Xj5/uTyY//RVlPzBMdu8VAYlszMIwM2Qoq1Wrnir2LvbVoyz1inUxkWj9Pd+vqmpa7ojUAxjVtu7u2M18PxxuqLDUW4cwbI1k2q5d+2yIaeSZzgxGoluNz7tHVCsElgumI53uvAkQiezxF/vXv4DqE2TLVu4ID5f6NywZSHfEczGKSzfsMEK1wEqzyPdImX+d3urvTE01Z8EMRSJ7/Bm13geezrWpyte93Y9th8NOKNz8jMI7/HM+TQzbLrY+29NzLrW6avdGjzhXQH15fqzIc7ulq+vz9KwyVFy27tQYjNKJ8D2irw2k3+0ORRq3KHIOKBO4JcJloBPoQmTIhQxh2D6QDhwfTLdeK/XX+IAMio1QDlTb6t00kO74YMYMBSPRrah+k3X1YCoee3ucH45+Cbpd4Fu1fA2p1Ed94/2mJpCPAQ8qz6e6z57I9wPh6EFB3wQQw5ae385dzvcnv2XqbMtlZiIM1HtBa92ORybCAKQSsZgoXwCo0W0T/d7E2bdQOrNTUTfRnwQkIsuyD0zaeME1S9eQfX2xxPfdpMXk1oT2AoijpQU7uLFFmOTP6aTWjGxwH0f+iPuScxk7W83t02Gkxn3qgJP2/ONMB6SsDVRFx9XYoFkgkatTDQuFGh9EZPNUfqAqWoeydtZAqjqQnZRKEb0QDDefz3mOMSdAjijOqYIw4ebj6jFXgIey3DLuMhYMN58X0QsIlePmmg4olYgdNaI7QXKXqCfHTFuLRJ2EOnQG1zRWh6qa9gci0b1ji0F3uDF/VtG9PYnHX54Q3o0l7UZ0ZyoROzojEEAyHmsV0UMT20V4RUWOeYxEcTy1KnJM1DkyKYDI673x2Idw2CkUX0QPJeOx1kLevNyH5lMLQDPJO5fOxjEtIvZilJu2kd3/OlD+f7JgJDr/NEwDJLbpQOwDU4409iWx5IBjzNhZomJeNY6zTD3OpYIxVQ8AiOPpuAfmBS3ov6W/AVWayEZrmE5bAAAAAElFTkSuQmCC">
-          Нові клієнти
-        </span>
-        <ul class="category-links ">
+    <article class="dashboard-section col-container">
+      <div class="dashboard-section-top row-container">
+        <div class="dashboard-section-top-start row-container">
+          <a href="javascript:void(0);" class="nav-icon" id="dashboard-menu-open-button">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAABkElEQVRYhe2XvU4CQRDHfwOojY+gBdHeRhMTKEiE86i1NMa3sBRLH4PQan8gJhQQE0Njb6K+gw0aHAtXXD7uQzgiJPdrbnZ2duZ/N5lLFhISZkP8NtShRJodIB1zzT59HqXBbWRB6lIDTmIWMkpNPE5DBalDiRSNOYsxxShJnabtyowFpdi1Vh2UdqwihDyQM/YehAmCNctuSp1KnHrUpTIQNFwLgFScxeJg0heaiLrkEfNmSke871YO+X0P/8bHJggoolwY+xIGBWy/H3Z8IMvbMjNtV2bV9vH7EXlSIwsy/4tmVP+0LG/LkilbFJIpC2N5W5ZM2aKQTFkYS9GynmXntMx5YAalKx53AOpygAxdEibF2xPZG90eF/RJ1/puRZRiYAH4UJdjY1+jrITE2zyMOiZfFA+pIuOXuADezXP1D2eq4nEWSZARVUTYR1n3TSkcAdsj3ieUm4Azb8D9T5sjC4qCltlAaQFbxvUKFMTjZdqcMwkCUIdNUrQQMvQpSIPnWXPOjDpk1SH73zrmwhfnO5WP2ZRbowAAAABJRU5ErkJggg==">
+          </a>
+          <form class="search-on-dashboard-form row-container" id="search-on-dashboard-form" action="">
+            <input type="text" placeholder="Пошук" name="search_text" autocomplete="off" />
+            <button type="submit" name="search_submit">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAACSUlEQVRYhe3XP2yNURjH8U9LKvWvLalGyyY60IQIHWwSSxOkjBZTh0aCEIPJJvHnmgxGi4iQICQigohB2YlBJBQRijbqPzWc97rH1Xt733tfaSX9JSd53jfn/M73Pe85z/u8TKu86lL0nYH16EEn2tCAl3iGa0n7mDHjX2rAzmTisQnaKI5iwb+C6cKjCkCK2zv0Zg3Tg5Giie5iL9ZgMVqxEjtwAT+ivj9xICuYtcJeyJs/TgAnUhduFT1EX60wC/E8Mryd3KtUM3EiGv8V3bUA5SKzh2iuwqMOpyOfAelO9G914HNi8l14BdVqDgYjqC3VmOyKDE7VAJNXX+R3thqDG5HBhgyA5ims+AhmpTV4mwz+IGzOLHRd4SFXTNS5Poob0ZLEg8IeykJPorg9DVBTFA9nBAPvo7ilZK9EMdCQkF0JGTgrtRXNUTHQN7xJ4g7MzQioM4oH0w4+r7ABt2UA06bwfXulguRYX3R9MYr7MwDqj+a4nICl0ny8VlilTTXALBXSR95rVbVGuyOTISyrwqMR9yOfc9XCELLpvcjsKVanGN8qVAj58Z+E2qkmtfuzBBnFQeVPXr1QqMUf1Hw7XOnE5XZ9Jy5heXRvGFdxEy+EbL4I67AZS8r4HcH+SsFKqRlnhISZpqYeb5XGEqhM1I0r+DIByAC2C68vV6JPWai0VVwTNir8l80WTuID3BFq71g57BnH5xj2pZw7Mx0y/krlJguoHNTxaagildroWycTqnilTqryFylL5aGmBExevaYQzP+jX9qT276ype3EAAAAAElFTkSuQmCC" />
+            </button>
+          </form>
+        </div>
+        <ul class="dashboard-section-top-end row-container">
           <li>
-            <a class="nav-icon category-text" href="">
-              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jlsolerdeltoro/128.jpg?size=32x32">
-              Павло Войтюк
+            <a href="" class="nav-icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAB5klEQVRYhe3XP2sUURSG8d9dI6JgZy34ByxUxMIUxkIlhI1gp51CgmJjpQStJJtG9BsYoiT29pkmGiSCWChiIUFtbDWVgoYEr8XehDWZzWyy6yIybzXn8M45z9w7c5hLqVLtKaxNxKpTgr6udI9ehMxcY6onx9YvGu0KEGP8CVTpUuOWtX6FojncF1zBnpT9JHrSVqfgAg6k6KvokTWrU7c1UawawmQKlwW9YdqbrbDEAUdUvMb2lBoOmak8b/MtyzzGTIp6ROPxom2bhqmpqBhfhYmep9q5arpCEKsO4S12pNRDwcfNETmIqylaxLGQmd8SUIKq0bGvbixkahsZir+y3e6K3reNEnzw071iWwuKVafxtMH/TPSqoHIvzqyUwNmQme0IUIKaxFC667MfDodZ33O95+2y5B32p9RUyAy30qf1wbhkBF/qHe21052m3mWjDTALgluttmkZKMxYoKFwdDMOOr7WF885KrrRkBoJ0+lBOgmEwtkUayp+eaDFmdM2UKi/nNfV5wmc8M2lVcNLl3EyRYuCa+mevwMEITMvmGhI7cu9DiY2GoAdAwLRQkc8Ofrnfj9KoCKVQEUqgYqUdwzarPrioNsgtn+e6wRQv6i/A3Xw32zZytltY607c5Uq1Q39BrNWfIoJehhIAAAAAElFTkSuQmCC">
             </a>
           </li>
           <li>
-            <a class="nav-icon category-text" href="">
-              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jlsolerdeltoro/128.jpg?size=32x32">
-              Павло Войтюк
-            </a>
-          </li>
-          <li>
-            <a class="nav-icon category-text" href="">
-              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jlsolerdeltoro/128.jpg?size=32x32">
-              Павло Войтюк
+            <a href="" class="nav-icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAADQklEQVRYhe3XzWtcVRjH8c+ZaRONpiiIYCnUilYpWItUrEJsis0rFBeaYn1ZCEKsIG76Bwi6ERcuFIRUQaQutOCiVWcSzIttfaForLQqorQWabsQBTM1Jk0zx0VukmZmMjPJJFlIf3Dhnuc85znfe+49z3kuV3VVtSlU6xi7XGvERtGqqqNP+i30+3PJgWKb3YJ3cP1CguO0vObQ5/clA4od1ojO47oFwiwKqhqgbaKvkuZHguMVo0ar8fJioCoDtWkSHEm8u0NGT8UxuzSY8E+B+ay8HaHPmXJjU5WCL6HWSxmMrTaUc1pJIKqAWmkgWC/t4Hyd1eeUheiySXxWZI+2Cm4Q3bSiQCFjHC1FPO2OoKns2FLG2OouKW9iC+rQmHSNYrwG1kZTi3A2ZN1ayqFohWKXtIsOie4o4d+QXMum4o865/YCmIhvcAyXCryH0YexpH0cQ1f094pO1AaUn3NeTQjaQ9Z9IatJylZmDstX1GmWtlewMwH/XLA7uR8VPCLlu9qA5up9//oytvs2tjsjLyd4Lenrd8mzJn0hWosLopaQ8QdO4ljIGBeLP258PN+E5XdZdEqdzbg3sXwgupzcPy54EWnR21gjuCW2ulkwiAuxwybRuoKoPbJemG/K8iuUKtiFUbyi1S0aQr9oB/IIUh4WDYgG5ItWp0fWc8GcOAsAiu5R7wSOCk5JeQwZEDyAX0QHQq9h/JrYW9QZ1GhYmANUEaYyEHtMaAtZD4WMu+Wtxb4E9lFjnpfXHjttwW2JfWc4JIc0tie2/dXATD1PgWKnjfJ+LjD/aCohbk4mSpz9JMiZTaDTGkraD4r269UdiEmO22eVN8Jho9UBvSTlayexqdLTVFQxzHuiJzBgtV2loOY7OjZIeV2wTdRgcUfHh7L2loCZVkmoZakY54zvkpbzLp4q0X3UmM4w5OK0YVnroQow0OQan8bm2dOhcvmRMjGzN6K22OHGsv6Tfgh9SSb+2/2Cc3gVBE9iHUZEb82Mqbcdn0y5VNAifoMOhKynS8aarYfmLT8qvrKQMYJnkKsSqCZVVTGGrIOx2WH17qziV/qvZQeCMGQM39cyWTVaniJ/PkXnBadxbkXn/V/pP3G/FPiDJtUaAAAAAElFTkSuQmCC">
             </a>
           </li>
         </ul>
+
       </div>
-      <div class="menu-section">
-        <span class="nav-icon category-text" href="">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAEkklEQVRYhe2XS2xUVRjHf9+ZGQq0tIMNj85MOyOPliC+0ARSmliIsdh2AGOMkrIGw0ITV8S4YEXigoULH8Sw9BFIEIHRVNRUIZiSqCzUSKt1ptOpIhY69EHL3Hs/F3OnTtvpC5oYTf/JJDfnf853fuf7zj33DCxoQf8zyUwdVqx4rmTRkpF6YKlRuZhMnunN90OhhvvweOtBFDvzVU9P6418v7JyV8ARrQOG79xe3Hb9+snBuwYKRRq3qJozwEq36Q4iL6XiZ48BBCqbdomR94AS1x9QR/f1JmNnAIKR5hdR3gAWuf6fIs6unvgn7XcBVO8Nhkt+AGqAEffnB0aNYz/g8RT1ZdT6BSgHcqsuAfp84l1n26PljvH85ML0A0uAIuBqKjG4CdqsQrOaqXBWV5VVuzA46GafDFYACaDINt4GS61aF2YIyxfRjNwPDAHlllq1tvE2uDAJnwxWOOijbugaN3ZBTQk0F6lauUzPuCdn0mxLNgoyAloGjHpUNxrju5FXsiF3UDHwl0+8692S/Ui2TPdeMmizHNUW3DK5MMMo+7u7Y13x+Ol+I9oC9LkgxUCfEd0Xj5/uTyY//RVlPzBMdu8VAYlszMIwM2Qoq1Wrnir2LvbVoyz1inUxkWj9Pd+vqmpa7ojUAxjVtu7u2M18PxxuqLDUW4cwbI1k2q5d+2yIaeSZzgxGoluNz7tHVCsElgumI53uvAkQiezxF/vXv4DqE2TLVu4ID5f6NywZSHfEczGKSzfsMEK1wEqzyPdImX+d3urvTE01Z8EMRSJ7/Bm13geezrWpyte93Y9th8NOKNz8jMI7/HM+TQzbLrY+29NzLrW6avdGjzhXQH15fqzIc7ulq+vz9KwyVFy27tQYjNKJ8D2irw2k3+0ORRq3KHIOKBO4JcJloBPoQmTIhQxh2D6QDhwfTLdeK/XX+IAMio1QDlTb6t00kO74YMYMBSPRrah+k3X1YCoee3ucH45+Cbpd4Fu1fA2p1Ed94/2mJpCPAQ8qz6e6z57I9wPh6EFB3wQQw5ae385dzvcnv2XqbMtlZiIM1HtBa92ORybCAKQSsZgoXwCo0W0T/d7E2bdQOrNTUTfRnwQkIsuyD0zaeME1S9eQfX2xxPfdpMXk1oT2AoijpQU7uLFFmOTP6aTWjGxwH0f+iPuScxk7W83t02Gkxn3qgJP2/ONMB6SsDVRFx9XYoFkgkatTDQuFGh9EZPNUfqAqWoeydtZAqjqQnZRKEb0QDDefz3mOMSdAjijOqYIw4ebj6jFXgIey3DLuMhYMN58X0QsIlePmmg4olYgdNaI7QXKXqCfHTFuLRJ2EOnQG1zRWh6qa9gci0b1ji0F3uDF/VtG9PYnHX54Q3o0l7UZ0ZyoROzojEEAyHmsV0UMT20V4RUWOeYxEcTy1KnJM1DkyKYDI673x2Idw2CkUX0QPJeOx1kLevNyH5lMLQDPJO5fOxjEtIvZilJu2kd3/OlD+f7JgJDr/NEwDJLbpQOwDU4409iWx5IBjzNhZomJeNY6zTD3OpYIxVQ8AiOPpuAfmBS3ov6W/AVWayEZrmE5bAAAAAElFTkSuQmCC">
-          Нові відгуки
-        </span>
-        <ul class="category-links ">
-          <li>
-            <a class="nav-icon category-text" href="">
-              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jlsolerdeltoro/128.jpg?size=32x32">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit...
-            </a>
-          </li>
-          <li>
-            <a class="nav-icon category-text" href="">
-              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jlsolerdeltoro/128.jpg?size=32x32">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit...
-            </a>
-          </li>
-          <li>
-            <a class="nav-icon category-text" href="">
-              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jlsolerdeltoro/128.jpg?size=32x32">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit...
-            </a>
-          </li>
-        </ul>
+      <div class="dashboard-section-bottom tabs-section">
+        <div class="tabs row-container" role="tablist">
+          <button aria-selected="true" class="tab" id="ordered">
+            Замовлено
+          </button>
+          <button aria-selected="false" class="tab" id="delivered">
+            Доставлено
+          </button>
+          <button aria-selected="false" class="tab" id="cancelled">
+            Відмовлено
+          </button>
+        </div>
+        <div class="tab-panel" aria-labelled="ordered">
+          <table class="table">
+            <tr class="table-heading">
+              <th>Дата</th>
+              <th>ID замовлення</th>
+              <th>Покупець</th>
+              <th>Кількість</th>
+              <th>Сума</th>
+
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Дата">19/08/2020, 11:21:52</td>
+              <td data-heading="ID замовлення">GF5FEW1</td>
+              <td class="customer" data-heading="Покупець">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+                Роман Стахів
+              </td>
+              <td data-heading="Кількість">3</td>
+              <td class="price" data-heading="Сума">2000 UAH</td>
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Дата">19/08/2020, 11:21:52</td>
+              <td data-heading="ID замовлення">GF5FEW1</td>
+              <td class="customer" data-heading="Покупець">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+                Роман Стахів
+              </td>
+              <td data-heading="Кількість">3</td>
+              <td class="price" data-heading="Сума">2000 UAH</td>
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Дата">19/08/2020, 11:21:52</td>
+              <td data-heading="ID замовлення">GF5FEW1</td>
+              <td class="customer" data-heading="Покупець">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+                Роман Стахів
+              </td>
+              <td data-heading="Кількість">3</td>
+              <td class="price" data-heading="Сума">2000 UAH</td>
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Дата">19/08/2020, 11:21:52</td>
+              <td data-heading="ID замовлення">GF5FEW1</td>
+              <td class="customer" data-heading="Покупець">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+                Роман Стахів
+              </td>
+              <td data-heading="Кількість">3</td>
+              <td class="price" data-heading="Сума">2000 UAH</td>
+            </tr>
+          </table>
+        </div>
+        <div class="tab-panel" aria-labelled="delivered" hidden>
+          <table class="table">
+            <tr class="table-heading">
+              <th>Дата</th>
+              <th>ID замовлення</th>
+              <th>Покупець</th>
+              <th>Кількість</th>
+              <th>Сума</th>
+
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Дата">19/08/2020, 11:21:52</td>
+              <td data-heading="ID замовлення">GF5FEW1</td>
+              <td class="customer" data-heading="Покупець">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+                Роман Стахів
+              </td>
+              <td data-heading="Кількість">3</td>
+              <td class="price" data-heading="Сума">2000 UAH</td>
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Дата">19/08/2020, 11:21:52</td>
+              <td data-heading="ID замовлення">GF5FEW1</td>
+              <td class="customer" data-heading="Покупець">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+                Роман Стахів
+              </td>
+              <td data-heading="Кількість">3</td>
+              <td class="price" data-heading="Сума">2000 UAH</td>
+            </tr>
+
+          </table>
+        </div>
+        <div class="tab-panel" aria-labelled="cancelled" hidden>
+          <table class="table">
+            <tr class="table-heading">
+              <th>Дата</th>
+              <th>ID замовлення</th>
+              <th>Покупець</th>
+              <th>Кількість</th>
+              <th>Сума</th>
+
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Дата">19/08/2020, 11:21:52</td>
+              <td data-heading="ID замовлення">GF5FEW1</td>
+              <td class="customer" data-heading="Покупець">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+                Роман Стахів
+              </td>
+              <td data-heading="Кількість">3</td>
+              <td class="price" data-heading="Сума">2000 UAH</td>
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Дата">19/08/2020, 11:21:52</td>
+              <td data-heading="ID замовлення">GF5FEW1</td>
+              <td class="customer" data-heading="Покупець">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+                Роман Стахів
+              </td>
+              <td data-heading="Кількість">3</td>
+              <td class="price" data-heading="Сума">2000 UAH</td>
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Дата">19/08/2020, 11:21:52</td>
+              <td data-heading="ID замовлення">GF5FEW1</td>
+              <td class="customer" data-heading="Покупець">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+                Роман Стахів
+              </td>
+              <td data-heading="Кількість">3</td>
+              <td class="price" data-heading="Сума">2000 UAH</td>
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Дата">19/08/2020, 11:21:52</td>
+              <td data-heading="ID замовлення">GF5FEW1</td>
+              <td class="customer" data-heading="Покупець">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+                Роман Стахів
+              </td>
+              <td data-heading="Кількість">3</td>
+              <td class="price" data-heading="Сума">2000 UAH</td>
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Дата">19/08/2020, 11:21:52</td>
+              <td data-heading="ID замовлення">GF5FEW1</td>
+              <td class="customer" data-heading="Покупець">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+                Роман Стахів
+              </td>
+              <td data-heading="Кількість">3</td>
+              <td class="price" data-heading="Сума">2000 UAH</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </article>
     <!-- End Dashboard Section -->

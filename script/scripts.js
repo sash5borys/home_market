@@ -19,3 +19,14 @@ openOverlayCatalogButton.addEventListener('click', () => {
 document.addEventListener('click', event => {
     if (!catalogMenu.contains(event.target)) overlayCatalogMenu.style = 'height: 0;';
 });
+
+// Open|Close Overlay Dashboard Menu
+const dashboardMenu = document.querySelector('#overlay-dashboard-menu');
+const openOverlayDashboardMenuButton = document.querySelector('#dashboard-menu-open-button');
+const closeOverlayDashboardMenuButton = document.querySelector('#dashboard-menu-close-button');
+openOverlayDashboardMenuButton.addEventListener('click', () => {
+    dashboardMenu.style = 'width:65%;';
+});
+closeOverlayDashboardMenuButton.addEventListener('click', () => {
+    dashboardMenu.style = 'width:0%;';
+});

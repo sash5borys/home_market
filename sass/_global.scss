@@ -110,10 +110,12 @@ a, span, ul, li{
   }
 }
 .horizontal-line{
-  position: absolute;
   height: 2px;
-  right: 0;
-  left: 0;
+  // width: 100%;
+  // margin: 0 -16px;  
+    position: absolute;
+    left: 0;
+    right: 0; 
   background-color: $color_blue;
 }
 #overlay-mobile-menu{
@@ -126,13 +128,13 @@ a, span, ul, li{
   overflow-x: hidden;
   transition: 0.5s;
   background-color: $color_white;
-  .overlay-mobile-menu-start{
+  box-shadow: 2px 0px 2px $color_gray;
+  .overlay-mobile-menu-start, .overlay-mobile-menu-center, .overlay-mobile-menu-end{
     padding: 0.8rem map-get($padding_container, small);
+  }
+  .overlay-mobile-menu-start{
     justify-content: space-between;
     background-color: $color_blue;
-  }
-  .overlay-mobile-menu-center, .overlay-mobile-menu-end{
-    padding: 0.8rem map-get($padding_container, small);
   }
 }
 #catalog-menu-open-button{
@@ -159,6 +161,7 @@ a, span, ul, li{
   z-index: 3;
   overflow-y: hidden;
   background-color: $color_white;
+  box-shadow: 0px 2px 2px #bdbdbd;
   .overlay-catalog-menu-start{
     width: 100%;
     flex-direction: row;
@@ -171,7 +174,7 @@ a, span, ul, li{
     }
   }
 }
-#search-products-form{
+#search-products-form, #search-on-dashboard-form{
   width: 100%;
   max-width: 700px;
   input, button {
@@ -200,10 +203,150 @@ a, span, ul, li{
     }
   }
 }
-.catalog-menu, #overlay-mobile-menu{
+.catalog-menu, #overlay-mobile-menu, #overlay-dashboard-menu,
+.dashboard-section-top, .dashboard-section-bottom 
+{
   margin-right: 0;
   div{
     margin-right: 0;
+  }
+}
+
+// Main
+#overlay-dashboard-menu{
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background-color: $color_white;
+  box-shadow: 2px 0px 2px $color_gray;
+  .horizontal-line{
+    position: relative;
+    margin: 0 -16px;
+  }
+  .overlay-dashboard-menu-start, .overlay-dashboard-menu-end{
+    padding: 0.8rem map-get($padding_container, small);
+  }
+  .overlay-dashboard-menu-start{
+    justify-content: flex-end;
+    background-color: $color_gray;
+  }
+  .accordion-panel{
+    display: none;
+    padding-left:map-get($padding_container, small);
+  }
+}
+
+
+.dashboard-section{
+  width: 100%;
+  white-space: normal;
+  .dashboard-section-top{
+    margin-bottom: map-get($margin_container, small);
+    justify-content: space-between;
+    align-items: center;
+    .dashboard-section-top-start{
+      width: 100%;
+       max-width: 300px;
+    }
+  }
+  .dashboard-section-bottom{
+    margin-top: map-get($margin_container, small);
+    .tabs{
+      margin-bottom: map-get($margin_container, small);
+      width: 100%;
+      .tab {
+        flex: 1;
+        padding: 6px;
+        outline: none;
+        border: none;
+        color: $color_white;
+        background-color: $color_orange;
+        height: map-get($image_size, medium);
+        font-size: map-get($font_size, medium);
+        cursor: pointer;
+        &:hover {
+          @include hoverLinksYellow;
+        }
+        &:first-child{
+          border-radius: 0.3rem 0 0 0.3rem;
+        }
+        &:last-child{
+          border-radius: 0 0.3rem 0.3rem 0;
+        }
+      }
+    }
+    .tab-panel{
+      margin-top: map-get($margin_container, small);
+    }
+
+  }
+}
+
+#search-on-dashboard-form{
+  border: 2px solid $color_orange;
+  border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+
+.table{
+  width: 100%;
+  th, td{ 
+    padding: .5rem;
+    vertical-align: middle;
+  }
+  th {
+    width: 7rem;
+    margin-right: .5rem;
+    color: #757474;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  img{
+    margin-right: map-get($margin_container, small);
+    height: map-get($image_size, small);
+    border-radius: 50%;
+  }
+  .table-content{
+    border-bottom: 2px solid $color_yellow;
+    &:hover{
+      background-color: #e2b22042;
+    }
+    .customer{
+      display: flex;
+      align-items: center;
+    }
+    .price{
+      font-weight: 700;
+    }
+  }
+  @media (max-width: 52rem) {
+    .table-heading {
+      display: none;
+    }
+    .table-content {
+      display: block;
+      td{
+        display: flex;
+        align-items: center;
+        &::before{
+          content: attr(data-heading);
+          // display: inline-block;
+          width: 7rem;
+          margin-right: .5rem;
+          color: #757474;
+          font-size: .75rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+      }
+    }
   }
 }
 
@@ -278,11 +421,8 @@ a, span, ul, li{
   .category-menu-text{
     font-size: map-get($image_size, big);
   }
-  #overlay-mobile-menu{
+  #overlay-mobile-menu, #dashboard-menu-open-button{
     display: none;
-  }
-  .horizontal-line{
-    height: 4px;
   }
   #catalog-menu-open-button{
     height: map-get($image_size, big);
@@ -300,7 +440,7 @@ a, span, ul, li{
       }
     }
   }
-  #search-products-form{
+  #search-products-form, #search-on-dashboard-form{
     input, button {
       height: map-get($image_size, big);
       font-size: map-get($font_size, big);
@@ -311,11 +451,36 @@ a, span, ul, li{
   }
 
   // Main
-  main{
-    .category-menu-content {
-      .card{
-        height: 180px;
+  #overlay-dashboard-menu{
+    position: relative;
+    height: initial;
+    flex: 0 0 30%;
+    min-width: 235px;
+    max-width: 275px;
+    z-index: 1;
+    box-shadow: none;
+    margin-right: map-get($margin_container, big);
+    .overlay-dashboard-menu-start{
+      display: none;
+    }
+  }
+
+  .dashboard-section{
+    .dashboard-section-end{
+      .tabs{
+        width: 100%;
+        .tab {
+          height: map-get($image_size, big);
+          font-size: map-get($font_size, big);
+        }
       }
+      .menu-section{
+        flex: 0 0 100%;
+      }
+      .tabs{
+        flex: 0 0 100%;
+      }
+
     }
   }
 
@@ -345,6 +510,16 @@ a, span, ul, li{
       .menu-section{
         flex: 0 0 30%;
       }
+    }
+  }
+
+  // Main
+  .dashboard-section{
+    .menu-section{
+      flex: 0 0 30%;
+    }
+    .menu-section:last-child{
+      flex: 100%;
     }
   }
 

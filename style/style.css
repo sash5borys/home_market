@@ -253,10 +253,10 @@ a, span, ul, li {
 }
 
 .horizontal-line {
-  position: absolute;
   height: 2px;
-  right: 0;
+  position: absolute;
   left: 0;
+  right: 0;
   background-color: #1b1f4c;
 }
 
@@ -271,18 +271,19 @@ a, span, ul, li {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #fff;
+  -webkit-box-shadow: 2px 0px 2px #bdbdbd;
+          box-shadow: 2px 0px 2px #bdbdbd;
+}
+
+#overlay-mobile-menu .overlay-mobile-menu-start, #overlay-mobile-menu .overlay-mobile-menu-center, #overlay-mobile-menu .overlay-mobile-menu-end {
+  padding: 0.8rem 1rem;
 }
 
 #overlay-mobile-menu .overlay-mobile-menu-start {
-  padding: 0.8rem 1rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #1b1f4c;
-}
-
-#overlay-mobile-menu .overlay-mobile-menu-center, #overlay-mobile-menu .overlay-mobile-menu-end {
-  padding: 0.8rem 1rem;
 }
 
 #catalog-menu-open-button {
@@ -311,6 +312,8 @@ a, span, ul, li {
   z-index: 3;
   overflow-y: hidden;
   background-color: #fff;
+  -webkit-box-shadow: 0px 2px 2px #bdbdbd;
+          box-shadow: 0px 2px 2px #bdbdbd;
 }
 
 #overlay-catalog-menu .overlay-catalog-menu-start {
@@ -333,17 +336,17 @@ a, span, ul, li {
   display: none;
 }
 
-#search-products-form {
+#search-products-form, #search-on-dashboard-form {
   width: 100%;
   max-width: 700px;
 }
 
-#search-products-form input, #search-products-form button {
+#search-products-form input, #search-products-form button, #search-on-dashboard-form input, #search-on-dashboard-form button {
   height: 34px;
   font-size: 14px;
 }
 
-#search-products-form input {
+#search-products-form input, #search-on-dashboard-form input {
   width: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 200px;
@@ -354,7 +357,7 @@ a, span, ul, li {
   background-color: #fff;
 }
 
-#search-products-form button {
+#search-products-form button, #search-on-dashboard-form button {
   width: 100%;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30px;
@@ -367,16 +370,191 @@ a, span, ul, li {
   cursor: pointer;
 }
 
-#search-products-form button img {
+#search-products-form button img, #search-on-dashboard-form button img {
   height: 16px;
 }
 
-.catalog-menu, #overlay-mobile-menu {
+.catalog-menu, #overlay-mobile-menu, #overlay-dashboard-menu,
+.dashboard-section-top, .dashboard-section-bottom {
   margin-right: 0;
 }
 
-.catalog-menu div, #overlay-mobile-menu div {
+.catalog-menu div, #overlay-mobile-menu div, #overlay-dashboard-menu div,
+.dashboard-section-top div, .dashboard-section-bottom div {
   margin-right: 0;
+}
+
+#overlay-dashboard-menu {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 0px 2px #bdbdbd;
+          box-shadow: 2px 0px 2px #bdbdbd;
+}
+
+#overlay-dashboard-menu .horizontal-line {
+  position: relative;
+  margin: 0 -16px;
+}
+
+#overlay-dashboard-menu .overlay-dashboard-menu-start, #overlay-dashboard-menu .overlay-dashboard-menu-end {
+  padding: 0.8rem 1rem;
+}
+
+#overlay-dashboard-menu .overlay-dashboard-menu-start {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #bdbdbd;
+}
+
+#overlay-dashboard-menu .accordion-panel {
+  display: none;
+  padding-left: 1rem;
+}
+
+.dashboard-section {
+  width: 100%;
+  white-space: normal;
+}
+
+.dashboard-section .dashboard-section-top {
+  margin-bottom: 0.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-section .dashboard-section-top .dashboard-section-top-start {
+  width: 100%;
+  max-width: 300px;
+}
+
+.dashboard-section .dashboard-section-bottom {
+  margin-top: 0.5rem;
+}
+
+.dashboard-section .dashboard-section-bottom .tabs {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.dashboard-section .dashboard-section-bottom .tabs .tab {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 6px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #ff4800;
+  height: 34px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dashboard-section .dashboard-section-bottom .tabs .tab:hover {
+  background-color: #e2b220;
+}
+
+.dashboard-section .dashboard-section-bottom .tabs .tab:first-child {
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.dashboard-section .dashboard-section-bottom .tabs .tab:last-child {
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.dashboard-section .dashboard-section-bottom .tab-panel {
+  margin-top: 0.5rem;
+}
+
+#search-on-dashboard-form {
+  border: 2px solid #ff4800;
+  border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+
+.table {
+  width: 100%;
+}
+
+.table th, .table td {
+  padding: .5rem;
+  vertical-align: middle;
+}
+
+.table th {
+  width: 7rem;
+  margin-right: .5rem;
+  color: #757474;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.table img {
+  margin-right: 0.5rem;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.table .table-content {
+  border-bottom: 2px solid #e2b220;
+}
+
+.table .table-content:hover {
+  background-color: #e2b22042;
+}
+
+.table .table-content .customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table .table-content .price {
+  font-weight: 700;
+}
+
+@media (max-width: 52rem) {
+  .table .table-heading {
+    display: none;
+  }
+  .table .table-content {
+    display: block;
+  }
+  .table .table-content td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .table .table-content td::before {
+    content: attr(data-heading);
+    width: 7rem;
+    margin-right: .5rem;
+    color: #757474;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 }
 
 #subscribe-form {
@@ -451,11 +629,8 @@ a, span, ul, li {
   .category-menu-text {
     font-size: 36px;
   }
-  #overlay-mobile-menu {
+  #overlay-mobile-menu, #dashboard-menu-open-button {
     display: none;
-  }
-  .horizontal-line {
-    height: 4px;
   }
   #catalog-menu-open-button {
     height: 36px;
@@ -475,15 +650,45 @@ a, span, ul, li {
     display: -ms-flexbox;
     display: flex;
   }
-  #search-products-form input, #search-products-form button {
+  #search-products-form input, #search-products-form button, #search-on-dashboard-form input, #search-on-dashboard-form button {
     height: 36px;
     font-size: 16px;
   }
-  #search-products-form img {
+  #search-products-form img, #search-on-dashboard-form img {
     height: 32px;
   }
-  main .category-menu-content .card {
-    height: 180px;
+  #overlay-dashboard-menu {
+    position: relative;
+    height: initial;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+    min-width: 235px;
+    max-width: 275px;
+    z-index: 1;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-right: 1rem;
+  }
+  #overlay-dashboard-menu .overlay-dashboard-menu-start {
+    display: none;
+  }
+  .dashboard-section .dashboard-section-end .tabs {
+    width: 100%;
+  }
+  .dashboard-section .dashboard-section-end .tabs .tab {
+    height: 36px;
+    font-size: 16px;
+  }
+  .dashboard-section .dashboard-section-end .menu-section {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .dashboard-section .dashboard-section-end .tabs {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
   #subscribe-form input, #subscribe-form button {
     height: 36px;
@@ -502,6 +707,16 @@ a, span, ul, li {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 30%;
             flex: 0 0 30%;
+  }
+  .dashboard-section .menu-section {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+  }
+  .dashboard-section .menu-section:last-child {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
   }
 }
 
@@ -561,10 +776,6 @@ header .header-bottom-menu .header-bottom-menu-end a:first-child {
 
 header .header-bottom-menu .horizontal-line {
   bottom: 0;
-}
-
-main {
-  background-color: orange;
 }
 
 footer {
@@ -698,6 +909,18 @@ footer .footer-bottom-menu span {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 20%;
             flex: 0 0 20%;
+  }
+}
+
+main {
+  padding: 0 1rem;
+  min-width: 360px;
+  position: relative;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    padding: 0 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
