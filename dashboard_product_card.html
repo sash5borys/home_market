@@ -212,7 +212,7 @@
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAB2klEQVRYhe3Xz0sCQRTA8e9shR09BIF5zYMQQSBd0/KgEvinBqUeDIWOBUEEBXW1KOzQscUf06FNZ9cdnV1HSehdhMfszoeZ58xb+I8VCxFMyBJZJDk2qIlzPhYxqTxlix4VBDeiwYMW5GFugQTQweFY1HmyiimTYUgL2AFcBAcqyvGNHnLoYQDSDGnLMhnLmLaHAUggyalj/CCHC+BFyaRsoRRMSkm/IKhrQaJBlwH5CZTkSpbIxsYU2fW2ScW8sUZRNOj6DNoXrPmWFgTvQCFYhEaY4Lt+MAVR4zE4PhRkCxUVMxU0LyoOZiYoLiouxggUFaUd65CfhTEGmaJs1J0xaNaE9OnZ+GdGAoH2gHv1fv05h3zUqycyCLRFq7411pkVGzQVNQcGgnfZH4jV37JFF3WkLQu9tQXvCIoMOMJCl7CaB6OVq8MQtbzL1RC13PbD4FltUWtbCNOlb/I80Q5LtoHWtEIPBU3tZ6JclDFQkx+KczRXuoiyff4PxSpJvrgH0ko61gE3gQo/UDtssifO+PxN+LfMpbIIDICo84RDnvGpDpD25hyFH9TnGnBHekuYEFTHS7nenOMxwYdkkV3W2SfBpbqUNkNWSeJyQp870eR5EXP8x9LiG2u4FSSSSpHKAAAAAElFTkSuQmCC" />
         </a>
       </div>
-      <div class="overlay-dashboard-menu-center col-container">
+      <div class="overlay-dashboard-menu-end col-container">
         <a class="menu-section nav-icon category-text" href="">
           <img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAB3ElEQVRYhe2XPW/TUBSGn3NrYOleyU6dVmVnKRJSOlQiGVCSMsCIEP+CkTLyM6quICFSFghSB1dIVRd2JBJLiWDvUmjuYWhSWU78ocaFVPKz2D73Pee8ukfXsqGkZD4kacH1dxqI3jNql4psaMWMUPk2DD98zm3Iq7b3QZ8VaWQG+4P+wfNMQ66/0xCxn67ZDACq2hiGH7vRmBMXibGb6GXKkYoJijQhardAahe95D6QYQjuTPyISHfQ6+wWaaiy1tpVpTbpFV83RTYrgqkdSsL121sGWwOwmKNh2Ani8SSi+sIMGaN1VXkFYERfA0E8npgb0Wf2yWvoX5F7h6zVAGPeAKi1wax4ElF9YYbG74tu3vhVubkjK0/ZolCesixu7sjKU7YolKcsi8UfmcLZ5b1Sq/jNl2kFFDkZhAdfADy/9VDQzVT9+Hs63ivZkDUnInbyWFeReloDkD/uavPpxa28VbiVro9gOZ6qNkvnrbX2UKZ+4lL4Pb7ezp2hsjcIOy9yGQJw/WZdRB6oyHKSRlSfAHdj4e8q8i4l5xTl62TMuQ3lwfMeVXCcQ9CNcag/Emf7Z+9976o15zIE4G48XpXz0SHgnCPbv/qdH/PWnJuVant9pdpe/98+roW/xwMFI2ZFQ7gAAAAASUVORK5CYII=">
@@ -297,6 +297,7 @@
           Відгуки
         </a>
       </div>
+
     </aside>
 
     <!-- Start Dashboard Section -->
@@ -317,168 +318,147 @@
         </div>
         <ul class="dashboard-section-top-end row-container">
           <li>
-            <a href="" class="nav-icon">
+            <a href="" class="nav-icon" id="dashboard-filter-button">
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAB5klEQVRYhe3XP2sUURSG8d9dI6JgZy34ByxUxMIUxkIlhI1gp51CgmJjpQStJJtG9BsYoiT29pkmGiSCWChiIUFtbDWVgoYEr8XehDWZzWyy6yIybzXn8M45z9w7c5hLqVLtKaxNxKpTgr6udI9ehMxcY6onx9YvGu0KEGP8CVTpUuOWtX6FojncF1zBnpT9JHrSVqfgAg6k6KvokTWrU7c1UawawmQKlwW9YdqbrbDEAUdUvMb2lBoOmak8b/MtyzzGTIp6ROPxom2bhqmpqBhfhYmep9q5arpCEKsO4S12pNRDwcfNETmIqylaxLGQmd8SUIKq0bGvbixkahsZir+y3e6K3reNEnzw071iWwuKVafxtMH/TPSqoHIvzqyUwNmQme0IUIKaxFC667MfDodZ33O95+2y5B32p9RUyAy30qf1wbhkBF/qHe21052m3mWjDTALgluttmkZKMxYoKFwdDMOOr7WF885KrrRkBoJ0+lBOgmEwtkUayp+eaDFmdM2UKi/nNfV5wmc8M2lVcNLl3EyRYuCa+mevwMEITMvmGhI7cu9DiY2GoAdAwLRQkc8Ofrnfj9KoCKVQEUqgYqUdwzarPrioNsgtn+e6wRQv6i/A3Xw32zZytltY607c5Uq1Q39BrNWfIoJehhIAAAAAElFTkSuQmCC">
             </a>
           </li>
           <li>
-            <a href="" class="nav-icon">
+            <a href="" class="nav-icon" id="dashboard-export-button">
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAADQklEQVRYhe3XzWtcVRjH8c+ZaRONpiiIYCnUilYpWItUrEJsis0rFBeaYn1ZCEKsIG76Bwi6ERcuFIRUQaQutOCiVWcSzIttfaForLQqorQWabsQBTM1Jk0zx0VukmZmMjPJJFlIf3Dhnuc85znfe+49z3kuV3VVtSlU6xi7XGvERtGqqqNP+i30+3PJgWKb3YJ3cP1CguO0vObQ5/clA4od1ojO47oFwiwKqhqgbaKvkuZHguMVo0ar8fJioCoDtWkSHEm8u0NGT8UxuzSY8E+B+ay8HaHPmXJjU5WCL6HWSxmMrTaUc1pJIKqAWmkgWC/t4Hyd1eeUheiySXxWZI+2Cm4Q3bSiQCFjHC1FPO2OoKns2FLG2OouKW9iC+rQmHSNYrwG1kZTi3A2ZN1ayqFohWKXtIsOie4o4d+QXMum4o865/YCmIhvcAyXCryH0YexpH0cQ1f094pO1AaUn3NeTQjaQ9Z9IatJylZmDstX1GmWtlewMwH/XLA7uR8VPCLlu9qA5up9//oytvs2tjsjLyd4Lenrd8mzJn0hWosLopaQ8QdO4ljIGBeLP258PN+E5XdZdEqdzbg3sXwgupzcPy54EWnR21gjuCW2ulkwiAuxwybRuoKoPbJemG/K8iuUKtiFUbyi1S0aQr9oB/IIUh4WDYgG5ItWp0fWc8GcOAsAiu5R7wSOCk5JeQwZEDyAX0QHQq9h/JrYW9QZ1GhYmANUEaYyEHtMaAtZD4WMu+Wtxb4E9lFjnpfXHjttwW2JfWc4JIc0tie2/dXATD1PgWKnjfJ+LjD/aCohbk4mSpz9JMiZTaDTGkraD4r269UdiEmO22eVN8Jho9UBvSTlayexqdLTVFQxzHuiJzBgtV2loOY7OjZIeV2wTdRgcUfHh7L2loCZVkmoZakY54zvkpbzLp4q0X3UmM4w5OK0YVnroQow0OQan8bm2dOhcvmRMjGzN6K22OHGsv6Tfgh9SSb+2/2Cc3gVBE9iHUZEb82Mqbcdn0y5VNAifoMOhKynS8aarYfmLT8qvrKQMYJnkKsSqCZVVTGGrIOx2WH17qziV/qvZQeCMGQM39cyWTVaniJ/PkXnBadxbkXn/V/pP3G/FPiDJtUaAAAAAElFTkSuQmCC">
             </a>
           </li>
         </ul>
-
       </div>
       <div class="dashboard-section-center tabs-section">
         <div class="tabs row-container" role="tablist">
-          <button aria-selected="true" class="tab" id="ordered">
-            Замовлено
+          <button aria-selected="true" class="tab" id="images">
+            Зображення
           </button>
-          <button aria-selected="false" class="tab" id="delivered">
-            Доставлено
+          <button aria-selected="false" class="tab" id="detail">
+            Деталі
           </button>
-          <button aria-selected="false" class="tab" id="cancelled">
-            Відмовлено
+          <button aria-selected="false" class="tab" id="characteristics">
+            Характеристики
+          </button>
+          <button aria-selected="false" class="tab" id="description">
+            Опис
+          </button>
+          <button aria-selected="false" class="tab" id="reviews">
+            Відгуки
           </button>
         </div>
-        <div class="tab-panel" aria-labelled="ordered">
-          <table class="table dashboard-table-list" id="dashboard-table-list">
+        <div class="tab-panel" aria-labelled="images">
+          <table class="table" id="dashboard-table-list">
             <tr class="table-heading">
               <th>Вибрати</th>
-              <th>Дата</th>
-              <th>ID замовлення</th>
-              <th>Покупець</th>
-              <th>Кількість</th>
-              <th>Сума</th>
+              <th>URL</th>
+              <th>Зображення</th>
+              <th>Головне</th>
+            </tr>
+            <tr class="table-content">
+              <td data-heading="Вибрати"><input type="checkbox" name="select-one" value="y"></td>
+              <td data-heading="URL">https://marmelab.com/posters/animals-1.jpeg</td>
+              <td data-heading="Зображення">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
+              </td>
+              <td data-heading="Головне">
+                <input type="checkbox" name="main-image" value="y">
+              </td>
+            </tr>
+          </table>
+          <div class="file-uploader col-container" id="file-uploader">
+            <div class="image-upload-wrap">
+              <input class="file-upload-input" type='file' accept="image/*" />
+              <div class="drag-text">
+                <h3>Додати зображення</h3>
+              </div>
+            </div>
+            <div class="file-upload-content">
+              <img class="file-upload-image" />
+              <div class="image-title-wrap">
+                <button type="button" class="remove-image">Remove
+                  <span class="image-title">
+                    Uploaded Image
+                  </span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" aria-labelled="detail" hidden>
+          <table class="table detail-product-form" id="detail-product-form">
+            <tr class="table-content">
+              <td data-heading="Дата">
+                <div>
+                  <input type="text" name="product-date" autocomplete="off" value="19/08/2020, 11:21:52" />
+                </div>
+              </td>
+              <td data-heading="ID товара">
+                <div>
+                  <input type="text" name="product-id" autocomplete="off" value="an-w6zw5-N" />
+                </div>
+              </td>
+              <td data-heading="Назва">
+                <div>
+                  <input type="text" name="product-name" autocomplete="off" value="Спортивні штани Adidas XL" />
+                </div>
+              </td>
+              <td data-heading="Ціна">
+                <div>
+                  <input type="text" name="product-price" autocomplete="off" value="400" />
+                  UAH
+                </div>
+              </td>
+              <td data-heading="Висота">
+                <div>
+                  <input type="text" name="product-height" autocomplete="off" value="110" />
+                  cm
+                </div>
+              </td>
+              <td data-heading="Ширина">
+                <div>
+                  <input type="text" data-heading="cm" name="product-width" autocomplete="off" value="18" />
+                  cm
+                </div>
+              </td>
+              <td data-heading="Категорія">
+                <div class="dropdown product-category" id="product-category">
+                  <span class="dropdown-title checked" id="product-categories"
+                    data-arr-product-categories="sportswear">Спортивний одяг</span>
+                  <div class="dropdown-list">
+                    <div class="checkbox">
+                      <input type="checkbox" class="checkbox-custom-input" id="select-1" name="select-1"
+                        value="sportswear" checked />
+                      <label for="select-1" class="checkbox-custom-label">Спортивний одяг</label>
+                    </div>
 
-            </tr>
-            <tr class="table-content">
-              <td data-heading="Вибрати"><input type="checkbox" name="select-one" value="y"></td>
-              <td data-heading="Дата">19/08/2020, 11:21:52</td>
-              <td data-heading="ID замовлення">GF5FEW1</td>
-              <td class="customer" data-heading="Покупець">
-                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
-                Роман Стахів
-              </td>
-              <td data-heading="Кількість">3</td>
-              <td class="price" data-heading="Сума">2000 UAH</td>
-            </tr>
-            <tr class="table-content">
-              <td><input type="checkbox" name="select-one" value="y"></td>
-              <td data-heading="Дата">19/08/2020, 11:21:52</td>
-              <td data-heading="ID замовлення">GF5FEW1</td>
-              <td class="customer" data-heading="Покупець">
-                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
-                Роман Стахів
-              </td>
-              <td data-heading="Кількість">3</td>
-              <td class="price" data-heading="Сума">2000 UAH</td>
-            </tr>
-            <tr class="table-content">
-              <td><input type="checkbox" name="select-one" value="y"></td>
-              <td data-heading="Дата">19/08/2020, 11:21:52</td>
-              <td data-heading="ID замовлення">GF5FEW1</td>
-              <td class="customer" data-heading="Покупець">
-                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
-                Роман Стахів
-              </td>
-              <td data-heading="Кількість">3</td>
-              <td class="price" data-heading="Сума">2000 UAH</td>
-            </tr>
-            <tr class="table-content">
-              <td><input type="checkbox" name="select-one" value="y"></td>
-              <td data-heading="Дата">19/08/2020, 11:21:52</td>
-              <td data-heading="ID замовлення">GF5FEW1</td>
-              <td class="customer" data-heading="Покупець">
-                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
-                Роман Стахів
-              </td>
-              <td data-heading="Кількість">3</td>
-              <td class="price" data-heading="Сума">2000 UAH</td>
-            </tr>
-          </table>
-        </div>
-        <div class="tab-panel" aria-labelled="delivered" hidden>
-          <table class="table">
-            <tr class="table-heading">
-              <th>Вибрати</th>
-              <th>Дата</th>
-              <th>ID замовлення</th>
-              <th>Покупець</th>
-              <th>Кількість</th>
-              <th>Сума</th>
+                    <div class="checkbox">
+                      <input type="checkbox" class="checkbox-custom-input" id="select-2" name="select-2"
+                        value="classic-costumes" />
+                      <label for="select-2" class="checkbox-custom-label">Класичні костюми</label>
+                    </div>
 
-            </tr>
-            <tr class="table-content">
-              <td data-heading="Вибрати"><input type="checkbox" name="select-one" value="y"></td>
-              <td data-heading="Дата">19/08/2020, 11:21:52</td>
-              <td data-heading="ID замовлення">GF5FEW1</td>
-              <td class="customer" data-heading="Покупець">
-                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
-                Роман Стахів
+                  </div>
+                </div>
               </td>
-              <td data-heading="Кількість">3</td>
-              <td class="price" data-heading="Сума">2000 UAH</td>
-            </tr>
-            <tr class="table-content">
-              <td><input type="checkbox" name="select-one" value="y"></td>
-              <td data-heading="Дата">19/08/2020, 11:21:52</td>
-              <td data-heading="ID замовлення">GF5FEW1</td>
-              <td class="customer" data-heading="Покупець">
-                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
-                Роман Стахів
+              <td data-heading="Кількість">
+                <div>
+                  <input type="text" name="product-count" autocomplete="off" value="100" />
+                  шт
+                </div>
               </td>
-              <td data-heading="Кількість">3</td>
-              <td class="price" data-heading="Сума">2000 UAH</td>
-            </tr>
-            <tr class="table-content">
-              <td><input type="checkbox" name="select-one" value="y"></td>
-              <td data-heading="Дата">19/08/2020, 11:21:52</td>
-              <td data-heading="ID замовлення">GF5FEW1</td>
-              <td class="customer" data-heading="Покупець">
-                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
-                Роман Стахів
-              </td>
-              <td data-heading="Кількість">3</td>
-              <td class="price" data-heading="Сума">2000 UAH</td>
-            </tr>
-            <tr class="table-content">
-              <td><input type="checkbox" name="select-one" value="y"></td>
-              <td data-heading="Дата">19/08/2020, 11:21:52</td>
-              <td data-heading="ID замовлення">GF5FEW1</td>
-              <td class="customer" data-heading="Покупець">
-                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
-                Роман Стахів
-              </td>
-              <td data-heading="Кількість">3</td>
-              <td class="price" data-heading="Сума">2000 UAH</td>
             </tr>
           </table>
         </div>
-        <div class="tab-panel" aria-labelled="cancelled" hidden>
-          <table class="table dashboard-table-list" id="dashboard-table-list">
-            <tr class="table-heading">
-              <th>Вибрати</th>
-              <th>Дата</th>
-              <th>ID замовлення</th>
-              <th>Покупець</th>
-              <th>Кількість</th>
-              <th>Сума</th>
-            </tr>
-            <tr class="table-content">
-              <td data-heading="Вибрати"><input type="checkbox" name="select-one" value="y"></td>
-              <td data-heading="Дата">19/08/2020, 11:21:52</td>
-              <td data-heading="ID замовлення">GF5FEW1</td>
-              <td class="customer" data-heading="Покупець">
-                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scottiedude/128.jpg?size=25x25" alt="">
-                Роман Стахів
-              </td>
-              <td data-heading="Кількість">3</td>
-              <td class="price" data-heading="Сума">2000 UAH</td>
-            </tr>
-          </table>
+        <div class="tab-panel" aria-labelled="characteristics" hidden>
+          <div>fds</div>
+        </div>
+        <div class="tab-panel" aria-labelled="description" hidden>
+
+        </div>
+        <div class="tab-panel" aria-labelled="reviews" hidden>
+
         </div>
       </div>
       <div class="dashboard-section-bottom row-container">

@@ -35,3 +35,41 @@ function handleTabClick(e) {
     tabPanel.hidden = false;
 }
 tabButtons.forEach(button => button.addEventListener('click', handleTabClick));
+
+// Dropdown Checkboxes
+function DropdownCheckbox(dropdown) {
+    if (!(dropdown instanceof Element)) throw new Error('No dropdown passed in');
+    const productCategories = dropdown.querySelector('#product-categories');
+    // eslint-disable-next-line prefer-const
+    let arrDataProductCategories = productCategories.dataset.arrProductCategories.replace(/\s/g, '').split(',');
+    let arrTitleProductCategories = productCategories.innerHTML.split(',').map(el => el.trim());
+    const checkboxes = dropdown.querySelectorAll('.checkbox');
+
+    // Open dropdown list
+    dropdown.addEventListener('click', () => {
+        dropdown.classList.toggle('open');
+    });
+
+    checkboxes.forEach((checkbox, index) => {
+        const input = checkbox.querySelector('input');
+        const label = checkbox.querySelector('label');
+
+        // Handle dropdown list input checked
+        input.addEventListener('change', () => {
+            if (input.checked) {
+                arrDataProductCategories.push(input.value);
+                arrTitleProductCategories.push(label.innerHTML);
+            } else {
+                arrDataProductCategories = arrDataProductCategories.filter(code => code !== input.value);
+                arrTitleProductCategories = arrTitleProductCategories.filter(title => title !== label.innerHTML);
+            }
+            productCategories.dataset.arrProductCategories = arrDataProductCategories.join(',');
+            productCategories.innerHTML = arrTitleProductCategories.join(', ');
+        });
+    });
+
+    document.addEventListener('click', e => {
+        if (!dropdown.contains(e.target)) dropdown.classList.remove('open');
+    });
+}
+const productCategory = DropdownCheckbox(document.querySelector('#product-category'));
